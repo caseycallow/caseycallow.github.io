@@ -1,0 +1,19 @@
+@import "base/base";
+
+body {
+  animation: fadeIn 2s forwards;
+  display: flex;
+  opacity: 0;
+  font-family: 'Taviraj', sans-serif;
+  background-color: #333;
+  color: white;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.main-content {
+  margin-right: 5rem;
+}
