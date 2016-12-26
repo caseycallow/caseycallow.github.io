@@ -6,10 +6,11 @@
   transform: rotate3d(0, 0, 1, -6deg);
 
   .screen {
+    display: flex;
+    flex: 1;
     width: 100%;
     position: relative;
-    height: 67%;
-    color: white;
+    height: 55%;
     z-index: 999;
     text-align: center;
     display: block;
@@ -36,7 +37,7 @@
 
   .keyboard {
     cursor: auto;
-    height: 33%;
+    height: 45%;
     line-height: 0;
     width: 100%;
     img {
