@@ -402,19 +402,26 @@ template {
 [hidden] {
   display: none; }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
 @keyframes fadeIn {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100vw, 0, 0) rotate3d(0, 0, 1, -80deg);
+    transform: translate3d(-100vw, 0, 0) rotate3d(0, 0, 1, -80deg); }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate3d(0, 0, 1, -6deg);
+    transform: rotate3d(0, 0, 1, -6deg); } }
 .ios-device {
   display: inline-block;
-  position: relative; }
+  position: relative;
+  margin: 2rem;
+  animation: rollIn 1s ease-in-out forwards;
+  transform: rotate3d(0, 0, 1, -6deg); }
   .ios-device .screen {
     width: 100%;
     position: relative;
@@ -694,15 +701,22 @@ template {
         margin-top: -5px; }
 
 body {
-  animation: fadeIn 2s forwards;
+  animation: fadeIn 1s forwards;
   display: flex;
-  opacity: 0;
   font-family: 'Taviraj', sans-serif;
   background-color: #333;
-  color: white; }
+  color: white;
+  background: url(../../images/table.jpg) no-repeat center center fixed;
+  background-size: cover; }
 
 iframe {
   border: none; }
+
+.screen {
+  animation: fadeIn 1s forwards;
+  animation-delay: 2.5s;
+  border: none;
+  opacity: 0; }
 
 h1 {
   font-size: 5rem;

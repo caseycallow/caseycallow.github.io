@@ -1,6 +1,9 @@
 .ios-device {
   display: inline-block;
   position: relative;
+  margin: 2rem;
+  animation: rollIn 1s ease-in-out forwards;
+  transform: rotate3d(0, 0, 1, -6deg);
 
   .screen {
     width: 100%;
