@@ -407,21 +407,10 @@ template {
     opacity: 0; }
   to {
     opacity: 1; } }
-@keyframes rollIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-200%, 0, 0) rotate3d(0, 0, 1, -80deg);
-    transform: translate3d(-200%, 0, 0) rotate3d(0, 0, 1, -80deg); }
-  to {
-    opacity: 1;
-    -webkit-transform: rotate3d(0, 0, 1, -6deg);
-    transform: rotate3d(0, 0, 1, -6deg); } }
 .ios-device {
   display: inline-block;
   position: relative;
-  margin: 2rem;
-  animation: rollIn 1s ease-in-out forwards;
-  transform: rotate3d(0, 0, 1, -6deg); }
+  margin: 2rem; }
   .ios-device .screen {
     display: flex;
     flex: 1;
@@ -723,7 +712,6 @@ body {
   display: flex;
   font-family: 'Work Sans', sans-serif;
   background-color: #333;
-  background: url(../../images/table.jpg) no-repeat center center fixed;
   background-size: cover; }
 
 iframe {

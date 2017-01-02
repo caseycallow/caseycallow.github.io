@@ -6,16 +6,3 @@
     opacity: 1;
   }
 }
-
-@keyframes rollIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-200%, 0, 0) rotate3d(0, 0, 1, -80deg);
-    transform: translate3d(-200%, 0, 0) rotate3d(0, 0, 1, -80deg);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: rotate3d(0, 0, 1, -6deg);
-    transform: rotate3d(0, 0, 1, -6deg);
-  }
-}
