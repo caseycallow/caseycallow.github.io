@@ -4,15 +4,12 @@
   margin: 2rem;
 
   .screen {
-    display: flex;
-    flex: 1;
     width: 100%;
     position: relative;
-    height: 55%;
+    height: 85%;
     z-index: 999;
     text-align: center;
     display: block;
-    -webkit-border-radius: 1px;
     border-radius: 1px;
     line-height: 0;
   }
@@ -31,17 +28,6 @@
     left: 90px;
     background: black;
     position: absolute;
-  }
-
-  .keyboard {
-    cursor: auto;
-    height: 45%;
-    line-height: 0;
-    width: 100%;
-    img {
-      height: auto;
-      width: 100%;
-    }
   }
 
   &.iphone6 {

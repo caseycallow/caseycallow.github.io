@@ -412,15 +412,12 @@ template {
   position: relative;
   margin: 2rem; }
   .ios-device .screen {
-    display: flex;
-    flex: 1;
     width: 100%;
     position: relative;
-    height: 55%;
+    height: 85%;
     z-index: 999;
     text-align: center;
     display: block;
-    -webkit-border-radius: 1px;
     border-radius: 1px;
     line-height: 0; }
   .ios-device .top-bar, .ios-device .bottom-bar {
@@ -435,14 +432,6 @@ template {
     left: 90px;
     background: black;
     position: absolute; }
-  .ios-device .keyboard {
-    cursor: auto;
-    height: 45%;
-    line-height: 0;
-    width: 100%; }
-    .ios-device .keyboard img {
-      height: auto;
-      width: 100%; }
   .ios-device.iphone6 {
     width: 375px;
     height: 667px;
@@ -692,20 +681,52 @@ template {
 
 .nav-bar {
   width: 100%;
-  height: 5rem;
-  border-bottom: 1px solid gray;
-  background-color: white; }
+  height: auto;
+  border-bottom: 1px solid #d7d7d7;
+  background-color: white;
+  padding: 0.2rem 0; }
   .nav-bar__picture {
     border-radius: 50%;
-    border: 1px solid gray;
     margin: 0 auto;
     height: 2.5rem;
     width: 2.5rem; }
   .nav-bar__label {
-    font-family: 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    font-size: 9px; }
+    font-family: "San-Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 0.8rem; }
   .nav-bar__info-icon {
     float: right; }
+
+.status-bar {
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  display: flex;
+  min-height: 1.5rem;
+  font-size: 0.8rem;
+  padding: 0 0.5rem;
+  font-family: "San-Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  .status-bar__connectivity {
+    align-items: center;
+    display: flex; }
+    .status-bar__connectivity .cellular-bars {
+      align-items: center;
+      display: flex; }
+    .status-bar__connectivity .cellular-bar {
+      height: 0.4rem;
+      width: 0.4rem;
+      background-color: black;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 0.05rem; }
+      .status-bar__connectivity .cellular-bar:last-of-type {
+        height: 0.28rem;
+        width: 0.28rem;
+        border: 1px solid black;
+        background-color: white;
+        margin-right: 0.25rem; }
+  .status-bar__time {
+    font-weight: 500;
+    letter-spacing: 1px; }
 
 body {
   animation: fadeIn 1s forwards;
@@ -719,7 +740,7 @@ iframe {
 
 .screen {
   animation: fadeIn 1s forwards;
-  animation-delay: 2.5s;
+  animation-delay: 1s;
   border: none;
   opacity: 0; }
 
