@@ -8,18 +8,10 @@ body {
   background-size: cover;
 }
 
-iframe {
-  border: none;
-}
-
-//turn on screen after phone slides in
-.screen {
-  animation: fadeIn 1s forwards;
-  animation-delay: 1s;
-  border: none;
-  opacity: 0;
-}
-
 .main-content {
   margin-right: 5rem;
+}
+
+iframe {
+  border: none;
 }

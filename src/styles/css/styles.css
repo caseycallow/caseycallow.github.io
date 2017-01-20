@@ -422,7 +422,11 @@ h1 {
     text-align: center;
     display: block;
     border-radius: 1px;
-    line-height: 0; }
+    line-height: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    border: none;
+    opacity: 0; }
   .ios-device .top-bar, .ios-device .bottom-bar {
     height: 3px;
     background: black;
@@ -747,16 +751,10 @@ body {
   background-color: #333;
   background-size: cover; }
 
-iframe {
-  border: none; }
-
-.screen {
-  animation: fadeIn 1s forwards;
-  animation-delay: 1s;
-  border: none;
-  opacity: 0; }
-
 .main-content {
   margin-right: 5rem; }
+
+iframe {
+  border: none; }
 
 /*# sourceMappingURL=styles.css.map */
