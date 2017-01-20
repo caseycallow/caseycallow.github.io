@@ -1,6 +1,10 @@
+//BASE//
 @import "normalize";
 @import "variables";
+@import "typography";
 @import "animation";
+
+//COMPONENTS//
 @import "ios-device";
 @import "nav-bar";
 @import "status-bar";

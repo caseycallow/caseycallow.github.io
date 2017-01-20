@@ -402,6 +402,9 @@ template {
 [hidden] {
   display: none; }
 
+h1 {
+  font-size: 5rem; }
+
 @keyframes fadeIn {
   from {
     opacity: 0; }
@@ -752,9 +755,6 @@ iframe {
   animation-delay: 1s;
   border: none;
   opacity: 0; }
-
-h1 {
-  font-size: 5rem; }
 
 .main-content {
   margin-right: 5rem; }
