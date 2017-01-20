@@ -1,0 +1,15 @@
+.proto-vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 375px;
+  height: 668px;
+
+  //hide prototype video layers until toggled on
+  &--book-reviews,
+  &--time-tracker,
+  &--wardrobe-mgmt,
+  &--restaurant-finder {
+    display: none;
+  }
+}

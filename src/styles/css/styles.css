@@ -728,6 +728,15 @@ template {
     font-weight: 500;
     letter-spacing: 1px; }
 
+.proto-vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 375px;
+  height: 668px; }
+  .proto-vid--book-reviews, .proto-vid--time-tracker, .proto-vid--wardrobe-mgmt, .proto-vid--restaurant-finder {
+    display: none; }
+
 body {
   animation: fadeIn 1s forwards;
   display: flex;
@@ -737,15 +746,6 @@ body {
 
 iframe {
   border: none; }
-
-.proto-vid {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 375px;
-  height: 668px; }
-  .proto-vid--book-reviews, .proto-vid--time-tracker, .proto-vid--wardrobe-mgmt, .proto-vid--restaurant-finder {
-    display: none; }
 
 .screen {
   animation: fadeIn 1s forwards;
