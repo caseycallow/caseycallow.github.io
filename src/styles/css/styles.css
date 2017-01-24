@@ -758,6 +758,7 @@ label {
   height: auto;
   border-bottom: 1px solid #ddd;
   background-color: white;
+  color: black;
   padding: 0.2rem 0; }
   .nav-bar__picture {
     border-radius: 50%;
@@ -766,7 +767,8 @@ label {
     width: 2.5rem; }
   .nav-bar__label {
     font-family: "San-Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    margin: 1rem 0; }
   .nav-bar__info-icon {
     float: right; }
 
@@ -774,6 +776,7 @@ label {
   align-items: center;
   justify-content: space-between;
   background-color: white;
+  color: black;
   display: flex;
   min-height: 1.5rem;
   font-size: 0.8rem;

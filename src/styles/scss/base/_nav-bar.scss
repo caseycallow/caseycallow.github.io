@@ -3,6 +3,7 @@
   height: auto;
   border-bottom: 1px solid $light-gray;
   background-color: white;
+  color: black;
   padding: 0.2rem 0;
   &__picture {
     border-radius: 50%;
@@ -13,6 +14,7 @@
   &__label {
     font-family: $san-franscisco;
     font-size: $base-font-size*0.8;
+    margin: 1rem 0;
   }
   &__info-icon {
     float: right;
