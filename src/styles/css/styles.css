@@ -402,8 +402,75 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal; }
+body {
+  color: white;
+  font-family: "Work Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: 1rem;
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  font-family: "Work Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 0 0 0.75rem; }
+
 h1 {
-  font-size: 5rem; }
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.875rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 1.12rem; }
+
+h5 {
+  font-size: .83rem; }
+
+h6 {
+  font-size: .75rem; }
+
+p {
+  margin: 0 0 0.75rem; }
+
+a {
+  cursor: pointer;
+  color: #477dca;
+  text-decoration: none;
+  transition: color 200ms ease-in-out; }
+  a:active, a:focus, a:hover {
+    text-decoration: underline; }
+
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5rem 0; }
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+label {
+  display: inline-block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #477dca;
+  border: none;
+  font-weight: bold;
+  margin: 0 0.25rem 0.4rem 0; }
 
 @keyframes fadeIn {
   from {
@@ -689,7 +756,7 @@ h1 {
 .nav-bar {
   width: 100%;
   height: auto;
-  border-bottom: 1px solid #d7d7d7;
+  border-bottom: 1px solid #ddd;
   background-color: white;
   padding: 0.2rem 0; }
   .nav-bar__picture {
@@ -747,10 +814,9 @@ h1 {
 body {
   animation: fadeIn 1s forwards;
   display: flex;
-  font-family: 'Work Sans', sans-serif;
   background-color: #333;
   background-size: cover;
-  padding: 2rem; }
+  padding: 1.5rem; }
 
 .main-content {
   margin-right: 5rem;

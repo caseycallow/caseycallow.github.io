@@ -1,8 +1,71 @@
-h1 {
-  font-size: 5rem;
+@font-face {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
 }
 
-h2 {}
-h3 {}
-h4 {}
-h5 {}
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $heading-color;
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+	font-weight: normal;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+}
+
+h1 {font-size: 2rem;}
+h2 {font-size: 1.875rem;}
+h3 {font-size: 1.25rem;}
+h4 {font-size: 1.12rem;}
+h5 {font-size: .83rem;}
+h6 {font-size: .75rem;}
+
+p {
+  margin: 0 0 $small-spacing;
+}
+
+a {
+  cursor: pointer;
+  color: $primary-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+label {
+  display: inline-block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: ($base-font-size * 0.85);
+  color: $primary-color;
+  border: none;
+  font-weight: bold;
+  margin: 0 0.25rem 0.4rem 0;
+}
