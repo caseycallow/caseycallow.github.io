@@ -811,6 +811,13 @@ label {
   .proto-vid--book-reviews, .proto-vid--time-tracker, .proto-vid--wardrobe-mgmt, .proto-vid--restaurant-finder {
     display: none; }
 
+.teaser {
+  margin: 0 0 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid white; }
+  .teaser__description {
+    margin: 0; }
+
 body {
   animation: fadeIn 1s forwards;
   display: flex;
