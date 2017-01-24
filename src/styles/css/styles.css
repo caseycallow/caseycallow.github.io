@@ -412,7 +412,7 @@ h1 {
     opacity: 1; } }
 .ios-device {
   display: inline-block;
-  position: relative;
+  position: fixed;
   margin: 2rem; }
   .ios-device .screen {
     width: 100%;
@@ -749,10 +749,12 @@ body {
   display: flex;
   font-family: 'Work Sans', sans-serif;
   background-color: #333;
-  background-size: cover; }
+  background-size: cover;
+  padding: 2rem; }
 
 .main-content {
-  margin-right: 5rem; }
+  margin-right: 5rem;
+  color: white; }
 
 iframe {
   border: none; }
