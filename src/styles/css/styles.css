@@ -515,6 +515,8 @@ body {
     animation-delay: 1s;
     border: none;
     opacity: 0; }
+    .ios-device .screen iframe {
+      border: none; }
   .ios-device .top-bar, .ios-device .bottom-bar {
     height: 3px;
     background: black;
@@ -841,8 +843,5 @@ body {
   border: 1px solid white; }
   .teaser__description {
     margin: 0; }
-
-iframe {
-  border: none; }
 
 /*# sourceMappingURL=styles.css.map */
