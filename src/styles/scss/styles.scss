@@ -1,31 +1,5 @@
 @import "base/base";
 
-body {
-  animation: fadeIn 1s forwards;
-  display: flex;
-  background-color: #333;
-  background-size: cover;
-  padding: $large-spacing;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.main-content {
-  justify-content: flex-end;
-  margin-right: $large-spacing;
-  color: white;
-}
-
-.secondary-content {
-  justify-content: flex-start;
-}
-
-.main-content, .secondary-content {
-  display: flex;
-  align-items: center;
-  flex: 1 1 auto;
-}
-
 iframe {
   border: none;
 }

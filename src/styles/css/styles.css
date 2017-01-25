@@ -472,6 +472,28 @@ label {
   font-weight: bold;
   margin: 0 0.25rem 0.4rem 0; }
 
+body {
+  animation: fadeIn 1s forwards;
+  display: flex;
+  background-color: #333;
+  background-size: cover;
+  padding: 3.6rem;
+  height: 100vh;
+  overflow: hidden; }
+
+.main-content, .secondary-content {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto; }
+
+.main-content {
+  justify-content: flex-end;
+  margin-right: 3.6rem;
+  color: white; }
+
+.secondary-content {
+  justify-content: flex-start; }
+
 @keyframes fadeIn {
   from {
     opacity: 0; }
@@ -819,28 +841,6 @@ label {
   border: 1px solid white; }
   .teaser__description {
     margin: 0; }
-
-body {
-  animation: fadeIn 1s forwards;
-  display: flex;
-  background-color: #333;
-  background-size: cover;
-  padding: 3.6rem;
-  height: 100vh;
-  overflow: hidden; }
-
-.main-content {
-  justify-content: flex-end;
-  margin-right: 3.6rem;
-  color: white; }
-
-.secondary-content {
-  justify-content: flex-start; }
-
-.main-content, .secondary-content {
-  display: flex;
-  align-items: center;
-  flex: 1 1 auto; }
 
 iframe {
   border: none; }
