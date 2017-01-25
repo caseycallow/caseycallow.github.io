@@ -832,6 +832,9 @@ body {
   margin-right: 5rem;
   color: white; }
 
+.main-content, .secondary-content {
+  flex: 1 1 auto; }
+
 iframe {
   border: none; }
 
