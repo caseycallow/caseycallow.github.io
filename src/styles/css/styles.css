@@ -469,8 +469,7 @@ label {
   font-size: 0.85rem;
   color: #477dca;
   border: none;
-  font-weight: bold;
-  margin: 0 0.25rem 0.4rem 0; }
+  font-weight: bold; }
 
 body {
   animation: fadeIn 1s forwards;
