@@ -776,25 +776,6 @@ body {
         margin-left: 0px;
         margin-top: -5px; }
 
-.nav-bar {
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid #ddd;
-  background-color: white;
-  color: black;
-  padding: 0.2rem 0; }
-  .nav-bar__picture {
-    border-radius: 50%;
-    margin: 0 auto;
-    height: 2.5rem;
-    width: 2.5rem; }
-  .nav-bar__label {
-    font-family: "San-Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 0.8rem;
-    margin: 1rem 0; }
-  .nav-bar__info-icon {
-    float: right; }
-
 .status-bar {
   align-items: center;
   justify-content: space-between;
@@ -827,6 +808,25 @@ body {
   .status-bar__time {
     font-weight: 500;
     letter-spacing: 1px; }
+
+.nav-bar {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  padding: 0.2rem 0; }
+  .nav-bar__picture {
+    border-radius: 50%;
+    margin: 0 auto;
+    height: 2.5rem;
+    width: 2.5rem; }
+  .nav-bar__label {
+    font-family: "San-Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 0.8rem;
+    margin: 1rem 0; }
+  .nav-bar__info-icon {
+    float: right; }
 
 .proto-vid {
   position: absolute;
