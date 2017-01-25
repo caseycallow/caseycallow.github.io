@@ -419,7 +419,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.2;
-  margin: 0 0 0.75rem; }
+  margin: 0 0 0.9rem; }
 
 h1 {
   font-size: 2rem; }
@@ -428,7 +428,7 @@ h2 {
   font-size: 1.875rem; }
 
 h3 {
-  font-size: 1.25rem; }
+  font-size: 1.4rem; }
 
 h4 {
   font-size: 1.12rem; }
@@ -440,7 +440,7 @@ h6 {
   font-size: .75rem; }
 
 p {
-  margin: 0 0 0.75rem; }
+  margin: 0 0 0.9rem; }
 
 a {
   cursor: pointer;
@@ -455,7 +455,7 @@ hr {
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  margin: 1.5rem 0; }
+  margin: 1.8rem 0; }
 
 img,
 picture {
@@ -479,8 +479,7 @@ label {
     opacity: 1; } }
 .ios-device {
   display: inline-block;
-  position: fixed;
-  margin: 2rem; }
+  position: relative; }
   .ios-device .screen {
     width: 100%;
     position: relative;
@@ -815,8 +814,8 @@ label {
     display: none; }
 
 .teaser {
-  margin: 0 0 1.5rem;
-  padding: 1.5rem;
+  margin: 0 0 1.8rem;
+  padding: 1.8rem;
   border: 1px solid white; }
   .teaser__description {
     margin: 0; }
@@ -826,13 +825,21 @@ body {
   display: flex;
   background-color: #333;
   background-size: cover;
-  padding: 1.5rem; }
+  padding: 3.6rem;
+  height: 100vh;
+  overflow: hidden; }
 
 .main-content {
-  margin-right: 5rem;
+  justify-content: flex-end;
+  margin-right: 3.6rem;
   color: white; }
 
+.secondary-content {
+  justify-content: flex-start; }
+
 .main-content, .secondary-content {
+  display: flex;
+  align-items: center;
   flex: 1 1 auto; }
 
 iframe {
