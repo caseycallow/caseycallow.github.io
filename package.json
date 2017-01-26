@@ -1,0 +1,31 @@
+{
+  "name": "casey-callow-portfolio",
+  "version": "1.0.0",
+  "description": "Design portfolio for Casey Callow",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caseycallow/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "design",
+    "UI",
+    "UX"
+  ],
+  "author": "Casey Callow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caseycallow/portfolio/issues"
+  },
+  "homepage": "https://github.com/caseycallow/portfolio#readme"
+}

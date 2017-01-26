@@ -406,6 +406,7 @@ template {
   font-family: 'Work Sans', sans-serif;
   font-weight: normal;
   font-style: normal; }
+
 body {
   color: white;
   font-family: "Work Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -498,6 +499,7 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
+
 .ios-device {
   display: inline-block;
   position: relative; }
@@ -842,5 +844,3 @@ body {
   border: 1px solid white; }
   .teaser__description {
     margin: 0; }
-
-/*# sourceMappingURL=styles.css.map */
