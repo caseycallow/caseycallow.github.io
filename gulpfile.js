@@ -6,9 +6,8 @@ var mustache = require("gulp-mustache");
 // browser-sync
 gulp.task('browser-sync', ['sass'], function() {
   bs.init({
-    server: {
-      baseDir: "./"
-    }
+    server: "./",
+    port: 8080
   });
 });
 
