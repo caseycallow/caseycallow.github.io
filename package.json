@@ -2,7 +2,6 @@
   "name": "casey-callow-portfolio",
   "version": "1.0.0",
   "description": "Design portfolio for Casey Callow",
-  "main": "gulpfile.js",
   "devDependencies": {
     "browser-sync": "^2.18.6",
     "gulp": "^3.9.1",
