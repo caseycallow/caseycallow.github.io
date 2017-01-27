@@ -1,0 +1,27 @@
+{
+  "siteTitle": "Casey Callow Portfolio",
+  "navBar": {
+    "label": "Casey Callow",
+    "imgSrc": "src/images/profile-pic.jpg"
+  },
+  "statusBar": {
+    "batteryLevel": "45%"
+  },
+  "iphone": {
+    "color": "black"
+  },
+  "teaser": [
+    {
+      "title": "Design #1",
+      "description": "Description for the project goes right here."
+    },
+    {
+      "title": "Design #2",
+      "description": "Description for the project goes right here."
+    },
+    {
+      "title": "Design #3",
+      "description": "Description for the project goes right here."
+    }
+  ]
+}

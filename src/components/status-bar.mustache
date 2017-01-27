@@ -1,0 +1,19 @@
+<div class="status-bar">
+  <div class="status-bar__connectivity">
+    <div class="cellular-bars">
+      <span class="cellular-bar"></span>
+      <span class="cellular-bar"></span>
+      <span class="cellular-bar"></span>
+      <span class="cellular-bar"></span>
+      <span class="cellular-bar"></span>
+    </div>
+    {{>wifi-icon}}
+  </div>
+  <div class="status-bar__time">
+    <time id="clock"></time>
+  </div>
+  <div class="status-bar__battery">
+    <span>{{statusBar.batteryLevel}}</span>
+    {{>battery-icon}}
+  </div>
+</div>
