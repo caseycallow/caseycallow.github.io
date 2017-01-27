@@ -477,9 +477,7 @@ body {
   display: flex;
   background-color: #333;
   background-size: cover;
-  padding: 3.6rem;
-  height: 100vh;
-  overflow: hidden; }
+  height: 100vh; }
 
 .main-content, .secondary-content {
   display: flex;
@@ -502,7 +500,8 @@ body {
 
 .iphone {
   display: inline-block;
-  position: relative; }
+  position: relative;
+  transform: scale(0.85); }
   .iphone .screen {
     width: 100%;
     position: relative;
