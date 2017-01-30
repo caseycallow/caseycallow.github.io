@@ -2,7 +2,7 @@
   "siteTitle": "Casey Callow Portfolio",
   "navBar": {
     "label": "Casey Callow",
-    "imgSrc": "src/images/profile-pic.jpg"
+    "imgSrc": "src/images/profile-pic.png"
   },
   "statusBar": {
     "batteryLevel": "45%"
