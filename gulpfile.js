@@ -35,6 +35,7 @@ gulp.task('mustache', function() {
 gulp.task('watch', ['browser-sync'], function () {
   gulp.watch('src/styles/scss/**/*.scss', ['sass']);
   gulp.watch('src/components/*.mustache', ['mustache']).on('change', bs.reload);
+  gulp.watch('src/data/*.json', ['mustache']).on('change', bs.reload);
   gulp.watch('src/scripts/*.js').on('change', bs.reload);
 });
 
