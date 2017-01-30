@@ -16,7 +16,7 @@ gulp.task('browser-sync', ['sass'], function() {
 //Compile SASS
 gulp.task('sass', function () {
   gulp.src('src/styles/scss/*.scss')
-    .pipe(sass())
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(gulp.dest('src/styles/css/'))
     .pipe(bs.reload({stream: true}));
 });
