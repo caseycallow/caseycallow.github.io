@@ -1,15 +1,35 @@
 {
   "siteTitle": "Casey Callow Portfolio",
+  "chatbotSrc": "https://api.motion.ai/webchat/23723?sendBtn=SEND&inputBox=Type+something...&token=ef7a260569f0f1fa64203a3f32fcd87e",
+  "fontSrc": "https://fonts.googleapis.com/css?family=Taviraj|Work+Sans",
+  "iphone": {
+    "color": "black"
+  },
   "navBar": {
     "label": "Casey Callow",
     "imgSrc": "src/images/profile-pic.png"
   },
   "statusBar": {
-    "batteryLevel": "45%"
+    "batteryLevel": "100%"
   },
-  "iphone": {
-    "color": "black"
-  },
+  "prototypeVideo": [
+    {
+      "class": "book-reviews",
+      "src": "https://player.vimeo.com/video/200289904?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+    },
+    {
+      "class": "time-tracker",
+      "src": "https://player.vimeo.com/video/200289219?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+    },
+    {
+      "class": "wardrobe-mgmt",
+      "src": "https://player.vimeo.com/video/200288005?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+    },
+    {
+      "class": "restaurant-finder",
+      "src": "https://player.vimeo.com/video/198791350?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+    }
+  ],
   "teaser": [
     {
       "title": "Design #1",
