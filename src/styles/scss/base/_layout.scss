@@ -1,7 +1,7 @@
 body {
   animation: fadeIn 1s forwards;
   display: flex;
-  background-color: #333;
+  background-color: $base-background-color;
   background-size: cover;
   height: 100vh;
 }
@@ -15,7 +15,7 @@ body {
 .main-content {
   justify-content: flex-end;
   margin-right: $large-spacing;
-  color: white;
+  color: $base-font-color;
 }
 
 .secondary-content {

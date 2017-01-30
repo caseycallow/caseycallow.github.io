@@ -36,27 +36,10 @@ $primary-color: $blue;
 $primary-color-lighter: lighten($blue, 10%);
 $secondary-color: $green;
 
-$color-brand-primary-blue: #124191;
-$color-brand-primary-white: #ffffff;
-$color-brand-primary-blue-black: #001135;
-
-$color-brand-gray-1: #edf3f5;
-$color-brand-gray-2: #bec8d2;
-$color-brand-gray-3: #98a2ae;
-$color-brand-gray-4: #4d5766;
-$color-brand-gray-5: #273142;
-
-$color-brand-accent-light-blue: #00c9ff;
-$color-brand-accent-red: #ff3154;
-$color-brand-accent-yellow: #fffb00;
-$color-brand-accent-green: #4bdd33;
-$color-brand-accent-orange: #ff9910;
-$color-brand-accent-black: #000000;
-
 // Font Colors
 $base-font-color: white;
 $heading-color: white;
-$action-color: $color-brand-accent-light-blue;
+$action-color: $blue;
 
 // Border
 $base-border-color: $light-gray;
@@ -65,11 +48,9 @@ $base-border: 1px solid $base-border-color;
 //Effects
 $base-box-shadow: 0 15px 25px rgba(0,0,0,0.3);
 $base-box-shadow-light: 0 2px 5px rgba(0,0,0,0.1);
-$base-box-shadow-light-top: 0 -2px 5px rgba(0,0,0,0.1);
 
 // Background Colors
-$page-background-color: #f3f3f3;
-$base-background-color: #fff;
+$base-background-color: #333;
 $secondary-background-color: tint($base-border-color, 75%);
 
 // Forms
@@ -84,7 +65,7 @@ $base-delay: 750ms;
 
 // Buttons
 $btn-font-size: $base-font-size;
-$btn-color: $color-brand-accent-light-blue;
+$btn-color: $primary-color;
 $btn-shadow-light: $base-box-shadow-light;
 $btn-shadow: $base-box-shadow;
 $btn-color-hover: lighten($btn-color, 10%);
