@@ -8,9 +8,16 @@
   transition: $base-transition;
   &:hover {
     background: $teaser-color-hover;
-    transform: scale(1.01);
+    transform: scale(1.02);
   }
   &__description {
     margin: 0;
+  }
+  &.js-teaser-open {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
   }
 }
