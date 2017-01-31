@@ -47,7 +47,7 @@ $base-border: 1px solid $base-border-color;
 
 //Effects
 $base-box-shadow: 0 15px 25px rgba(0,0,0,0.3);
-$base-box-shadow-light: 0 2px 5px rgba(0,0,0,0.1);
+$base-box-shadow-hover: 0 2px 5px rgba(0,0,0,0.1);
 
 // Background Colors
 $base-background-color: #333;
@@ -66,8 +66,12 @@ $base-delay: 750ms;
 // Buttons
 $btn-font-size: $base-font-size;
 $btn-color: $primary-color;
-$btn-shadow-light: $base-box-shadow-light;
+$btn-shadow-light: $base-box-shadow-hover;
 $btn-shadow: $base-box-shadow;
 $btn-color-hover: lighten($btn-color, 10%);
 $btn-color-text: #fff;
 $btn-color-icon: $btn-color-text;
+
+// Teaser
+$teaser-color: #d94a4a;
+$teaser-color-hover: lighten($teaser-color, 4%);

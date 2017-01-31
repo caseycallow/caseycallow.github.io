@@ -1,9 +1,14 @@
 .teaser {
+  cursor: pointer;
   margin: 0 0 $base-spacing;
   padding: $base-spacing;
-  border: 1px solid white;
-  &__title {
-
+  background: $teaser-color;
+  box-shadow: $base-box-shadow;
+  border-radius: $base-border-radius;
+  transition: $base-transition;
+  &:hover {
+    background: $teaser-color-hover;
+    transform: scale(1.01);
   }
   &__description {
     margin: 0;
