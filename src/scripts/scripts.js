@@ -23,5 +23,5 @@ window.onload=function(){
 }
 
 $('.teaser').click(function(){
-  $(this).children('.project-detail').toggleClass('js-expand');
+  $(this).children('.project-detail').toggleClass('js-show-detail');
 });

@@ -1,12 +1,8 @@
-$teaser-color: $primary-color;
-$teaser-color-hover: lighten($teaser-color, 4%);
-$cubic-bezier: cubic-bezier(0.010, 0.800, 0.355, 1.000);
-
 .teaser {
   cursor: pointer;
   margin: 0 0 $base-spacing;
   padding: $base-spacing;
-  background: $teaser-color;
+  background: $primary-color;
   box-shadow: $base-box-shadow;
   border-radius: $base-border-radius;
   transition: $base-transition;
@@ -16,28 +12,6 @@ $cubic-bezier: cubic-bezier(0.010, 0.800, 0.355, 1.000);
   }
 
   &:hover {
-    background: $teaser-color-hover;
+    background: $primary-color-lighter;
   }
-
-  //////////////////////
-  ///move this into a 'project-detail' partial
-  .project-detail {
-    padding: $base-spacing;
-    transform: scale3d(0, 0, 0);
-    transform-origin: center left;
-    background: $teaser-color;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.25s ease;
-    &.js-expand {
-      transform: scale3d(1, 1, 1);
-      animation: fadeIn 0.3s;
-      .project-detail__header {
-        animation: fadeInUp 1s $cubic-bezier, fadeIn 1.5s;
-      }
-    }
-  }
-  //////////////////
 }
