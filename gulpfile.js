@@ -24,9 +24,9 @@ gulp.task('sass', function () {
 //Compile Mustache
 gulp.task('mustache', function() {
   var content = fs.readFileSync('./src/data/data.json');
-  var components = JSON.parse(content);
-  gulp.src('./src/components/index.mustache')
-    .pipe(mustache(components, {extension: '.html'}))
+  var data = JSON.parse(content);
+  gulp.src('./src/templates/index.mustache')
+    .pipe(mustache(data, {extension: '.html'}))
     .pipe(htmlbeautify({indent_with_tabs: true}))
     .pipe(gulp.dest('./'));
 })
@@ -34,7 +34,7 @@ gulp.task('mustache', function() {
 //Watch Files
 gulp.task('watch', ['browser-sync'], function () {
   gulp.watch('src/styles/scss/**/*.scss', ['sass']);
-  gulp.watch('src/components/*.mustache', ['mustache']).on('change', bs.reload);
+  gulp.watch('src/templates/*.mustache', ['mustache']).on('change', bs.reload);
   gulp.watch('src/data/*.json', ['mustache']).on('change', bs.reload);
   gulp.watch('src/scripts/*.js').on('change', bs.reload);
 });
