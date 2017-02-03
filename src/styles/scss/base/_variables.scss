@@ -27,8 +27,8 @@ $dark-gray: #333;
 $medium-dark-gray: #666;
 $medium-gray: #999;
 $light-gray: #d7d7d7;
-$primary-color: $blue;
-$primary-color-lighter: lighten($blue, 10%);
+$primary-color: #d94a4a;
+$primary-color-lighter: lighten($primary-color, 10%);
 
 //Font Colors
 $base-font-color: white;
@@ -65,7 +65,3 @@ $btn-shadow: $base-box-shadow;
 $btn-color-hover: lighten($btn-color, 10%);
 $btn-color-text: #fff;
 $btn-color-icon: $btn-color-text;
-
-//Teaser
-$teaser-color: #d94a4a;
-$teaser-color-hover: lighten($teaser-color, 4%);

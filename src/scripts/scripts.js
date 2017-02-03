@@ -21,3 +21,7 @@ window.onload=function(){
   GetClock();
   setInterval(GetClock,1000);
 }
+
+$('.teaser').click(function(){
+  $(this).children('.project-detail').toggleClass('js-expand');
+});
