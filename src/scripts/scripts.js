@@ -22,6 +22,12 @@ window.onload=function(){
   setInterval(GetClock,1000);
 }
 
+//Expand teaser when clicked, collapse when close icon clicked
 $('.teaser').click(function(){
-  $(this).children('.project-detail').toggleClass('js-show-detail');
+  $(this).children('.project-detail').addClass('js-show-detail');
+});
+
+$('.icon-close').click(function(e){
+  e.stopPropagation();
+  $(this).parents('.project-detail').removeClass('js-show-detail');
 });

@@ -1,6 +1,9 @@
 $cubic-bezier: cubic-bezier(0.010, 0.800, 0.355, 1.000);
 
 .project-detail {
+  display: flex;
+  justify-content: space-between;
+  cursor: auto;
   padding: $base-spacing;
   transform: scale3d(0, 0, 0);
   transform-origin: center left;
@@ -14,7 +17,14 @@ $cubic-bezier: cubic-bezier(0.010, 0.800, 0.355, 1.000);
     transform: scale3d(1, 1, 1);
     animation: 'fadeIn' 0.4s;
     .project-detail__header {
-      animation: 'fadeInUp' 0.6s $cubic-bezier, 'fadeIn' 1.5s;
+      animation: 'fadeInUp' 0.8s $cubic-bezier, 'fadeIn' 1.5s;
+    }
+  }
+  .icon-close {
+    cursor: pointer;
+    svg {
+      height: 2.5rem;
+      width: 2.5rem;
     }
   }
 }
