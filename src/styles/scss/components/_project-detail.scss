@@ -13,6 +13,7 @@ $cubic-bezier: cubic-bezier(0.010, 0.800, 0.355, 1.000);
   top: 0;
   left: 0;
   transition: all 0.25s ease;
+  overflow-y: scroll;
   &.js-show-detail {
     transform: scale3d(1, 1, 1);
     animation: 'fadeIn' 0.4s;
