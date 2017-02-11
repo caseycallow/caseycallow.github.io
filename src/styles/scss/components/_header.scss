@@ -1,3 +1,8 @@
 .header {
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 $base-spacing;
+  width: 100%;
+  background: darken(rgba(51, 51, 51, 0.9), 10%);
 }

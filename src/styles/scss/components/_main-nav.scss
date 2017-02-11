@@ -1,0 +1,14 @@
+.main-nav {
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+  &__item {
+    margin-right: $base-spacing;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
