@@ -26,3 +26,9 @@ $('.icon-close').click(function(e){
   e.stopPropagation();
   $(this).parents('.project-detail').removeClass('js-show-detail');
 });
+
+//Wake iPhone when home button is pressed
+$('.iphone__screen').css({'opacity':0});
+$('.iphone__home').click(function(){
+  $(this).siblings('.iphone__screen').animate({'opacity':1});
+});
