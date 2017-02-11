@@ -16,6 +16,9 @@
         border-bottom: $base-border;
         transition: $base-transition;
       }
+      &.active {
+        border-bottom: $base-border;
+      }
     }
   }
 }

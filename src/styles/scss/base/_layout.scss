@@ -6,6 +6,7 @@ body {
   animation: fadeIn 2s forwards;
   display: flex;
   height: 100vh;
+  padding: 0 $large-spacing;
 }
 
 .main-content, .secondary-content {
@@ -13,15 +14,14 @@ body {
   align-items: center;
 }
 
-.main-content {
+.secondary-content {
   justify-content: flex-end;
-  margin-right: $large-spacing;
   color: $base-font-color;
-  flex: 1 1 auto;
+  flex: 1 1 40%;
 }
 
-.secondary-content {
+.main-content {
   justify-content: flex-start;
   position: relative;
-  flex: 4 4 auto;
+  flex: 1 1 60%;
 }
