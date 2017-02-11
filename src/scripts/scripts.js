@@ -1,4 +1,4 @@
-//iPhone Clock
+//Update iPhone clock and copyright year
 var tmonth = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
 function GetClock() {
   var d=new Date();
@@ -11,6 +11,7 @@ function GetClock() {
   else if(nhour>12){ap=' PM';nhour-=12;}
   if(nmin<=9) nmin='0'+nmin;
   document.getElementById('clock').innerHTML=''+nhour+':'+nmin+ap+'';
+  document.getElementById('copyright-year').innerHTML=nyear;
 }
 window.onload=function(){
   GetClock();
