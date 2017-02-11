@@ -1,9 +1,10 @@
 body {
-  background: $base-background-color;
+  background: url('../../images/wood-bg.jpg') $base-background-color;
+  background-size: cover;
 }
 
 .body {
-  animation: fadeIn 2s forwards;
+  animation: fadeIn 1s forwards;
   display: flex;
   height: 100vh;
   padding: 0 $large-spacing;
