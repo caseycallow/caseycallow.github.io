@@ -1,24 +1,27 @@
 body {
-  animation: fadeIn 1s forwards;
-  display: flex;
   background: $base-background-color;
-  background-size: cover;
+}
+
+.body {
+  animation: fadeIn 2s forwards;
+  display: flex;
   height: 100vh;
 }
 
 .main-content, .secondary-content {
   display: flex;
   align-items: center;
-  flex: 1 1 auto;
 }
 
 .main-content {
   justify-content: flex-end;
   margin-right: $large-spacing;
   color: $base-font-color;
+  flex: 1 1 auto;
 }
 
 .secondary-content {
   justify-content: flex-start;
   position: relative;
+  flex: 4 4 auto;
 }

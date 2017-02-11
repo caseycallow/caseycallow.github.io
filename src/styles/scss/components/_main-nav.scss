@@ -10,5 +10,12 @@
     &:last-child {
       margin-right: 0;
     }
+    a {
+      text-decoration: none;
+      &:hover {
+        border-bottom: $base-border;
+        transition: $base-transition;
+      }
+    }
   }
 }
