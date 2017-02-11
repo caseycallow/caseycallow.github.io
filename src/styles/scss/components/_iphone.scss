@@ -1,13 +1,13 @@
 .iphone {
   display: inline-block;
   position: relative;
-  transform: scale(0.75) rotate(-5deg);
+  transform: scale(0.75);
   width: 375px;
   height: 667px;
   padding: 105px 24px;
   border-radius: 56px;
   background: #464646;
-  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.7), $base-box-shadow;
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.7), 0 30px 100px black;
   &:before {
     width: calc(100% - 12px);
     height: calc(100% - 12px);
