@@ -33,3 +33,13 @@ $('.iphone__screen').css({'opacity':0});
 $('.iphone__home').click(function(){
   $(this).siblings('.iphone__screen').animate({'opacity':1});
 });
+
+$('.portfolio-section').hide();
+$('#about').click(function(){
+  $('.about').fadeIn();
+  $('.portfolio-section').hide();
+});
+$('#portfolio').click(function(){
+  $('.portfolio-section').fadeIn();
+  $('.about').hide();
+});
