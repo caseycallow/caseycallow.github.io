@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{siteTitle}}</title>
+    <link rel="stylesheet" href="src/styles/css/styles.css">
+    <link href="{{{fontSrc}}}" rel="stylesheet">
+  </head>
+  <body>
+    {{>../templates/header}}
+    <div class="body">
+      <div class="secondary-content">
+        {{>../templates/iphone}}
+      </div>
+      <div class="main-content">
+        {{>../templates/teaser}}
+      </div>
+    </div>
+    {{>../templates/footer}}
+  </body>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="src/scripts/scripts.js" type="text/javascript"></script>
+</html>
