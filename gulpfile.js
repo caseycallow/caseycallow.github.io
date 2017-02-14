@@ -23,9 +23,9 @@ gulp.task('sass', function () {
 
 //Compile Mustache
 gulp.task('mustache', function() {
-  var content = fs.readFileSync('./src/data/data.json');
+  var content = fs.readFileSync('src/data/data.json');
   var data = JSON.parse(content);
-  var pages = './src/pages/*.mustache'
+  var pages = 'src/pages/*.mustache'
   gulp.src(pages)
     .pipe(mustache(data, {extension: '.html'}))
     .pipe(htmlbeautify({indent_with_tabs: true}))
