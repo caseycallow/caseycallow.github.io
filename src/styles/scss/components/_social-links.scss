@@ -12,7 +12,7 @@
     animation: 0.5s spin ease, 0.5s fadeIn ease forwards;
     @for $i from 1 to 7 {
       &:nth-of-type(#{$i}) {
-        animation-delay: $i * 100ms;
+        animation-delay: 500ms + $i * 100ms;
       }
     }
     &:hover {

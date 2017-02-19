@@ -53,19 +53,19 @@
   ],
   "teaser": [
     {
-      "title": "Design #1",
+      "title": "Proposal Builder",
       "description": "Description for the project goes right here."
     },
     {
-      "title": "Design #2",
+      "title": "Activity Tracker",
       "description": "Description for the project goes right here."
     },
     {
-      "title": "Design #3",
+      "title": "Deployment Dashboard",
       "description": "Description for the project goes right here."
     },
     {
-      "title": "Design #4",
+      "title": "Restaurant Finder",
       "description": "Description for the project goes right here."
     }
   ]
