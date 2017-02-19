@@ -1,0 +1,26 @@
+<ul class="social-links">
+  {{#socialLinks}}
+  <li class="social-links__item">
+    <a href="{{iconSrc}}" target="_blank">
+      {{#twitter}}
+      {{>icon-twitter}}
+      {{/twitter}}
+      {{#email}}
+      {{>icon-gmail}}
+      {{/email}}
+      {{#linkedin}}
+      {{>icon-linkedin}}
+      {{/linkedin}}
+      {{#medium}}
+      {{>icon-medium}}
+      {{/medium}}
+      {{#codepen}}
+      {{>icon-codepen}}
+      {{/codepen}}
+      {{#dribbble}}
+      {{>icon-dribbble}}
+      {{/dribbble}}
+    </a>
+  </li>
+  {{/socialLinks}}
+</ul>

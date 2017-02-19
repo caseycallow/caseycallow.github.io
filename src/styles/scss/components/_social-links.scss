@@ -1,0 +1,27 @@
+.social-links {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &__item {
+    opacity: 0;
+    margin: 0 1rem 0 0;
+    line-height: 0;
+    transition: $base-transition;
+    animation: 0.5s spin ease, 0.5s fadeIn ease forwards;
+    @for $i from 1 to 7 {
+      &:nth-of-type(#{$i}) {
+        animation-delay: $i * 100ms;
+      }
+    }
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+  .icon {
+    line-height: 0;
+    display: inline-block;
+    width: 2rem;
+  }
+}

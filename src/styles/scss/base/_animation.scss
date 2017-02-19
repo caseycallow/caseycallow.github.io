@@ -17,3 +17,12 @@
     transform: none;
   }
 }
+
+@keyframes spin {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+};

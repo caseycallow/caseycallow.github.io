@@ -8,6 +8,8 @@ html {
   display: flex;
   height: 100vh;
   padding: 0 $large-spacing;
+  animation: 1s fadeIn ease forwards;
+  opacity: 0;
 }
 
 .main-content, .secondary-content {

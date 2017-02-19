@@ -1,7 +1,16 @@
 .footer {
-  font-size: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
   position: fixed;
-  bottom: 0.5rem;
-  right: 0.5rem;
-  opacity: 0.8;
+  bottom: 0;
+  right: 0;
+  padding: $small-spacing/2;
+
+  .copyright {
+    font-size: 10px;
+    opacity: 0.8;
+    display: inline-block;
+  }
 }
