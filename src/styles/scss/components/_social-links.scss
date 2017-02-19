@@ -1,7 +1,7 @@
 .social-links {
   display: flex;
   align-items: center;
-  margin: 0;
+  margin: $base-spacing 0 0;
   padding: 0;
   list-style: none;
   &__item {
