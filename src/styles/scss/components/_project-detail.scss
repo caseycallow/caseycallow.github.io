@@ -9,13 +9,14 @@ $cubic-bezier: cubic-bezier(0.010, 0.800, 0.355, 1.000);
   transform-origin: left center;
   background: $primary-color;
   height: 100%;
-  width: 46vw;
+  width: 50vw;
   position: absolute;
   top: 0;
   right: 0;
   transition: all 0.25s ease;
   overflow-y: scroll;
   z-index: 1;
+  box-shadow: $base-box-shadow-left;
   &.js-show-detail {
     transform: scale3d(1, 1, 1);
     animation: 'fadeIn' 0.4s;

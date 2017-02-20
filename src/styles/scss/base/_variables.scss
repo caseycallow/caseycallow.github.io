@@ -17,6 +17,7 @@ $base-spacing: $base-line-height * 1.2rem;
 $small-spacing: $base-spacing / 2;
 $large-spacing: $base-spacing * 2;
 $base-z-index: 0;
+$header-height: 3rem;
 
 //Colors
 $blue: #477dca;
@@ -41,6 +42,7 @@ $base-border: 1px solid $base-border-color;
 
 //Shadows
 $base-box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+$base-box-shadow-left: -15px 0 25px rgba(0,0,0,0.3);
 $base-box-shadow-hover: 0 2px 5px rgba(0,0,0,0.1);
 
 //Background Colors

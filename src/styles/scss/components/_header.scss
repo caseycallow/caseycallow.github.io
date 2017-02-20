@@ -1,8 +1,5 @@
 .header {
-  min-height: 3rem;
-  position: fixed;
-  top: 0;
-  left: 0;
+  min-height: $header-height;
   width: calc(100% - #{$base-spacing}*2);
   display: flex;
   padding: 0 $base-spacing;
