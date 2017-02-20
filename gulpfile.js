@@ -15,7 +15,7 @@ gulp.task('browser-sync', function() {
 });
 
 //Compile SASS
-gulp.task('sass', function () {
+gulp.task('sass', function() {
   gulp.src('src/styles/scss/*.scss')
     .pipe(autoprefixer())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -35,7 +35,7 @@ gulp.task('mustache', function() {
 });
 
 //Watch Files
-gulp.task('watch', function () {
+gulp.task('watch', function() {
   gulp.watch('src/styles/scss/**/*.scss', ['sass']);
   gulp.watch('src/**/*.mustache', ['mustache']).on('change', bs.reload);
   gulp.watch('src/data/*.json', ['mustache']).on('change', bs.reload);
