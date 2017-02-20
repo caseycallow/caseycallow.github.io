@@ -8,13 +8,6 @@
   box-shadow: $base-box-shadow;
   border-radius: $base-border-radius;
   transition: $base-transition;
-  opacity: 0;
-  animation: 1s flipInX ease forwards;
-  @for $i from 1 to 5 {
-    &:nth-of-type(#{$i}) {
-      animation-delay: 200ms + $i * 350ms;
-    }
-  }
 
   &:last-child, &__description {
     margin: 0;

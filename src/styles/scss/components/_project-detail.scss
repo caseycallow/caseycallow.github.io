@@ -5,8 +5,8 @@ $cubic-bezier: cubic-bezier(0.010, 0.800, 0.355, 1.000);
   justify-content: space-between;
   cursor: auto;
   padding: $base-spacing;
-  transform: scale3d(0, 0, 0) translate3d(0, 0, 0);
-  transform-origin: center bottom;
+  transform: scale3d(0, 0, 0);
+  transform-origin: left center;
   background: $primary-color;
   height: 100%;
   width: 46vw;
@@ -17,7 +17,7 @@ $cubic-bezier: cubic-bezier(0.010, 0.800, 0.355, 1.000);
   overflow-y: scroll;
   z-index: 1;
   &.js-show-detail {
-    transform: scale3d(1, 1, 1) translate3d(0, 0, 1px);
+    transform: scale3d(1, 1, 1);
     animation: 'fadeIn' 0.4s;
     .project-detail__header {
       animation: 'fadeInUp' 0.8s $cubic-bezier, 'fadeIn' 1.5s;
