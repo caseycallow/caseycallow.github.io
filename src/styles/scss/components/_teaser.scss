@@ -1,6 +1,3 @@
-.teaser-section {
-}
-
 .teaser {
   max-width: 25rem;
   flex-basis: 50%;
@@ -15,7 +12,7 @@
   animation: 1s flipInX ease forwards;
   @for $i from 1 to 5 {
     &:nth-of-type(#{$i}) {
-      animation-delay: 200ms + $i * 250ms;
+      animation-delay: 200ms + $i * 350ms;
     }
   }
 
