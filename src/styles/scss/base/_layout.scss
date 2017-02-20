@@ -3,9 +3,10 @@ body {
   background-size: cover;
   margin: 0 auto;
   max-width: 60rem;
+  overflow: hidden;
 }
 
-.body {
+.main {
   display: flex;
   height: 100vh;
   padding: 0 $large-spacing;
@@ -26,6 +27,5 @@ body {
 
 .main-content {
   justify-content: flex-start;
-  position: relative;
   flex: 1 1 60%;
 }
