@@ -7,7 +7,7 @@ var htmlbeautify = require('gulp-html-beautify');
 var fs  = require('fs');
 
 // Run Browsersync
-gulp.task('browser-sync', ['sass'], function() {
+gulp.task('browser-sync', function() {
   bs.init({
     server: './',
     port: 8080
