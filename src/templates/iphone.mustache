@@ -8,7 +8,10 @@
   <div class="iphone__screen">
     {{>status-bar}}
     {{>nav-bar}}
-    <iframe class="chatbot" src="{{{mainChatbotSrc}}}" width="100%" height="100%"></iframe>
+    {{#prototypeVideos}}
+    {{>prototype-videos}}
+    {{/prototypeVideos}}
+    <iframe class="chatbot" src="{{{chatbotSrc}}}" width="100%" height="100%"></iframe>
   </div>
   <div class="iphone__home"></div>
   <div class="iphone__bottom-bar"></div>

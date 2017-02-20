@@ -1,8 +1,14 @@
 {
   "siteTitle": "Casey Callow Portfolio",
-  "mainChatbotSrc": "https://api.motion.ai/webchat/23723?sendBtn=SEND&inputBox=Type+something...&token=ef7a260569f0f1fa64203a3f32fcd87e",
-  "portfolioChatbotSrc": "https://api.motion.ai/webchat/34296?sendBtn=SEND&inputBox=Type+something...&token=daadf986ccf2824df69b3ad2ebb3542a",
   "fontSrc": "https://fonts.googleapis.com/css?family=Taviraj|Work+Sans",
+  "mainPage": {
+    "chatbotSrc": "https://api.motion.ai/webchat/23723?sendBtn=SEND&inputBox=Type+something...&token=ef7a260569f0f1fa64203a3f32fcd87e",
+    "prototypeVideos": false
+  },
+  "portfolioPage": {
+    "chatbotSrc": "https://api.motion.ai/webchat/34296?sendBtn=SEND&inputBox=Type+something...&token=daadf986ccf2824df69b3ad2ebb3542a",
+    "prototypeVideos": true
+  },
   "navBar": {
     "label": "Casey Callow, Product Designer",
     "imgSrc": "src/images/profile-pic.png"
