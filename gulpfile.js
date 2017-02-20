@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var bs = require('browser-sync').create();
 var mustache = require('gulp-mustache');
 var htmlbeautify = require('gulp-html-beautify');
@@ -16,6 +17,7 @@ gulp.task('browser-sync', ['sass'], function() {
 //Compile SASS
 gulp.task('sass', function () {
   gulp.src('src/styles/scss/*.scss')
+    .pipe(autoprefixer())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('src/styles/css/'))
     .pipe(bs.reload({stream: true}));
