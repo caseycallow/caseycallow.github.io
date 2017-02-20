@@ -29,7 +29,7 @@ $('.icon-close').click(function(e){
 });
 
 //Wake iPhone when home button is pressed
-// $('.iphone__screen').css({'opacity':0});
-// $('.iphone__home').click(function(){
-//   $(this).siblings('.iphone__screen').animate({'opacity':1});
-// });
+$('.iphone__screen').css({'opacity':0});
+$('.iphone__home').click(function(){
+  $(this).siblings('.iphone__screen').animate({'opacity':1});
+});
