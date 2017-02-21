@@ -4,20 +4,19 @@
     display: flex;
   }
   &__item {
-    margin-right: $base-spacing;
     text-transform: uppercase;
     letter-spacing: 1px;
-    &:last-child {
-      margin-right: 0;
-    }
     a {
       text-decoration: none;
+      padding: $small-spacing;
+      transition: $base-transition;
       &:hover {
-        border-bottom: $base-border;
-        transition: $base-transition;
+        color: white;
+        background: transparentize($primary-color, 0.7);
       }
       &.active {
-        border-bottom: $base-border;
+        color: white;
+        background: transparentize($primary-color, 0.4);
       }
     }
   }
