@@ -41,8 +41,13 @@
     border-radius: 1px;
     line-height: 0;
     border: none;
+    opacity: 0;
+    transition: $base-transition;
     iframe {
       border: none;
+    }
+    &.js-wake {
+      opacity: 1;
     }
   }
 
@@ -83,6 +88,21 @@
     width: 4px;
     height: 66px;
     border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    transition: $base-transition;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -2rem;
+      left: -2rem;
+      z-index: 9999;
+      width: 5rem;
+      height: 8rem;
+    }
+    &.js-sleep {
+      opacity: 0;
+    }
   }
 
   &__volume {
