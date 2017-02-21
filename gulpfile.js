@@ -10,7 +10,8 @@ var fs  = require('fs');
 gulp.task('browser-sync', function() {
   bs.init({
     server: './',
-    port: 8080
+    port: 8080,
+    notify: false
   });
 });
 
