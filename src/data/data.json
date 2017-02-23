@@ -27,27 +27,27 @@
   },
   "socialLinks": [
     {
-      "iconSrc": "https://twitter.com/caseycallow",
+      "src": "https://twitter.com/caseycallow",
       "twitter": true
     },
     {
-      "iconSrc": "mailto:hello@caseycallow.design",
+      "src": "mailto:hello@caseycallow.design",
       "email": true
     },
     {
-      "iconSrc": "https://www.linkedin.com/in/caseycallow/",
+      "src": "https://www.linkedin.com/in/caseycallow/",
       "linkedin": true
     },
     {
-      "iconSrc": "https://medium.com/@caseycallow",
+      "src": "https://medium.com/@caseycallow",
       "medium": true
     },
     {
-      "iconSrc": "http://codepen.io/caseycallow",
+      "src": "http://codepen.io/caseycallow",
       "codepen": true
     },
     {
-      "iconSrc": "https://dribbble.com/caseycallow",
+      "src": "https://dribbble.com/caseycallow",
       "dribbble": true
     }
   ],
