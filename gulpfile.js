@@ -18,8 +18,8 @@ gulp.task('browser-sync', function() {
 //Compile SASS
 gulp.task('sass', function() {
   gulp.src('src/styles/scss/*.scss')
-    .pipe(autoprefixer())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(autoprefixer())
     .pipe(gulp.dest('src/styles/css/'))
     .pipe(bs.reload({stream: true}));
 });
