@@ -25,30 +25,45 @@
     "label": "Casey Callow, Product Designer",
     "imgSrc": "src/images/profile-pic.png"
   },
+  "iconWifi": [
+    {
+      "icon": "wifi"
+    }
+  ],
+  "iconBattery": [
+    {
+      "icon": "battery"
+    }
+  ],
+  "iconClose": [
+    {
+      "icon": "close"
+    }
+  ],
   "socialLinks": [
     {
       "src": "https://twitter.com/caseycallow",
-      "twitter": true
+      "icon": "twitter"
     },
     {
       "src": "mailto:hello@caseycallow.design",
-      "email": true
+      "icon": "gmail"
     },
     {
       "src": "https://www.linkedin.com/in/caseycallow/",
-      "linkedin": true
+      "icon": "linkedin"
     },
     {
       "src": "https://medium.com/@caseycallow",
-      "medium": true
+      "icon": "medium"
     },
     {
       "src": "http://codepen.io/caseycallow",
-      "codepen": true
+      "icon": "codepen"
     },
     {
       "src": "https://dribbble.com/caseycallow",
-      "dribbble": true
+      "icon": "dribbble"
     }
   ],
   "prototypeVideo": [

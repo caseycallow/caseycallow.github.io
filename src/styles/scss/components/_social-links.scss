@@ -22,6 +22,9 @@
   .icon {
     line-height: 0;
     display: inline-block;
-    width: 2rem;
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 }
