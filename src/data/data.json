@@ -21,8 +21,12 @@
     "prototypeVideos": true,
     "portfolioActive": true
   },
+  "about": {
+    "title": "Casey Callow is a product designer, prototyper, and UX engineer with an affinity for design systems.",
+    "description": "He also feels extremely uncomfortable referring to himself in the third person, so he built a chatbot to let you [pretend to] talk to him."
+  },
   "navBar": {
-    "label": "Casey Callow, Product Designer",
+    "label": "Casey Callow",
     "imgSrc": "src/images/profile-pic.png"
   },
   "iconWifi": [
