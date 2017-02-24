@@ -183,6 +183,7 @@
     bottom: 22px;
     z-index: 3;
     background: linear-gradient(135deg, #080808 0%, #464646 50%, #080808 100%);
+    animation: 3.5s halfSpin ease 5s 5;
     &:before {
       background: #080808;
       position: absolute;

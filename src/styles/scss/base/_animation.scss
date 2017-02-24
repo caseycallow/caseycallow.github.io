@@ -27,6 +27,15 @@
   }
 };
 
+@keyframes halfSpin {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+};
+
 @keyframes flipInX {
   from {
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
