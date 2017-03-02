@@ -28,3 +28,26 @@
     padding: $base-spacing;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .iphone {
+    height: 550px;
+    width: 330px;
+    border-radius: 50px;
+    padding: 95px 22px;
+    &:after, &:before {
+      border-radius: 44px;
+    }
+    &__screen {
+      height: 81%;
+    }
+    &__speaker {
+      width: 65px;
+      left: 52%;
+    }
+    &__home {
+      width: 62px;
+      height: 62px;
+    }
+  }
+}
