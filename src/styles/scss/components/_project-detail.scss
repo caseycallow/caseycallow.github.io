@@ -25,6 +25,9 @@ $cubic-bezier: cubic-bezier(0.010, 0.800, 0.355, 1.000);
     }
   }
   .icon-close {
+    position: absolute;
+    right: $base-spacing;
+    top: $base-spacing;
     cursor: pointer;
     svg {
       height: 2.5rem;
