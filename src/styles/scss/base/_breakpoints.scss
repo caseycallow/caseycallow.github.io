@@ -27,6 +27,18 @@
   .main-content {
     padding: $base-spacing;
   }
+  .teaser-section {
+    width: 100%;
+    .teaser {
+      max-width: 100%;
+    }
+    .project-detail {
+      transform-origin: center;
+      width: auto;
+      height: auto;
+      overflow-y: hidden;
+    }
+  }
 }
 
 @media only screen and (max-width: 450px) {
