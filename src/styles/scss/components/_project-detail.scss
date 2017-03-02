@@ -1,15 +1,14 @@
 $cubic-bezier: cubic-bezier(0.010, 0.800, 0.355, 1.000);
 
 .project-detail {
-  display: flex;
-  justify-content: space-between;
+  box-sizing: border-box;
   cursor: auto;
   padding: $base-spacing;
   transform: scale3d(0, 0, 0);
   transform-origin: left center;
   background: $primary-color;
-  height: 100%;
-  width: 50vw;
+  height: 100vh;
+  width: 55vw;
   position: absolute;
   top: 0;
   right: 0;
@@ -20,8 +19,11 @@ $cubic-bezier: cubic-bezier(0.010, 0.800, 0.355, 1.000);
   &.js-show-detail {
     transform: scale3d(1, 1, 1);
     animation: 'fadeIn' 0.4s;
-    .project-detail__header {
+    .project-detail__header, .project-detail__body {
       animation: 'fadeInUp' 0.8s $cubic-bezier, 'fadeIn' 1.5s;
+    }
+    .icon-close {
+      animation: 'rollInLeft' 0.8s $cubic-bezier forwards 0.75s;
     }
   }
   .icon-close {
@@ -29,9 +31,15 @@ $cubic-bezier: cubic-bezier(0.010, 0.800, 0.355, 1.000);
     right: $base-spacing;
     top: $base-spacing;
     cursor: pointer;
+    opacity: 0;
+    transition: $base-transition;
     svg {
       height: 2.5rem;
       width: 2.5rem;
+    }
+    &:hover {
+      background: $primary-color-lighter;
+      border-radius: 50%;
     }
   }
 }
