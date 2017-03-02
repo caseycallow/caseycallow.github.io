@@ -1,0 +1,30 @@
+@media only screen and (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    .header {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+    }
+    .footer {
+      z-index: -1;
+      justify-content: center;
+    }
+  }
+  .main {
+    display: block;
+    margin: $header-height 0 0;
+    padding: 0;
+    .iphone {
+      transform: scale(0.9);
+    }
+  }
+  .main-content, .secondary-content {
+    justify-content: center;
+  }
+  .main-content {
+    padding: $base-spacing;
+  }
+}
