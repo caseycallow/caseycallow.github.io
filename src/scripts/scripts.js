@@ -30,10 +30,18 @@ $('.icon-close').click(function(e){
 
 //Wake iPhone when home button is pressed
 $('.iphone__home').click(function(){
-  $(this).siblings('.iphone__screen').removeClass('js-sleep').addClass('js-wake');
+  $('.iphone__screen').removeClass('js-sleep').addClass('js-wake');
 });
 
 //Put iPhone to sleep wake sleep button pressed
 $('.iphone__sleep').click(function(){
-  $(this).siblings('.iphone__screen').removeClass('js-wake').addClass('js-sleep');
+  $('.iphone__screen').removeClass('js-wake').addClass('js-sleep');
 });
+
+//Hint at interactivity when screen clicked
+// $('.iphone__screen').click(function(){
+//   $('.iphone__home').addClass('js-wake-hint');
+//   setTimeout(function() {
+//     $('.iphone__home').removeClass('js-wake-hint');
+//   }, 2000);
+// });

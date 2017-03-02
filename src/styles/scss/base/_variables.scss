@@ -59,6 +59,7 @@ $base-duration: 200ms;
 $base-timing: ease-in-out;
 $base-transition: all $base-duration $base-timing;
 $base-delay: 750ms;
+$cubic-bezier: cubic-bezier(0.010, 0.800, 0.355, 1.000);
 
 //Buttons
 $btn-font-size: $base-font-size;

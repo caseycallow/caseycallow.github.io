@@ -183,8 +183,22 @@
     bottom: 22px;
     z-index: 3;
     background: linear-gradient(135deg, #080808 0%, #464646 50%, #080808 100%);
-    animation: 3.5s halfSpin ease 5s 5;
+    transition: all 2s ease-in-out;
     &:before {
+      content: '';
+      border-radius: inherit;
+      width: inherit;
+      height: inherit;
+      position: inherit;
+      left: inherit;
+      margin-left: inherit;
+      bottom: 0;
+      z-index: -1;
+      background: linear-gradient(135deg, #080808 0%, #cbc9c9 50%, #080808 100%);
+      opacity: 0;
+      transition: inherit;
+    }
+    &:after {
       background: #080808;
       position: absolute;
       content: '';
@@ -193,6 +207,12 @@
       height: calc(100% - 8px);
       top: 4px;
       left: 4px;
+    }
+    &:hover, &.js-wake-hint {
+      transform: rotate(90deg);
+      &:before {
+        opacity: 1;
+      }
     }
   }
 }
