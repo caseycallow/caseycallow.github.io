@@ -5,6 +5,21 @@
       position: fixed;
       z-index: 1;
       top: 0;
+      left: 0;
+      padding: 0;
+      width: 100%;
+    }
+    .main-nav {
+      width: inherit;
+      &__item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        a {
+          flex: 1;
+          text-align: center;
+        }
+      }
     }
     .footer {
       z-index: -1;
