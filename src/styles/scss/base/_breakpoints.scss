@@ -1,8 +1,6 @@
 @media only screen and (max-width: 900px) {
   body {
     overflow-x: hidden;
-    overflow-y: scroll;
-    height: 100%;
     .header {
       position: fixed;
       z-index: 1;
@@ -51,15 +49,11 @@
       border-radius: 44px;
     }
     &__screen {
-      height: 81%;
+      height: 80%;
     }
     &__speaker {
       width: 65px;
       left: 52%;
-    }
-    &__home {
-      width: 62px;
-      height: 62px;
     }
   }
 }

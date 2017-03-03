@@ -1,7 +1,6 @@
 body {
   background: url('../../images/wood-bg.jpg') $base-background-color no-repeat center center fixed;
   background-size: cover;
-  overflow: hidden;
   animation: 1s fadeIn ease forwards;
   opacity: 0;
 }
