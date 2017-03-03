@@ -16,14 +16,14 @@
     margin: $header-height 0 0;
     padding: 0;
     .iphone {
-      transform: scale(0.9);
+      transform: scale(0.8);
     }
   }
   .main-content, .secondary-content {
     justify-content: center;
   }
   .main-content {
-    padding: $base-spacing;
+    padding: $base-spacing $base-spacing 0;
   }
   .teaser-section {
     width: 100%;
@@ -31,10 +31,9 @@
       max-width: 100%;
     }
     .project-detail {
-      transform-origin: center;
+      transform-origin: top center;
       width: auto;
       height: auto;
-      overflow-y: hidden;
     }
   }
 }
