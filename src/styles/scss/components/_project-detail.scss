@@ -20,17 +20,14 @@
     .project-detail__header, .project-detail__body {
       animation: 'fadeInUp' 0.8s $cubic-bezier, 'fadeIn' 1.5s;
     }
-    .icon-close {
-      animation: 'rollInLeft' 0.8s $cubic-bezier forwards 0.75s;
-    }
   }
   .icon-close {
     position: absolute;
     right: $base-spacing;
     top: $base-spacing;
     cursor: pointer;
-    opacity: 0;
     transition: $base-transition;
+    padding: $small-spacing/2;
     svg {
       height: 2.5rem;
       width: 2.5rem;
