@@ -22,6 +22,7 @@
     }
   }
   .icon-close {
+    z-index: 2;
     position: absolute;
     right: $base-spacing;
     top: $base-spacing;
