@@ -7,16 +7,18 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     a {
+      color: $base-font-color;
       text-decoration: none;
       padding: $small-spacing;
       transition: $base-transition;
+      animation: hueRotate 60s infinite linear;
       &:hover {
         color: white;
-        background: transparentize($primary-color, 0.7);
+        background: linear-gradient(rgba(#ed00b9, 0.5), rgba(#5200af, 0.5));
       }
       &.active {
         color: white;
-        background: transparentize($primary-color, 0.4);
+        background: linear-gradient(rgba(#ed005c, 0.5), rgba(#5200af, 0.5));
       }
     }
   }

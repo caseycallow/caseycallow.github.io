@@ -1,8 +1,19 @@
 body {
-  background: url('../../images/wood-bg.jpg') $base-background-color no-repeat center center fixed;
-  background-size: cover;
+  background: $base-background-color;
   animation: 1s fadeIn ease forwards;
   opacity: 0;
+}
+
+.main-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: url('../../images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  animation: hueRotate 60s infinite linear;
 }
 
 .main {
