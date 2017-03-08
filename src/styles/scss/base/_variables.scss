@@ -20,7 +20,7 @@ $base-z-index: 0;
 $header-height: 3rem;
 
 //Colors
-$blue: #477dca;
+$blue: #374ca6;
 $red: #e80202;
 $green: #009c2b;
 $yellow: #e8a000;
@@ -28,7 +28,7 @@ $dark-gray: #333;
 $medium-dark-gray: #666;
 $medium-gray: #999;
 $light-gray: #d7d7d7;
-$primary-color: #a70a3e;
+$primary-color: $blue;
 $primary-color-lighter: lighten($primary-color, 4%);
 
 //Font Colors
