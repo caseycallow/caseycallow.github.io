@@ -35,12 +35,3 @@
     transform: rotate(180deg);
   }
 }
-
-@keyframes hueRotate {
-  from {
-    filter: hue-rotate(0deg);
-  }
-  to {
-    filter: hue-rotate(-100deg);
-  }
-}
