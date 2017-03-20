@@ -43,11 +43,10 @@
     border: none;
     opacity: 0;
     transition: $base-transition;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1.5s;
     iframe {
       border: none;
-    }
-    &.js-wake {
-      opacity: 1;
     }
   }
 
@@ -88,21 +87,6 @@
     width: 4px;
     height: 66px;
     border-radius: 0 2px 2px 0;
-    cursor: pointer;
-    transition: $base-transition;
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: -2rem;
-      left: -2rem;
-      z-index: 9999;
-      width: 5rem;
-      height: 8rem;
-    }
-    &.js-sleep {
-      opacity: 0;
-    }
   }
 
   &__volume {
@@ -173,7 +157,6 @@
   }
 
   &__home {
-    cursor: pointer;
     border-radius: 100%;
     width: 68px;
     height: 68px;
@@ -183,21 +166,6 @@
     bottom: 22px;
     z-index: 3;
     background: linear-gradient(135deg, #080808 0%, #464646 50%, #080808 100%);
-    transition: all 2s ease-in-out;
-    &:before {
-      content: '';
-      border-radius: inherit;
-      width: inherit;
-      height: inherit;
-      position: inherit;
-      left: inherit;
-      margin-left: inherit;
-      bottom: 0;
-      z-index: -1;
-      background: linear-gradient(135deg, #080808 0%, #cbc9c9 50%, #080808 100%);
-      opacity: 0;
-      transition: inherit;
-    }
     &:after {
       background: #080808;
       position: absolute;
@@ -207,12 +175,6 @@
       height: calc(100% - 8px);
       top: 4px;
       left: 4px;
-    }
-    &:hover, &.js-wake-hint {
-      transform: rotate(90deg);
-      &:before {
-        opacity: 1;
-      }
     }
   }
 }
