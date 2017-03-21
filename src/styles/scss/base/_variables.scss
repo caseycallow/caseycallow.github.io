@@ -1,8 +1,11 @@
-//Typography
+//Typefaces
 $san-franscisco: "San-Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-$work-sans: "Work Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-$base-font-family: $work-sans;
-$heading-font-family: $base-font-family;
+$armata: "Armata", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$open-sans: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+//Base Typography
+$base-font-family: $open-sans;
+$heading-font-family: $armata;
 
 //Font Sizes
 $base-font-size: 1rem;
