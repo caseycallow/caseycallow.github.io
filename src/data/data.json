@@ -95,15 +95,32 @@
   ],
   "teaser": [
     {
-      "title": "Proposal Builder",
-      "description": "Description for the project goes right here."
+      "title": "Deployment Dashboard",
+      "description": "Description for the project goes right here.",
+      "overview": "Developers at a well-known academic journal company had no standardized or simple way to launch and configure services/applications for their company. Developers were spending lots of time setting up and managing projects rather than focusing on developing. Management needed a way to check the status of the product line. Our solution was to build a dashboard that aided in easy creation/configuration of apps and services, and a high-level view of the availability of all applications.",
+      "role": "Lead designer, sketching and whiteboarding, user research, creating mockups, designing in the browser using PatternLab, and delivering production HTML and CSS to be converted into Angular application.",
+      "tools": "Sketch, PatternLab, Sass, Mustache, Gulp",
+      "body": [
+        {
+          "body": "After speaking with several developers to understand the scope of the project, it became clear we had two main users that would be using the application: developers and managers. Developers needed a top down view, configuration options, settings, and power features. Managers would only usually need a top down view. It made sense to focus the app around the area where both user goals intersected, so I began thinking about the landing page."
+        },
+        {
+          "body": "The landing page needed to serve one goal: provide a high-level summary of the availability state (either available or unavailable) of a list of apps. A card based layout would provide room for a status component, title, meta data, and any action link we might need."
+        },
+        {
+          "body": "The dashboard was designed to feel like a single page app with a flat information hierarchy. Both the creation form and the detail overlay controls slide over the dashboard page without completely obscuring it. Clicking outside the panel will dismiss it. This eliminated the need for any signposting “you are here” UI or full page reloading by creating a strong sense of stacking. I also knew our Angular developers would be able to update any page component without fully refreshing the page."
+        },
+        {
+          "body": "Early iterations contained a “deploy” button on the card itself. But after some feedback, we decided this was a more deliberate action that should be contained inside the configuration page. Instead, it was replaced with a link that pointed to the URL of the app itself."
+        }
+      ]
     },
     {
       "title": "Activity Tracker",
       "description": "Description for the project goes right here."
     },
     {
-      "title": "Deployment Dashboard",
+      "title": "Proposal Builder",
       "description": "Description for the project goes right here."
     },
     {
