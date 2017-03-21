@@ -20,7 +20,7 @@ window.onload=function(){
 
 //Expand teaser when clicked, collapse when close icon clicked
 $('.teaser').click(function(){
-  $(this).children('.project-detail').addClass('js-show-detail');
+  $(this).next('.project-detail').addClass('js-show-detail');
 });
 
 $('.icon-close').click(function(e){
