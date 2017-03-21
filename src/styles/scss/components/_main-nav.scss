@@ -5,15 +5,17 @@
   }
   &__item {
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    padding: 0 $small-spacing;
     a {
+      font-weight: bold;
       color: $base-font-color;
       text-decoration: none;
-      padding: $small-spacing;
+      padding: $small-spacing/3;
       transition: $base-transition;
       &:hover, &.active {
-        color: white;
-        background: $primary-color;
+        color: $base-font-color;
+        border-bottom: 3px solid $primary-color;
       }
     }
   }
