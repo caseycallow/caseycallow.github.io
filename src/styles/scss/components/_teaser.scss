@@ -5,12 +5,17 @@
   max-width: 25rem;
   flex-basis: 50%;
   cursor: pointer;
-  margin: 0 0 $base-spacing;
   padding: $base-spacing;
-  background: $primary-color;
-  box-shadow: $base-box-shadow;
   border-radius: $base-border-radius;
   transition: $base-transition;
+  transform: rotateZ(360deg); //hardware acceleration
+  opacity: 0;
+  animation: fadeInRight 750ms ease forwards;
+  @for $i from 1 to 5 {
+    &:nth-of-type(#{$i}) {
+      animation-delay: $i * 150ms + 750ms;
+    }
+  }
 
   &:last-child, &__description {
     margin: 0;
@@ -18,5 +23,6 @@
 
   &:hover {
     background: $primary-color-lighter;
+    box-shadow: $base-box-shadow;
   }
 }
