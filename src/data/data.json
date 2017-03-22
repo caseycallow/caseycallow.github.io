@@ -2,16 +2,6 @@
   "siteTitle": "Casey Callow",
   "siteDescription": "Designer, prototyper, maker.",
   "fontSrc": "https://fonts.googleapis.com/css?family=Armata|Open+Sans",
-  "navItems": [
-    {
-      "title": "About",
-      "href": "/"
-    },
-    {
-      "title": "Portfolio",
-      "href": "/portfolio.html"
-    }
-  ],
   "mainPage": {
     "chatbotSrc": "https://api.motion.ai/webchat/23723?sendBtn=SEND&inputBox=Type+something...&token=ef7a260569f0f1fa64203a3f32fcd87e",
     "prototypeVideos": false,
