@@ -32,7 +32,7 @@
 			<section class="teaser-section">
 				<article class="teaser">
 					<h3 class="teaser__title">Deployment Dashboard</h3>
-					<p class="teaser__description">Description for the project goes right here.</p>
+					<p class="teaser__description">A deployment tool for developers and project managers to create, configure, and monitor new services and applications.</p>
 				</article>
 				<div class="project-detail">
 					<i class="icon icon-close">
@@ -43,8 +43,9 @@
 						<hr>
 						<div class="project-detail__section">
 							<h3>Overview</h3>
-							<p>Developers at a well-known academic journal company had no standardized or simple way to launch and configure services&#x2F;applications for their company. Developers were spending lots of time setting up and managing projects rather than focusing
-								on developing. Management needed a way to check the status of the product line. Our solution was to build a dashboard that aided in easy creation&#x2F;configuration of apps and services, and a high-level view of the availability of all applications.</p>
+							<p>Developers at a major academic journal company had no standardized or simple way to launch and configure services&#x2F;applications for their company. Developers were spending lots of time setting up Github repos and managing configuration settings
+								rather than focusing on development. Management needed a way to check the status of the product line. Our solution was to build a dashboard that aided in easy creation&#x2F;configuration of new apps and services, and allow for a high-level view
+								of the availability of all applications.</p>
 						</div>
 						<div class="project-detail__section">
 							<h3>Role</h3>
@@ -55,16 +56,24 @@
 							<p>Sketch, PatternLab, Sass, Mustache, Gulp</p>
 						</div>
 					</div>
-					<hr>
 					<div class="project-detail__body">
+						<h3>Process</h3>
 						<p>After speaking with several developers to understand the scope of the project, it became clear we had two main users that would be using the application: developers and managers. Developers needed a top down view, configuration options, settings,
 							and power features. Managers would only usually need a top down view. It made sense to focus the app around the area where both user goals intersected, so I began thinking about the landing page.</p>
 						<p>The landing page needed to serve one goal: provide a high-level summary of the availability state (either available or unavailable) of a list of apps. A card based layout would provide room for a status component, title, meta data, and any action
 							link we might need.</p>
-						<p>The dashboard was designed to feel like a single page app with a flat information hierarchy. Both the creation form and the detail overlay controls slide over the dashboard page without completely obscuring it. Clicking outside the panel will dismiss
-							it. This eliminated the need for any signposting “you are here” UI or full page reloading by creating a strong sense of stacking. I also knew our Angular developers would be able to update any page component without fully refreshing the page.</p>
+						<div class="project-detail__image">
+							<img src="src&#x2F;images&#x2F;dashboard-home.jpg" alt="Dashboard mockup">
+							<span class="project-detail__image-caption">Stubbing out what a card based layout might look like.</span>
+						</div>
+						<div class="project-detail__image">
+							<img src="src&#x2F;images&#x2F;dashboard-cards.png" alt="Card component concepts">
+							<span class="project-detail__image-caption">Early explorations for the status card component.</span>
+						</div>
 						<p>Early iterations contained a “deploy” button on the card itself. But after some feedback, we decided this was a more deliberate action that should be contained inside the configuration page. Instead, it was replaced with a link that pointed to the
 							URL of the app itself.</p>
+						<p>The dashboard was designed to feel like a single page app with a flat information hierarchy. Both the creation form and the detail overlay controls slide over the dashboard page without completely obscuring it. Clicking outside the panel will dismiss
+							it. This eliminated the need for any signposting “you are here” UI or full page reloading by creating a strong sense of stacking. I also knew our Angular developers would be able to update any page component without fully refreshing the page.</p>
 					</div>
 				</div>
 				<article class="teaser">
@@ -91,8 +100,8 @@
 							<p></p>
 						</div>
 					</div>
-					<hr>
 					<div class="project-detail__body">
+						<h3>Process</h3>
 					</div>
 				</div>
 				<article class="teaser">
@@ -119,8 +128,8 @@
 							<p></p>
 						</div>
 					</div>
-					<hr>
 					<div class="project-detail__body">
+						<h3>Process</h3>
 					</div>
 				</div>
 			</section>

@@ -38,4 +38,13 @@
       border-radius: 50%;
     }
   }
+  &__image {
+    margin: 0 0 $base-spacing;
+  }
+  &__image-caption {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    font-size: $base-font-size/1.25;
+  }
 }
