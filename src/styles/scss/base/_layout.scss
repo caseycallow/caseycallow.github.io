@@ -1,8 +1,7 @@
 body {
-  background: $base-background-color;
   animation: 1s fadeIn ease forwards;
   opacity: 0;
-  background: url('../../images/bg.jpg') no-repeat center center fixed;
+  background: url('../../images/bg.jpg') no-repeat center center fixed $base-background-color;
   background-size: cover;
 }
 
