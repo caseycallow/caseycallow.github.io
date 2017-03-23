@@ -1,5 +1,5 @@
 {
-  "name": "casey-callow-portfolio",
+  "name": "caseycallow.design",
   "version": "1.0.0",
   "description": "Design portfolio for Casey Callow",
   "devDependencies": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caseycallow/portfolio.git"
+    "url": "git+https://github.com/caseycallow/caseycallow.design.git"
   },
   "keywords": [
     "portfolio",
@@ -26,7 +26,7 @@
   "author": "Casey Callow",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/caseycallow/portfolio/issues"
+    "url": "https://github.com/caseycallow/caseycallow.design/issues"
   },
-  "homepage": "https://github.com/caseycallow/portfolio#readme"
+  "homepage": "https://github.com/caseycallow/caseycallow.design#readme"
 }
