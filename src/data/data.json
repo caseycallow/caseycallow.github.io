@@ -147,7 +147,7 @@
           "paragraph": "At this point, I had a clear enough idea to start designing in the browser using PatternLab. Jumping into code early and not restricting myself to a set 'whiteboard -> mockup -> code' process allowed for the flowing of creative ideas and the ability to validate design decisions quickly. I could now test how the design held up on different browser widths and devices, and start introducing animation and state to the UI."
         },
         {
-          "paragraph": "Getting into code earlier also meant our Angular developers could start hooking the UI up to the API faster, even though it wasn't fully complete. As I built features and components, the team would update the production app, and we could see the final product take shape much faster than if we had taken a more waterfall-like approach."
+          "paragraph": "Getting into code earlier also meant our developers could start hooking up the UI to the API faster, even though it wasn't fully complete. As I built features and components, the team would update the production app, and we could see the final product take shape much faster than if we had taken a more waterfall-like approach."
         },
         {
           "image": [

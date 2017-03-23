@@ -32,7 +32,8 @@ $medium-dark-gray: #666;
 $medium-gray: #999;
 $light-gray: #d7d7d7;
 $primary-color: $blue;
-$primary-color-lighter: lighten($primary-color, 4%);
+$primary-color-lighter: lighten($primary-color, 8%);
+$primary-color-gradient: linear-gradient(135deg, $primary-color 0%, $primary-color-lighter 100%);
 
 //Font Colors
 $base-font-color: white;

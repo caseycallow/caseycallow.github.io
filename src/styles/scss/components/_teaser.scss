@@ -1,6 +1,7 @@
 .teaser-section {
   pointer-events: auto;
 }
+
 .teaser {
   max-width: 25rem;
   flex-basis: 50%;
@@ -11,9 +12,10 @@
   transform: rotateZ(360deg); //hardware acceleration
   opacity: 0;
   animation: fadeInRight 750ms ease forwards;
+  position: relative;
   @for $i from 1 to 5 {
     &:nth-of-type(#{$i}) {
-      animation-delay: $i * 150ms + 750ms;
+      animation-delay: $i * 150ms + 150ms;
     }
   }
 
@@ -21,8 +23,23 @@
     margin: 0;
   }
 
-  &:hover {
-    background: $primary-color-lighter;
+  &:before {
+    content: '';
+    border-radius: inherit;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: $base-transition;
+    background: $primary-color-gradient;
+    z-index: -1;
     box-shadow: $base-box-shadow;
+  }
+
+  &:hover:before {
+    opacity: 1;
   }
 }
