@@ -88,7 +88,7 @@
       "title": "Deployment Dashboard",
       "description": "A deployment tool for developers and project managers to create, configure, and monitor new services and applications.",
       "overview": "Developers at a major academic journal company had no standardized or simple way to launch and configure services/applications for their company. Developers were spending lots of time setting up Github repos and managing configuration settings rather than focusing on development. Management needed a way to check the status of the product line. Our solution was to build a dashboard that aided in easy creation/configuration of new apps and services, and allow for a high-level view of the availability of all applications.",
-      "role": "Lead designer, sketching and whiteboarding, user research, creating mockups, designing in the browser using PatternLab, and delivering production HTML and CSS to be converted into Angular application.",
+      "role": "Lead designer, sketching and whiteboarding, user research, creating mockups, prototyping in the browser using PatternLab, and delivering production HTML and CSS to be converted into Angular application.",
       "tools": "Sketch, PatternLab, Sass, Mustache, Gulp",
       "body": [
         {
@@ -100,7 +100,7 @@
         {
           "image": [
             {
-              "src": "src/images/dashboard-home.jpg",
+              "src": "src/images/dashboard-mock-home.jpg",
               "alt": "Dashboard mockup",
               "caption": "Stubbing out what a card based layout might look like."
             }
@@ -109,7 +109,7 @@
         {
           "image": [
             {
-              "src": "src/images/dashboard-cards.png",
+              "src": "src/images/dashboard-mock-cards.png",
               "alt": "Card component concepts",
               "caption": "Early explorations for the status card component."
             }
@@ -119,7 +119,53 @@
           "paragraph": "Early iterations contained a “deploy” button on the card itself. But after some feedback, we decided this was a more deliberate action that should be contained inside the configuration page. Instead, it was replaced with a link that pointed to the URL of the app itself."
         },
         {
+          "paragraph": "After building out the dashboard page I started thinking about the configuration options and the best way to display a growiing list of controls. Part of the challenge was that the amount of options was in flux and I had very little requirements to latch onto, so the design needed to be dynamic and scalable. Tabbed navigation provided the best way to do this."
+        },
+        {
+          "image": [
+            {
+              "src": "src/images/dashboard-sketch.jpg",
+              "alt": "Whiteboard sketch of UI",
+              "caption": "What should the workflow look like? Does this UI support the goals of the user?"
+            },
+            {
+              "src": "src/images/dashboard-sketch-spec.jpg",
+              "alt": "Whiteboard sketch of UI with component names",
+              "caption": "Atomic design. Breaking each element down into modular components."
+            }
+          ]
+        },
+        {
           "paragraph": "The dashboard was designed to feel like a single page app with a flat information hierarchy. Both the creation form and the detail overlay controls slide over the dashboard page without completely obscuring it. Clicking outside the panel will dismiss it. This eliminated the need for any signposting “you are here” UI or full page reloading by creating a strong sense of stacking. I also knew our Angular developers would be able to update any page component without fully refreshing the page."
+        },
+        {
+          "paragraph": "At this point, I had a clear enough idea to start designing in the browser using PatternLab. Jumping into code early and not restricting myself to a set 'whiteboard -> mockup -> code' process allowed for the freedom of creative ideas and the ability to validate design decisions quickly. I could now test how the design held up on different browser widths and devices, and start introducing animation and state to the UI."
+        },
+        {
+          "image": [
+            {
+              "src": "src/images/dashboard-home.png",
+              "alt": "Dashboard homepage",
+              "caption": "Final implementation of homepage."
+            },
+            {
+              "src": "src/images/dashboard-create.png",
+              "alt": "Dashboard homepage",
+              "caption": "The slide over panel to create a new application."
+            },
+            {
+              "src": "src/images/dashboard-detail.png",
+              "alt": "Dashboard homepage",
+              "caption": "The detail page with options to deploy, delete, and configure a number of options."
+            }
+          ]
+        },
+        {
+          "video": [
+            {
+              "src": "https://player.vimeo.com/video/209667278?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+            }
+          ]
         }
       ]
     },

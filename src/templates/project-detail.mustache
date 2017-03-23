@@ -30,6 +30,11 @@
       <span class="project-detail__image-caption">{{caption}}</span>
     </div>
     {{/image}}
+    {{#video}}
+    <div class="project-detail__video">
+      <iframe src="{{src}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    {{/video}}
     {{/body}}
   </div>
 </div>
