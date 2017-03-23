@@ -18,7 +18,7 @@
   },
   "navBar": {
     "label": "Casey Callow",
-    "imgSrc": "src/images/profile-pic.png"
+    "imgSrc": "images/profile-pic.png"
   },
   "iconWifi": [
     {
@@ -100,7 +100,7 @@
         {
           "image": [
             {
-              "src": "src/images/dashboard/dashboard-mock-home.jpg",
+              "src": "images/dashboard/dashboard-mock-home.jpg",
               "alt": "Dashboard mockup",
               "caption": "Stubbing out what a card based layout might look like."
             }
@@ -109,7 +109,7 @@
         {
           "image": [
             {
-              "src": "src/images/dashboard/dashboard-mock-cards.png",
+              "src": "images/dashboard/dashboard-mock-cards.png",
               "alt": "Card component concepts",
               "caption": "Early explorations for the status card component."
             }
@@ -124,17 +124,17 @@
         {
           "image": [
             {
-              "src": "src/images/dashboard/dashboard-sketch.jpg",
+              "src": "images/dashboard/dashboard-sketch.jpg",
               "alt": "Whiteboard sketch of UI",
               "caption": "What should the workflow look like? Does this UI support the goals of the user?"
             },
             {
-              "src": "src/images/dashboard/dashboard-mock-layouts.png",
+              "src": "images/dashboard/dashboard-mock-layouts.png",
               "alt": "UI iterations for detail page",
               "caption": "UI iterations for detail page."
             },
             {
-              "src": "src/images/dashboard/dashboard-sketch-spec.jpg",
+              "src": "images/dashboard/dashboard-sketch-spec.jpg",
               "alt": "Whiteboard sketch of UI with component names",
               "caption": "Atomic design. Breaking each element down into modular components before coding it up in the browser."
             }
@@ -152,17 +152,17 @@
         {
           "image": [
             {
-              "src": "src/images/dashboard/dashboard-home.png",
+              "src": "images/dashboard/dashboard-home.png",
               "alt": "Dashboard homepage",
               "caption": "Final implementation of homepage."
             },
             {
-              "src": "src/images/dashboard/dashboard-create.png",
+              "src": "images/dashboard/dashboard-create.png",
               "alt": "Dashboard homepage",
               "caption": "The slide over panel to create a new application."
             },
             {
-              "src": "src/images/dashboard/dashboard-detail.png",
+              "src": "images/dashboard/dashboard-detail.png",
               "alt": "Dashboard homepage",
               "caption": "The detail page with options to deploy, delete, and configure a number of options."
             }

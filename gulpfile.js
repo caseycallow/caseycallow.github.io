@@ -4,23 +4,26 @@ var autoprefixer = require('gulp-autoprefixer');
 var bs = require('browser-sync').create();
 var mustache = require('gulp-mustache');
 var htmlbeautify = require('gulp-html-beautify');
+var uglify = require('gulp-uglify');
+var rename = require('gulp-rename');
 var fs  = require('fs');
 
 // Run Browsersync
 gulp.task('browser-sync', function() {
   bs.init({
-    server: './',
+    server: './dist',
     port: 8080,
     notify: false
   });
 });
 
-//Compile SASS
+//Compile and minify Sass
 gulp.task('sass', function() {
   gulp.src('src/styles/scss/*.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(gulp.dest('src/styles/css/'))
+    .pipe(rename('styles.min.css'))
+    .pipe(gulp.dest('./dist'))
     .pipe(bs.reload({stream: true}));
 });
 
@@ -32,16 +35,24 @@ gulp.task('mustache', function() {
   gulp.src(pages)
     .pipe(mustache(data, {extension: '.html'}))
     .pipe(htmlbeautify({indent_with_tabs: true}))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./dist'));
+});
+
+//Minify JS
+gulp.task('scripts', function() {
+  return gulp.src('src/scripts/*.js')
+    .pipe(rename('scripts.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./dist'));
 });
 
 //Watch Files
 gulp.task('watch', function() {
-  gulp.watch('src/styles/scss/**/*.scss', ['sass']);
+  gulp.watch('src/styles/**/*.scss', ['sass']);
   gulp.watch('src/**/*.mustache', ['mustache']).on('change', bs.reload);
   gulp.watch('src/data/*.json', ['mustache']).on('change', bs.reload);
   gulp.watch('src/scripts/*.js').on('change', bs.reload);
 });
 
 //Set up default task
-gulp.task('default',['watch', 'mustache', 'sass', 'browser-sync']);
+gulp.task('default',['watch', 'mustache', 'sass', 'scripts', 'browser-sync']);
