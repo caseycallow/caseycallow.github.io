@@ -2,3 +2,9 @@
 *.css.map
 *.DS_Store
 node_modules
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+Session.vim
+.netrwhist
+*~
+tags
