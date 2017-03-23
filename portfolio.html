@@ -61,39 +61,43 @@
 						<p>The landing page needed to serve one goal: provide a high-level summary of the availability state (either available or unavailable) of a list of apps. A card based layout would provide room for a status component, title, meta data, and any action
 							link we might need.</p>
 						<div class="project-detail__image">
-							<img src="src&#x2F;images&#x2F;dashboard-mock-home.jpg" alt="Dashboard mockup">
+							<img src="src&#x2F;images&#x2F;dashboard&#x2F;dashboard-mock-home.jpg" alt="Dashboard mockup">
 							<span class="project-detail__image-caption">Stubbing out what a card based layout might look like.</span>
 						</div>
 						<div class="project-detail__image">
-							<img src="src&#x2F;images&#x2F;dashboard-mock-cards.png" alt="Card component concepts">
+							<img src="src&#x2F;images&#x2F;dashboard&#x2F;dashboard-mock-cards.png" alt="Card component concepts">
 							<span class="project-detail__image-caption">Early explorations for the status card component.</span>
 						</div>
 						<p>Early iterations contained a “deploy” button on the card itself. But after some feedback, we decided this was a more deliberate action that should be contained inside the configuration page. Instead, it was replaced with a link that pointed to the
 							URL of the app itself.</p>
-						<p>After building out the dashboard page I started thinking about the configuration options and the best way to display a growiing list of controls. Part of the challenge was that the amount of options was in flux and I had very little requirements
+						<p>After building out the dashboard page I started thinking about the configuration options and the best way to display a growing list of controls. Part of the challenge was that the amount of options was in flux and I had very little requirements
 							to latch onto, so the design needed to be dynamic and scalable. Tabbed navigation provided the best way to do this.</p>
 						<div class="project-detail__image">
-							<img src="src&#x2F;images&#x2F;dashboard-sketch.jpg" alt="Whiteboard sketch of UI">
+							<img src="src&#x2F;images&#x2F;dashboard&#x2F;dashboard-sketch.jpg" alt="Whiteboard sketch of UI">
 							<span class="project-detail__image-caption">What should the workflow look like? Does this UI support the goals of the user?</span>
 						</div>
 						<div class="project-detail__image">
-							<img src="src&#x2F;images&#x2F;dashboard-sketch-spec.jpg" alt="Whiteboard sketch of UI with component names">
-							<span class="project-detail__image-caption">Atomic design. Breaking each element down into modular components.</span>
+							<img src="src&#x2F;images&#x2F;dashboard&#x2F;dashboard-mock-layouts.png" alt="UI iterations for detail page">
+							<span class="project-detail__image-caption">UI iterations for detail page.</span>
+						</div>
+						<div class="project-detail__image">
+							<img src="src&#x2F;images&#x2F;dashboard&#x2F;dashboard-sketch-spec.jpg" alt="Whiteboard sketch of UI with component names">
+							<span class="project-detail__image-caption">Atomic design. Breaking each element down into modular components before coding it up in the browser.</span>
 						</div>
 						<p>The dashboard was designed to feel like a single page app with a flat information hierarchy. Both the creation form and the detail overlay controls slide over the dashboard page without completely obscuring it. Clicking outside the panel will dismiss
 							it. This eliminated the need for any signposting “you are here” UI or full page reloading by creating a strong sense of stacking. I also knew our Angular developers would be able to update any page component without fully refreshing the page.</p>
 						<p>At this point, I had a clear enough idea to start designing in the browser using PatternLab. Jumping into code early and not restricting myself to a set &#39;whiteboard -&gt; mockup -&gt; code&#39; process allowed for the freedom of creative ideas
 							and the ability to validate design decisions quickly. I could now test how the design held up on different browser widths and devices, and start introducing animation and state to the UI.</p>
 						<div class="project-detail__image">
-							<img src="src&#x2F;images&#x2F;dashboard-home.png" alt="Dashboard homepage">
+							<img src="src&#x2F;images&#x2F;dashboard&#x2F;dashboard-home.png" alt="Dashboard homepage">
 							<span class="project-detail__image-caption">Final implementation of homepage.</span>
 						</div>
 						<div class="project-detail__image">
-							<img src="src&#x2F;images&#x2F;dashboard-create.png" alt="Dashboard homepage">
+							<img src="src&#x2F;images&#x2F;dashboard&#x2F;dashboard-create.png" alt="Dashboard homepage">
 							<span class="project-detail__image-caption">The slide over panel to create a new application.</span>
 						</div>
 						<div class="project-detail__image">
-							<img src="src&#x2F;images&#x2F;dashboard-detail.png" alt="Dashboard homepage">
+							<img src="src&#x2F;images&#x2F;dashboard&#x2F;dashboard-detail.png" alt="Dashboard homepage">
 							<span class="project-detail__image-caption">The detail page with options to deploy, delete, and configure a number of options.</span>
 						</div>
 						<div class="project-detail__video">

@@ -100,7 +100,7 @@
         {
           "image": [
             {
-              "src": "src/images/dashboard-mock-home.jpg",
+              "src": "src/images/dashboard/dashboard-mock-home.jpg",
               "alt": "Dashboard mockup",
               "caption": "Stubbing out what a card based layout might look like."
             }
@@ -109,7 +109,7 @@
         {
           "image": [
             {
-              "src": "src/images/dashboard-mock-cards.png",
+              "src": "src/images/dashboard/dashboard-mock-cards.png",
               "alt": "Card component concepts",
               "caption": "Early explorations for the status card component."
             }
@@ -119,19 +119,24 @@
           "paragraph": "Early iterations contained a “deploy” button on the card itself. But after some feedback, we decided this was a more deliberate action that should be contained inside the configuration page. Instead, it was replaced with a link that pointed to the URL of the app itself."
         },
         {
-          "paragraph": "After building out the dashboard page I started thinking about the configuration options and the best way to display a growiing list of controls. Part of the challenge was that the amount of options was in flux and I had very little requirements to latch onto, so the design needed to be dynamic and scalable. Tabbed navigation provided the best way to do this."
+          "paragraph": "After building out the dashboard page I started thinking about the configuration options and the best way to display a growing list of controls. Part of the challenge was that the amount of options was in flux and I had very little requirements to latch onto, so the design needed to be dynamic and scalable. Tabbed navigation provided the best way to do this."
         },
         {
           "image": [
             {
-              "src": "src/images/dashboard-sketch.jpg",
+              "src": "src/images/dashboard/dashboard-sketch.jpg",
               "alt": "Whiteboard sketch of UI",
               "caption": "What should the workflow look like? Does this UI support the goals of the user?"
             },
             {
-              "src": "src/images/dashboard-sketch-spec.jpg",
+              "src": "src/images/dashboard/dashboard-mock-layouts.png",
+              "alt": "UI iterations for detail page",
+              "caption": "UI iterations for detail page."
+            },
+            {
+              "src": "src/images/dashboard/dashboard-sketch-spec.jpg",
               "alt": "Whiteboard sketch of UI with component names",
-              "caption": "Atomic design. Breaking each element down into modular components."
+              "caption": "Atomic design. Breaking each element down into modular components before coding it up in the browser."
             }
           ]
         },
@@ -144,17 +149,17 @@
         {
           "image": [
             {
-              "src": "src/images/dashboard-home.png",
+              "src": "src/images/dashboard/dashboard-home.png",
               "alt": "Dashboard homepage",
               "caption": "Final implementation of homepage."
             },
             {
-              "src": "src/images/dashboard-create.png",
+              "src": "src/images/dashboard/dashboard-create.png",
               "alt": "Dashboard homepage",
               "caption": "The slide over panel to create a new application."
             },
             {
-              "src": "src/images/dashboard-detail.png",
+              "src": "src/images/dashboard/dashboard-detail.png",
               "alt": "Dashboard homepage",
               "caption": "The detail page with options to deploy, delete, and configure a number of options."
             }
