@@ -116,10 +116,10 @@
           ]
         },
         {
-          "paragraph": "Early iterations contained a “deploy” button on the card itself. But after some feedback, we decided this was a more deliberate action that should be contained inside the configuration page. Instead, it was replaced with a link that pointed to the URL of the app itself."
+          "paragraph": "Early iterations contained a “deploy” button on the card itself. But after some feedback, we decided this was a more deliberate action that should be contained inside the configuration page. Instead, it was replaced with a link that pointed to the URL of the app itself. I opted for a dark UI to blend in with the tools developers were already using, and hopefully increase adoption."
         },
         {
-          "paragraph": "After building out the dashboard page I started thinking about the configuration options and the best way to display a growing list of controls. Part of the challenge was that the amount of options was in flux and I had very little requirements to latch onto, so the design needed to be dynamic and scalable. Tabbed navigation provided the best way to do this."
+          "paragraph": "After building out the dashboard page I started thinking about the configuration options and the best way to display a growing list of controls. Part of the challenge was that the amount of options was in flux and I had very little requirements to latch onto, so the design needed to be dynamic and scalable. Tabbed navigation was the best way to do this because the tab list could easily grow as more settings were added."
         },
         {
           "image": [
@@ -141,10 +141,13 @@
           ]
         },
         {
-          "paragraph": "The dashboard was designed to feel like a single page app with a flat information hierarchy. Both the creation form and the detail overlay controls slide over the dashboard page without completely obscuring it. Clicking outside the panel will dismiss it. This eliminated the need for any signposting “you are here” UI or full page reloading by creating a strong sense of stacking. I also knew our Angular developers would be able to update any page component without fully refreshing the page."
+          "paragraph": "The dashboard was designed to feel like a single page app with a flat information hierarchy. Both the creation form and the detail overlay controls slide over the dashboard page without completely obscuring it where clicking outside the panel dismisses it. I struggled with several ideas before landing on this. Should the app detail go to a new page? If it doesn't, how do I create a sense of layering without making it a modal? Does it work on a phone? Eventually, I landed on this drawer-style UI which eliminated the need for any signposting “you are here” UI, and back button, or page reloading by creating a strong sense of vertical layering. I also knew our Angular developers would be able to update any page component without fully refreshing the page."
         },
         {
-          "paragraph": "At this point, I had a clear enough idea to start designing in the browser using PatternLab. Jumping into code early and not restricting myself to a set 'whiteboard -> mockup -> code' process allowed for the freedom of creative ideas and the ability to validate design decisions quickly. I could now test how the design held up on different browser widths and devices, and start introducing animation and state to the UI."
+          "paragraph": "At this point, I had a clear enough idea to start designing in the browser using PatternLab. Jumping into code early and not restricting myself to a set 'whiteboard -> mockup -> code' process allowed for the flowing of creative ideas and the ability to validate design decisions quickly. I could now test how the design held up on different browser widths and devices, and start introducing animation and state to the UI."
+        },
+        {
+          "paragraph": "Getting into code earlier also meant our Angular developers could start hooking the UI up to the API faster, even though it wasn't fully complete. As I built features and components, the team would update the production app, and we could see the final product take shape much faster than if we had taken a more waterfall-like approach."
         },
         {
           "image": [
@@ -171,6 +174,9 @@
               "src": "https://player.vimeo.com/video/209667278?autoplay=1&loop=1&title=0&byline=0&portrait=0"
             }
           ]
+        },
+        {
+          "paragraph": "The major challenge I faced during this project was operating with very loose requirements. Many assumptions had to be made in the absence of strict user needs, and I often found myself designing with data that would be out of date in a few days. This forced me to iterate more frequently and not grow attached to specific UI solutions. Sometimes the only tangible data I would have to work with was a JSON object. However, designing and coding the UI layer in parallel with API development meant I was collaborating incredibly closely with the dev team and building a deeper understanding of the system, which ultimately led to a better product."
         }
       ]
     },

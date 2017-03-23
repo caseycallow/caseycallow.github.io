@@ -48,6 +48,7 @@
     position: relative;
   	padding-bottom: 56.25%; /* 16:9 */
   	height: 0;
+    margin: 0 0 $base-spacing;
     iframe {
       position: absolute;
       top: 0;
