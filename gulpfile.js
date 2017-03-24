@@ -19,7 +19,7 @@ gulp.task('browser-sync', function() {
 
 //Compile and minify Sass
 gulp.task('sass', function() {
-  gulp.src('src/styles/scss/*.scss')
+  gulp.src('src/styles/*.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(rename('styles.min.css'))
