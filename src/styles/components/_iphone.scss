@@ -8,6 +8,16 @@
   border-radius: 56px;
   background: #464646;
   box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.7), 0 30px 100px black;
+  @include breakpoint(medium) {
+    transform: scale(0.8);
+  }
+  @include breakpoint(small) {
+    height: 550px;
+    width: 330px;
+    border-radius: 50px;
+    padding: 95px 22px;
+  }
+
   &:before {
     width: calc(100% - 12px);
     height: calc(100% - 12px);
@@ -18,6 +28,9 @@
     border-radius: 50px;
     background: #080808;
     z-index: 1;
+    @include breakpoint(small) {
+      border: 44px;
+    }
   }
   &:after {
     width: calc(100% - 16px);
@@ -29,6 +42,9 @@
     border-radius: 48px;
     box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 6px 3px #212121;
     z-index: 2;
+    @include breakpoint(small) {
+      border: 42px;
+    }
   }
 
   &__screen {
@@ -47,6 +63,9 @@
     animation-delay: 1.5s;
     iframe {
       border: none;
+    }
+    @include breakpoint(small) {
+      height: 80%;
     }
   }
 
@@ -154,6 +173,10 @@
     margin-left: -35px;
     border-radius: 6px;
     z-index: 3;
+    @include breakpoint(small) {
+      width: 65px;
+      left: 52%;
+    }
   }
 
   &__home {

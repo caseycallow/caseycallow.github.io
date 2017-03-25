@@ -5,4 +5,8 @@
   padding: 0 $base-spacing;
   justify-content: flex-end;
   align-items: center;
+  @include breakpoint(medium) {
+    padding: 0;
+    width: 100%;
+  }
 }

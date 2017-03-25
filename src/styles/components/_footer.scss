@@ -7,6 +7,10 @@
   bottom: 0;
   right: 0;
   padding: $small-spacing/2;
+  @include breakpoint(medium) {
+    z-index: -1;
+    justify-content: center;
+  }
 
   .copyright {
     font-size: 10px;

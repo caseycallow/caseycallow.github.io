@@ -1,5 +1,8 @@
 .teaser-section {
   pointer-events: auto;
+  @include breakpoint(medium) {
+    width: 100%;
+  }
 }
 
 .teaser {
@@ -13,7 +16,9 @@
   opacity: 0;
   animation: fadeInRight 750ms ease forwards;
   position: relative;
-  @for $i from 1 to 5 {
+
+  //stagger animation
+  @for $i from 1 to 4 {
     &:nth-of-type(#{$i}) {
       animation-delay: $i * 150ms + 150ms;
     }
@@ -23,6 +28,7 @@
     margin: 0;
   }
 
+  //gradient
   &:before {
     content: '';
     border-radius: inherit;
@@ -41,5 +47,9 @@
 
   &:hover:before {
     opacity: 1;
+  }
+
+  @include breakpoint(medium) {
+    max-width: 100%;
   }
 }

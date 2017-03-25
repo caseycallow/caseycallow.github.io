@@ -3,6 +3,7 @@ body {
   opacity: 0;
   background: url('assets/bg.jpg') no-repeat center center fixed $base-background-color;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .main {
@@ -11,6 +12,11 @@ body {
   padding: 0 $large-spacing;
   margin: -$header-height auto 0;
   max-width: 60rem;
+  @include breakpoint(medium) {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .main-content, .secondary-content {
@@ -22,6 +28,9 @@ body {
   justify-content: flex-end;
   color: $base-font-color;
   flex: 1 1 20vw;
+  @include breakpoint(medium) {
+    justify-content: center;
+  }
 }
 
 .main-content {
@@ -29,4 +38,8 @@ body {
   flex: 1 1 40vw;
   order: 1;
   pointer-events: none;
+  @include breakpoint(medium) {
+    justify-content: center;
+    padding: $base-spacing $base-spacing 0;
+  }
 }
