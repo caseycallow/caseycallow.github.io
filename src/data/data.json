@@ -182,7 +182,41 @@
     },
     {
       "title": "Proposal Builder",
-      "description": "Description for the project goes right here."
+      "description": "",
+      "overview": "",
+      "role": "",
+      "tools": "",
+      "body": [
+        {
+          "image": [
+            {
+              "src": "assets/proposal/proposal-whiteboard.jpg",
+              "alt": "Whiteboard with ideas and UI sketches",
+              "caption": "Trying to figure out how to best wrangle complexity."
+            },
+            {
+              "src": "assets/proposal/proposal-description.jpg",
+              "alt": "",
+              "caption": "Description page."
+            },
+            {
+              "src": "assets/proposal/proposal-budget.jpg",
+              "alt": "",
+              "caption": "Budget page."
+            },
+            {
+              "src": "assets/proposal/proposal-metrics.jpg",
+              "alt": "",
+              "caption": "Metrics page."
+            }
+          ],
+          "video": [
+            {
+              "src": "https://player.vimeo.com/video/210014070?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+            }
+          ]
+        }
+      ]
     },
     {
       "title": "Restaurant Finder",
