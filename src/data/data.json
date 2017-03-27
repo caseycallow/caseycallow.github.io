@@ -200,16 +200,31 @@
           ]
         },
         {
-          "paragraph": "We approached early UI concepts around the idea of breaking down the UI into manageable chunks, and separating each step into its own area."
+          "paragraph": "We centered early UI concepts around the idea of breaking down the UI into manageable chunks, and separating each step into its own breadcrumb. The UI would walk you through each step, rather than hitting you in the face with a giant form. The breadcrumbs also provide context and situational awareness. Where am I? How much more is left? Did I do this part yet?"
         },
         {
           "image": [
             {
               "src": "assets/proposal/proposal-wireframe.jpg",
-              "alt": "",
-              "caption": "Early layout concept."
+              "alt": "Wireframe mockup for proposal UI",
+              "caption": "Early layout UI wireframe."
             }
           ]
+        },
+        {
+          "paragraph": "With a rough outline in place, and requirements changing left and right, I started focusing on the pieces I knew would remain constant and gathered a list of UI components we would likely need. One advantage of designing 'atomically' is that you can still make headway even as the product requirements are still coming into focus."
+        },
+        {
+          "image": [
+            {
+              "src": "assets/proposal/proposal-sketches.jpg",
+              "alt": "UI sketches",
+              "caption": "Early layout concepts and inventory of required UI components."
+            }
+          ]
+        },
+        {
+          "paragraph": "My next step was to begin building out the modular components in PatternLab so would could get something in front of the client as quickly as possible and gather feedback."
         },
         {
           "image": [
