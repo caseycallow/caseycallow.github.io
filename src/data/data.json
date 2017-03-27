@@ -88,8 +88,8 @@
       "title": "Deployment Dashboard",
       "description": "A deployment tool for developers and project managers to create, configure, and monitor new services and applications.",
       "overview": "Developers at a major academic journal company had no standardized or simple way to launch and configure services/applications for their company. Developers were spending lots of time setting up Github repos and managing configuration settings rather than focusing on development. Management needed a way to check the status of the product line. Our solution was to build a dashboard that aided in easy creation/configuration of new apps and services, and allow for a high-level view of the availability of all applications.",
-      "role": "Lead designer, sketching and whiteboarding, user research, creating mockups, prototyping in the browser using PatternLab, and delivering production HTML and CSS to be converted into Angular application.",
-      "tools": "Sketch, PatternLab, Sass, Mustache, Gulp",
+      "role": "Lead designer, sketching, user research, creating mockups, prototyping in the browser using PatternLab, and delivering production HTML and CSS to be converted into Angular application.",
+      "tools": "Whiteboard, Sketch, PatternLab, Sass, Mustache, jQuery, Gulp",
       "body": [
         {
           "paragraph": "After speaking with several developers to understand the scope of the project, it became clear we had two main users that would be using the application: developers and managers. Developers needed a top down view, configuration options, settings, and power features. Managers would only usually need a top down view. It made sense to focus the app around the area where both user goals intersected, so I began thinking about the landing page."
@@ -182,34 +182,63 @@
     },
     {
       "title": "Proposal Builder",
-      "description": "",
-      "overview": "",
-      "role": "",
-      "tools": "",
+      "description": "A system to streamline the creation of funding proposals for job creation and a stronger California economy.",
+      "overview": "We worked with a program associated the California Community Colleges to help streamline the process of creating, distributing, and tracking funding proposals for new grants and educational resources. Most of the proposal creation process was happening either offline or using free online tools, so keeping track of proposal data was nearly impossible. The state needed this data in order to monitor the success of collegiate programs to more appropriately allocate resources, and to hopefully prepare our future workforce for emerging job demands.",
+      "role": "Design strategy, UI design, prototyping, HTML/CSS.",
+      "tools": "Whiteboard, Sketch, PatternLab, Sass (BEM), Mustache, jQuery, Gulp",
       "body": [
+        {
+          "paragraph": "This was easily the most complex project I've ever had the pleasure of working on. Working with a small team, we had roughly 2 months to build an MVP UI showcasing the proposal creation process. In the beginning, a lot of our time was spent simply trying to wrap our heads around the problem, and all the details and considerations involved."
+        },
         {
           "image": [
             {
               "src": "assets/proposal/proposal-whiteboard.jpg",
               "alt": "Whiteboard with ideas and UI sketches",
-              "caption": "Trying to figure out how to best wrangle complexity."
-            },
+              "caption": "Trying to figure how to organize the overwhelming complexity."
+            }
+          ]
+        },
+        {
+          "paragraph": "We approached early UI concepts around the idea of breaking down the UI into manageable chunks, and separating each step into its own area."
+        },
+        {
+          "image": [
+            {
+              "src": "assets/proposal/proposal-wireframe.jpg",
+              "alt": "",
+              "caption": "Early layout concept."
+            }
+          ]
+        },
+        {
+          "image": [
             {
               "src": "assets/proposal/proposal-description.jpg",
               "alt": "",
               "caption": "Description page."
-            },
+            }
+          ]
+        },
+        {
+          "image": [
             {
               "src": "assets/proposal/proposal-budget.jpg",
               "alt": "",
               "caption": "Budget page."
-            },
+            }
+          ]
+        },
+        {
+          "image": [
             {
               "src": "assets/proposal/proposal-metrics.jpg",
               "alt": "",
               "caption": "Metrics page."
             }
-          ],
+          ]
+        },
+        {
           "video": [
             {
               "src": "https://player.vimeo.com/video/210014070?autoplay=1&loop=1&title=0&byline=0&portrait=0"
