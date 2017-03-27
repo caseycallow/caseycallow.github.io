@@ -1,15 +1,42 @@
+$iphone-tilt-speed: 1s;
+$iphone-tilt-transition: all $iphone-tilt-speed ease;
+
 .iphone {
   display: inline-block;
   position: relative;
-  transform: scale(0.7);
+  transform: scale(0.7) perspective(550px) rotateX(-2deg) rotateY(7deg);
+  transition: $iphone-tilt-transition;
   width: 375px;
   height: 667px;
   padding: 105px 24px;
   border-radius: 56px;
   background: #464646;
   box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.7), 0 30px 100px black;
+  opacity: 0.9; //allow for brightening on hover
+  &:hover {
+    transform: scale(0.7); //preserve scale, remove other 3D transforms
+    opacity: 1; //subtle brightening on hover
+    .iphone__home {
+    transform: rotate(100deg); //home button shimmer effect
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
   @include breakpoint(medium) {
-    transform: scale(0.8);
+    transform: scale(0.8); //make iphone larger
+    //override 3D hover effects
+    opacity: 1;
+    &:hover {
+      transform: scale(0.8);
+      opacity: inherit;
+      .iphone__home {
+        transform: none;
+        &:before {
+          opacity: 0;
+        }
+      }
+    }
   }
   @include breakpoint(small) {
     height: 550px;
@@ -59,8 +86,7 @@
     border: none;
     opacity: 0;
     transition: $base-transition;
-    animation: fadeIn 1s forwards;
-    animation-delay: 1.5s;
+    animation: fadeIn 1s forwards 1.5s;
     iframe {
       border: none;
     }
@@ -189,6 +215,21 @@
     bottom: 22px;
     z-index: 3;
     background: linear-gradient(135deg, #080808 0%, #464646 50%, #080808 100%);
+    transition: $iphone-tilt-transition;
+    &:before {
+      content: '';
+      border-radius: inherit;
+      width: inherit;
+      height: inherit;
+      position: inherit;
+      left: inherit;
+      margin-left: inherit;
+      bottom: 0;
+      z-index: -1;
+      background: linear-gradient(135deg, #080808 0%, #838383 50%, #080808 100%);
+      opacity: 0;
+      transition: inherit;
+    }
     &:after {
       background: #080808;
       position: absolute;
