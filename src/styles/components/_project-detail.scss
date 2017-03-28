@@ -12,9 +12,11 @@
   right: 0;
   transition: all 0.25s ease;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch; //enable intertial scrolling on mobile
   z-index: 1;
   box-shadow: $base-box-shadow-left;
+
+  //open animation
   &.js-show-detail {
     transform: scale3d(1, 1, 1);
     animation: 'fadeIn' 0.4s;
@@ -22,6 +24,7 @@
       animation: 'fadeInUp' 0.8s $cubic-bezier, 'fadeIn' 1.5s;
     }
   }
+
   .icon-close {
     z-index: 2;
     position: absolute;
@@ -39,15 +42,21 @@
       border-radius: 50%;
     }
   }
+
+  &__title {
+    margin-right: 5rem; //prevent close icon from eclipsing title
+  }
+
   &__image {
     margin: 0 0 $base-spacing;
     img {
       width: 100%;
     }
   }
+
   &__video {
     position: relative;
-  	padding-bottom: 56.25%; //16:9
+  	padding-bottom: 57%; //16:9
   	height: 0;
     margin: 0 0 $base-spacing;
     iframe {
@@ -58,12 +67,14 @@
       height: 100%;
     }
   }
+
   &__image-caption {
     display: block;
     text-align: right;
     font-style: italic;
     font-size: $base-font-size/1.25;
   }
+
   @include breakpoint(medium) {
     transform-origin: top center;
     width: auto;
