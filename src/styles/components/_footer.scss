@@ -3,13 +3,12 @@
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 0;
   padding: $small-spacing/2;
   @include breakpoint(medium) {
-    z-index: -1;
-    justify-content: center;
+    visibility: hidden;
   }
 
   .copyright {
