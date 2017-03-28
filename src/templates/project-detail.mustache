@@ -1,7 +1,9 @@
 <div class="project-detail">
+
   {{#iconClose}}
   {{>icon}}
   {{/iconClose}}
+
   <div class="project-detail__header">
     <h2 class="project-detail__title">{{title}}</h2>
     <hr>
@@ -19,22 +21,29 @@
     </div>
   </div>
   <div class="project-detail__body">
+
     <h3>Process</h3>
+
     {{#body}}
+
     {{#paragraph}}
     <p>{{{paragraph}}}</p>
     {{/paragraph}}
+
     {{#image}}
     <div class="project-detail__image">
       <img src="{{src}}" alt="{{alt}}">
       <span class="project-detail__image-caption">{{caption}}</span>
     </div>
     {{/image}}
+
     {{#video}}
     <div class="project-detail__video">
       <iframe src="{{src}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     {{/video}}
+
     {{/body}}
+
   </div>
 </div>

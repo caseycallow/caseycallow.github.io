@@ -119,7 +119,7 @@
           "paragraph": "Early iterations contained a “deploy” button on the card itself. But after some feedback, we decided this was a more deliberate action that should be contained inside the configuration page. Instead, it was replaced with a link that pointed to the URL of the app itself. I opted for a dark UI to blend in with the tools developers were already using, and hopefully increase adoption."
         },
         {
-          "paragraph": "After building out the dashboard page I started thinking about the configuration options and the best way to display a growing list of controls. Part of the challenge was that the amount of options was in flux and I had very little requirements to latch onto, so the design needed to be dynamic and scalable. Tabbed navigation was the best way to do this because the tab list could easily grow as more settings were added."
+          "paragraph": "After building out the dashboard page I started thinking about the configuration options and the best way to display a growing list of controls. Part of the challenge was that the amount of options were in flux and I had very little requirements to latch onto, so the design needed to be dynamic and scalable. Tabbed navigation was the best way to do this because the tab list could easily grow as more settings were added."
         },
         {
           "image": [

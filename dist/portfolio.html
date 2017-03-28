@@ -35,7 +35,9 @@
 					<p class="teaser__description">A deployment tool for developers and project managers to create, configure, and monitor new services and applications.</p>
 				</article>
 				<div class="project-detail">
+
 					<i class="icon icon-close"><svg><use xlink:href="assets/icons.svg#icon-close"></use></svg></i>
+
 					<div class="project-detail__header">
 						<h2 class="project-detail__title">Deployment Dashboard</h2>
 						<hr>
@@ -55,23 +57,51 @@
 						</div>
 					</div>
 					<div class="project-detail__body">
+
 						<h3>Process</h3>
+
+
 						<p>After speaking with several developers to understand the scope of the project, it became clear we had two main users that would be using the application: developers and managers. Developers needed a top down view, configuration options, settings,
 							and power features. Managers would only usually need a top down view. It made sense to focus the app around the area where both user goals intersected, so I began thinking about the landing page.</p>
+
+
+
+
 						<p>The landing page needed to serve one goal: provide a high-level summary of the availability state (either available or unavailable) of a list of apps. A card based layout would provide room for a status component, title, meta data, and any action
 							link we might need.</p>
+
+
+
+
+
 						<div class="project-detail__image">
 							<img src="assets&#x2F;dashboard&#x2F;dashboard-mock-home.jpg" alt="Dashboard mockup">
 							<span class="project-detail__image-caption">Stubbing out what a card based layout might look like.</span>
 						</div>
+
+
+
+
 						<div class="project-detail__image">
 							<img src="assets&#x2F;dashboard&#x2F;dashboard-mock-cards.png" alt="Card component concepts">
 							<span class="project-detail__image-caption">Early explorations for the status card component.</span>
 						</div>
+
+
+
 						<p>Early iterations contained a “deploy” button on the card itself. But after some feedback, we decided this was a more deliberate action that should be contained inside the configuration page. Instead, it was replaced with a link that pointed to the
 							URL of the app itself. I opted for a dark UI to blend in with the tools developers were already using, and hopefully increase adoption.</p>
-						<p>After building out the dashboard page I started thinking about the configuration options and the best way to display a growing list of controls. Part of the challenge was that the amount of options was in flux and I had very little requirements
+
+
+
+
+						<p>After building out the dashboard page I started thinking about the configuration options and the best way to display a growing list of controls. Part of the challenge was that the amount of options were in flux and I had very little requirements
 							to latch onto, so the design needed to be dynamic and scalable. Tabbed navigation was the best way to do this because the tab list could easily grow as more settings were added.</p>
+
+
+
+
+
 						<div class="project-detail__image">
 							<img src="assets&#x2F;dashboard&#x2F;dashboard-sketch.jpg" alt="Whiteboard sketch of UI">
 							<span class="project-detail__image-caption">What should the workflow look like? Does this UI support the goals of the user?</span>
@@ -84,14 +114,30 @@
 							<img src="assets&#x2F;dashboard&#x2F;dashboard-sketch-spec.jpg" alt="Whiteboard sketch of UI with component names">
 							<span class="project-detail__image-caption">Atomic design. Breaking each element down into modular components before coding it up in the browser.</span>
 						</div>
+
+
+
 						<p>The dashboard was designed to feel like a single page app with a flat information hierarchy. Both the creation form and the detail overlay controls slide over the dashboard page without completely obscuring it where clicking outside the panel dismisses
 							it. I struggled with several ideas before landing on this. Should the app detail go to a new page? If it doesn't, how do I create a sense of layering without making it a modal? Does it work on a phone? Eventually, I landed on this drawer-style
 							UI which eliminated the need for any signposting “you are here” UI, and back button, or page reloading by creating a strong sense of vertical layering. I also knew our Angular developers would be able to update any page component without fully
 							refreshing the page.</p>
+
+
+
+
 						<p>At this point, I had a clear enough idea to start designing in the browser using PatternLab. Jumping into code early and not restricting myself to a set 'whiteboard -> mockup -> code' process allowed for the flowing of creative ideas and the ability
 							to validate design decisions quickly. I could now test how the design held up on different browser widths and devices, and start introducing animation and state to the UI.</p>
+
+
+
+
 						<p>Getting into code earlier also meant our developers could start hooking up the UI to the API faster, even though it wasn't fully complete. As I built features and components, the team would update the production app, and we could see the final product
 							take shape much faster than if we had taken a more waterfall-like approach.</p>
+
+
+
+
+
 						<div class="project-detail__image">
 							<img src="assets&#x2F;dashboard&#x2F;dashboard-home.png" alt="Dashboard homepage">
 							<span class="project-detail__image-caption">Final implementation of homepage.</span>
@@ -104,12 +150,23 @@
 							<img src="assets&#x2F;dashboard&#x2F;dashboard-detail.png" alt="Dashboard homepage">
 							<span class="project-detail__image-caption">The detail page with options to deploy, delete, and configure a number of options.</span>
 						</div>
+
+
+
+
+
 						<div class="project-detail__video">
 							<iframe src="https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;209667278?autoplay&#x3D;1&amp;loop&#x3D;1&amp;title&#x3D;0&amp;byline&#x3D;0&amp;portrait&#x3D;0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 						</div>
+
+
 						<p>The major challenge I faced during this project was operating with very loose requirements. Many assumptions had to be made in the absence of strict user needs, and I often found myself designing with data that would be out of date in a few days.
 							This forced me to iterate more frequently and not grow attached to specific UI solutions. Sometimes the only tangible data I would have to work with was a JSON object. However, designing and coding the UI layer in parallel with API development
 							meant I was collaborating incredibly closely with the dev team and building a deeper understanding of the system, which ultimately led to a better product.</p>
+
+
+
+
 					</div>
 				</div>
 				<article class="teaser">
@@ -117,7 +174,9 @@
 					<p class="teaser__description">A system to streamline the creation of funding proposals for job creation and a stronger California economy.</p>
 				</article>
 				<div class="project-detail">
+
 					<i class="icon icon-close"><svg><use xlink:href="assets/icons.svg#icon-close"></use></svg></i>
+
 					<div class="project-detail__header">
 						<h2 class="project-detail__title">Proposal Builder</h2>
 						<hr>
@@ -137,52 +196,111 @@
 						</div>
 					</div>
 					<div class="project-detail__body">
+
 						<h3>Process</h3>
+
+
 						<p>This was easily the most complex project I've ever worked on. Working with a small team, we had a short timeframe to release an MVP UI showcasing a functional proposal creation process. In the beginning, a lot of our time was spent simply trying
 							to wrap our heads around the problem, and all the details and considerations involved. Working close to the state government level meant having to understand multiple hierarchies, nomenclature, different data sources, and competing policies and
 							goals from each community college.</p>
+
+
+
+
+
 						<div class="project-detail__image">
 							<img src="assets&#x2F;proposal&#x2F;proposal-whiteboard.jpg" alt="Whiteboard with ideas and UI sketches">
 							<span class="project-detail__image-caption">Trying to figure how to wade through the overwhelming complexity.</span>
 						</div>
+
+
+
 						<p>We centered early UI concepts around the idea of breaking down the UI into manageable chunks, and separating each step into its own breadcrumb. The UI would walk you through each step, rather than hitting you in the face with a giant form. The breadcrumbs
 							also provide context and situational awareness. Where am I? How much more is left? Did I do this part yet?</p>
+
+
+
+
+
 						<div class="project-detail__image">
 							<img src="assets&#x2F;proposal&#x2F;proposal-wireframe.jpg" alt="Wireframe mockup for proposal UI">
 							<span class="project-detail__image-caption">Early layout UI wireframe.</span>
 						</div>
+
+
+
 						<p>With a rough outline in place, and requirements changing left and right, I started focusing on the pieces I knew would remain constant and gathered a list of UI components we would likely need. One advantage of designing 'atomically' is that you
 							can still make headway even as the product requirements are still coming into focus.</p>
+
+
+
+
+
 						<div class="project-detail__image">
 							<img src="assets&#x2F;proposal&#x2F;proposal-sketches.jpg" alt="UI sketches">
 							<span class="project-detail__image-caption">Early layout concepts and inventory of required UI components.</span>
 						</div>
+
+
+
 						<p>My next step was to begin building out the modular components in PatternLab so would could get something in front of the client as quickly as possible and gather feedback. Once I had my bucket of LEGOs so to speak, I could start plugging and playing.
 							Each component was written as a template in Mustache, allowing me to pass dummy data via JSON into the UI to test how it would hold up.</p>
+
+
+
+
+
 						<div class="project-detail__image">
 							<img src="assets&#x2F;proposal&#x2F;proposal-patternlab.jpg" alt="Components in the PatternLab UI.">
 							<span class="project-detail__image-caption">Disparate components floating around in the PatternLab UI, before being assembled into patterns.</span>
 						</div>
+
+
+
 						<p>This pattern-based approach to design proved incredibly useful when it came to iterating and improving the prototype with the client. For demos, we pulled the repository and ran it on a local server, giving us a link to share with the client to
 							click through and interact with the prototype. Because each pattern was templated and set up with the proper class names and structure, I could easily make content changes to JSON files during meetings, which would instantly update the underlying
 							patterns. This proved to be invaluable, as labels and dropdowns and cards were constantly changing and adapting as we worked with users.</p>
+
+
+
+
 						<p>An unexpected side effect of protoyping in the browser was that people we showed it to often thought the protoype <strong>was</strong> the final product. While we were able to get great feedback early, we also had to educate the client on the nuances
 							of how software is built. Software doesn't follow the normal rules when it comes to visible progress -- there is much more involved that is invisible. A database schema, API design, AWS architecture all tend to go unnoticed in a demo where all
 							eyes are trained on the UI. So from the surface, it sometimes appeared as if progress was slowing, even though it wasn't. I think this is a helpful lesson that reveals a lot about how human beings perceive software. The interface is the product,
 							and the product is the brand. This is another reason why consistency, predictability, and ease of use are so important in UI design.</p>
+
+
+
+
+
 						<div class="project-detail__image">
 							<img src="assets&#x2F;proposal&#x2F;proposal-budget.jpg" alt="Budget page UI">
 							<span class="project-detail__image-caption">Budget page.</span>
 						</div>
+
+
+
+
 						<div class="project-detail__image">
 							<img src="assets&#x2F;proposal&#x2F;proposal-metrics.jpg" alt="Metrics page UI">
 							<span class="project-detail__image-caption">Metrics page.</span>
 						</div>
+
+
+
+
+
 						<div class="project-detail__video">
 							<iframe src="https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;210014070?autoplay&#x3D;1&amp;loop&#x3D;1&amp;title&#x3D;0&amp;byline&#x3D;0&amp;portrait&#x3D;0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 						</div>
+
+
 						<p>Ultimately, we shipped on time, began beta testing, and spent a few months squashing bugs and iterating on user feedback. The main launch was so successful that the scope of work rapidly expanded beyond 'proposal creation' as stakeholders were looking
 							to add more functionality and services. Moving forward, existing patterns will have to be evaluated to see how they hold up against a new wave of user goals and broader contexts.</p>
+
+
+
+
 					</div>
 				</div>
 				<article class="teaser">
@@ -190,7 +308,9 @@
 					<p class="teaser__description">Description for the project goes right here.</p>
 				</article>
 				<div class="project-detail">
+
 					<i class="icon icon-close"><svg><use xlink:href="assets/icons.svg#icon-close"></use></svg></i>
+
 					<div class="project-detail__header">
 						<h2 class="project-detail__title">Restaurant Finder</h2>
 						<hr>
@@ -208,7 +328,10 @@
 						</div>
 					</div>
 					<div class="project-detail__body">
+
 						<h3>Process</h3>
+
+
 					</div>
 				</div>
 			</section>

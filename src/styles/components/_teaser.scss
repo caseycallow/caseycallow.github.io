@@ -6,10 +6,10 @@
 }
 
 .teaser {
-  max-width: 25rem;
   flex-basis: 50%;
   cursor: pointer;
-  padding: $base-spacing;
+  padding: $base-spacing/1.25;
+  margin: 0 0 $small-spacing;
   border-radius: $base-border-radius;
   transition: $base-transition;
   transform: rotateZ(360deg); //hardware acceleration
