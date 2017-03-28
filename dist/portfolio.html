@@ -85,13 +85,13 @@
 							<span class="project-detail__image-caption">Atomic design. Breaking each element down into modular components before coding it up in the browser.</span>
 						</div>
 						<p>The dashboard was designed to feel like a single page app with a flat information hierarchy. Both the creation form and the detail overlay controls slide over the dashboard page without completely obscuring it where clicking outside the panel dismisses
-							it. I struggled with several ideas before landing on this. Should the app detail go to a new page? If it doesn&#39;t, how do I create a sense of layering without making it a modal? Does it work on a phone? Eventually, I landed on this drawer-style
+							it. I struggled with several ideas before landing on this. Should the app detail go to a new page? If it doesn't, how do I create a sense of layering without making it a modal? Does it work on a phone? Eventually, I landed on this drawer-style
 							UI which eliminated the need for any signposting “you are here” UI, and back button, or page reloading by creating a strong sense of vertical layering. I also knew our Angular developers would be able to update any page component without fully
 							refreshing the page.</p>
-						<p>At this point, I had a clear enough idea to start designing in the browser using PatternLab. Jumping into code early and not restricting myself to a set &#39;whiteboard -&gt; mockup -&gt; code&#39; process allowed for the flowing of creative ideas
-							and the ability to validate design decisions quickly. I could now test how the design held up on different browser widths and devices, and start introducing animation and state to the UI.</p>
-						<p>Getting into code earlier also meant our developers could start hooking up the UI to the API faster, even though it wasn&#39;t fully complete. As I built features and components, the team would update the production app, and we could see the final
-							product take shape much faster than if we had taken a more waterfall-like approach.</p>
+						<p>At this point, I had a clear enough idea to start designing in the browser using PatternLab. Jumping into code early and not restricting myself to a set 'whiteboard -> mockup -> code' process allowed for the flowing of creative ideas and the ability
+							to validate design decisions quickly. I could now test how the design held up on different browser widths and devices, and start introducing animation and state to the UI.</p>
+						<p>Getting into code earlier also meant our developers could start hooking up the UI to the API faster, even though it wasn't fully complete. As I built features and components, the team would update the production app, and we could see the final product
+							take shape much faster than if we had taken a more waterfall-like approach.</p>
 						<div class="project-detail__image">
 							<img src="assets&#x2F;dashboard&#x2F;dashboard-home.png" alt="Dashboard homepage">
 							<span class="project-detail__image-caption">Final implementation of homepage.</span>
@@ -124,7 +124,7 @@
 						<div class="project-detail__section">
 							<h3>Overview</h3>
 							<p>We worked with a program associated the California Community Colleges to help streamline the process of creating, distributing, and tracking funding proposals for new grants and educational resources. Most of the proposal creation process was happening
-								either offline or using free online tools, so keeping track of proposal data was nearly impossible. The state needed this data in order to monitor the success of collegiate programs to more appropriately allocate resources, and to hopefully prepare
+								either offline or using free online tools, so keeping track of proposal data was nearly impossible. The state needed this data in order to monitor the success of academic programs to more appropriately allocate resources, and to hopefully prepare
 								our future workforce for emerging job demands.</p>
 						</div>
 						<div class="project-detail__section">
@@ -133,16 +133,17 @@
 						</div>
 						<div class="project-detail__section">
 							<h3>Tools</h3>
-							<p>Whiteboard, Sketch, PatternLab, Sass (BEM), Mustache, jQuery, Gulp</p>
+							<p>Whiteboard, Sketch, PatternLab, Sass (BEM), Mustache, jQuery, Gulp.</p>
 						</div>
 					</div>
 					<div class="project-detail__body">
 						<h3>Process</h3>
-						<p>This was easily the most complex project I&#39;ve ever had the pleasure of working on. Working with a small team, we had roughly 2 months to build an MVP UI showcasing the proposal creation process. In the beginning, a lot of our time was spent
-							simply trying to wrap our heads around the problem, and all the details and considerations involved.</p>
+						<p>This was easily the most complex project I've ever worked on. Working with a small team, we had a short timeframe to release an MVP UI showcasing a functional proposal creation process. In the beginning, a lot of our time was spent simply trying
+							to wrap our heads around the problem, and all the details and considerations involved. Working close to the state government level meant having to understand multiple hierarchies, nomenclature, different data sources, and competing policies and
+							goals from each community college.</p>
 						<div class="project-detail__image">
 							<img src="assets&#x2F;proposal&#x2F;proposal-whiteboard.jpg" alt="Whiteboard with ideas and UI sketches">
-							<span class="project-detail__image-caption">Trying to figure how to organize the overwhelming complexity.</span>
+							<span class="project-detail__image-caption">Trying to figure how to wade through the overwhelming complexity.</span>
 						</div>
 						<p>We centered early UI concepts around the idea of breaking down the UI into manageable chunks, and separating each step into its own breadcrumb. The UI would walk you through each step, rather than hitting you in the face with a giant form. The breadcrumbs
 							also provide context and situational awareness. Where am I? How much more is left? Did I do this part yet?</p>
@@ -150,28 +151,38 @@
 							<img src="assets&#x2F;proposal&#x2F;proposal-wireframe.jpg" alt="Wireframe mockup for proposal UI">
 							<span class="project-detail__image-caption">Early layout UI wireframe.</span>
 						</div>
-						<p>With a rough outline in place, and requirements changing left and right, I started focusing on the pieces I knew would remain constant and gathered a list of UI components we would likely need. One advantage of designing &#39;atomically&#39; is
-							that you can still make headway even as the product requirements are still coming into focus.</p>
+						<p>With a rough outline in place, and requirements changing left and right, I started focusing on the pieces I knew would remain constant and gathered a list of UI components we would likely need. One advantage of designing 'atomically' is that you
+							can still make headway even as the product requirements are still coming into focus.</p>
 						<div class="project-detail__image">
 							<img src="assets&#x2F;proposal&#x2F;proposal-sketches.jpg" alt="UI sketches">
 							<span class="project-detail__image-caption">Early layout concepts and inventory of required UI components.</span>
 						</div>
-						<p>My next step was to begin building out the modular components in PatternLab so would could get something in front of the client as quickly as possible and gather feedback.</p>
+						<p>My next step was to begin building out the modular components in PatternLab so would could get something in front of the client as quickly as possible and gather feedback. Once I had my bucket of LEGOs so to speak, I could start plugging and playing.
+							Each component was written as a template in Mustache, allowing me to pass dummy data via JSON into the UI to test how it would hold up.</p>
 						<div class="project-detail__image">
-							<img src="assets&#x2F;proposal&#x2F;proposal-description.jpg" alt="">
-							<span class="project-detail__image-caption">Description page.</span>
+							<img src="assets&#x2F;proposal&#x2F;proposal-patternlab.jpg" alt="Components in the PatternLab UI.">
+							<span class="project-detail__image-caption">Disparate components floating around in the PatternLab UI, before being assembled into patterns.</span>
 						</div>
+						<p>This pattern-based approach to design proved incredibly useful when it came to iterating and improving the prototype with the client. For demos, we pulled the repository and ran it on a local server, giving us a link to share with the client to
+							click through and interact with the prototype. Because each pattern was templated and set up with the proper class names and structure, I could easily make content changes to JSON files during meetings, which would instantly update the underlying
+							patterns. This proved to be invaluable, as labels and dropdowns and cards were constantly changing and adapting as we worked with users.</p>
+						<p>An unexpected side effect of protoyping in the browser was that people we showed it to often thought the protoype <strong>was</strong> the final product. While we were able to get great feedback early, we also had to educate the client on the nuances
+							of how software is built. Software doesn't follow the normal rules when it comes to visible progress -- there is much more involved that is invisible. A database schema, API design, AWS architecture all tend to go unnoticed in a demo where all
+							eyes are trained on the UI. So from the surface, it sometimes appeared as if progress was slowing, even though it wasn't. I think this is a helpful lesson that reveals a lot about how human beings perceive software. The interface is the product,
+							and the product is the brand. This is another reason why consistency, predictability, and ease of use are so important in UI design.</p>
 						<div class="project-detail__image">
-							<img src="assets&#x2F;proposal&#x2F;proposal-budget.jpg" alt="">
+							<img src="assets&#x2F;proposal&#x2F;proposal-budget.jpg" alt="Budget page UI">
 							<span class="project-detail__image-caption">Budget page.</span>
 						</div>
 						<div class="project-detail__image">
-							<img src="assets&#x2F;proposal&#x2F;proposal-metrics.jpg" alt="">
+							<img src="assets&#x2F;proposal&#x2F;proposal-metrics.jpg" alt="Metrics page UI">
 							<span class="project-detail__image-caption">Metrics page.</span>
 						</div>
 						<div class="project-detail__video">
 							<iframe src="https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;210014070?autoplay&#x3D;1&amp;loop&#x3D;1&amp;title&#x3D;0&amp;byline&#x3D;0&amp;portrait&#x3D;0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 						</div>
+						<p>Ultimately, we shipped on time, began beta testing, and spent a few months squashing bugs and iterating on user feedback. The main launch was so successful that the scope of work rapidly expanded beyond 'proposal creation' as stakeholders were looking
+							to add more functionality and services. Moving forward, existing patterns will have to be evaluated to see how they hold up against a new wave of user goals and broader contexts.</p>
 					</div>
 				</div>
 				<article class="teaser">
