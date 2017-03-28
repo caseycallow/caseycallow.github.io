@@ -12,6 +12,7 @@
   right: 0;
   transition: all 0.25s ease;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   z-index: 1;
   box-shadow: $base-box-shadow-left;
   &.js-show-detail {
