@@ -67,18 +67,6 @@
   ],
   "prototypeVideo": [
     {
-      "class": "book-reviews",
-      "src": "https://player.vimeo.com/video/200289904?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-    },
-    {
-      "class": "time-tracker",
-      "src": "https://player.vimeo.com/video/200289219?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-    },
-    {
-      "class": "wardrobe-mgmt",
-      "src": "https://player.vimeo.com/video/200288005?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-    },
-    {
       "class": "restaurant-finder",
       "src": "https://player.vimeo.com/video/198791350?autoplay=1&loop=1&title=0&byline=0&portrait=0"
     }
@@ -272,6 +260,7 @@
       ]
     },
     {
+      "prototype": true,
       "title": "Restaurant Finder",
       "description": "A fun mobile prototype for searching for restaurants.",
       "overview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, reprehenderit nobis odit magnam ad expedita quod iusto quaerat corporis consectetur.",

@@ -38,8 +38,14 @@ $('.teaser').click(function(){
   $(this).next('.project-detail').addClass('js-show-detail');
 });
 
-// collapse teaser when close icon clicked
+// collapse teaser when close icon clicked, hide video prototype
 $('.icon-close').click(function(e){
   e.stopPropagation();
   $(this).parents('.project-detail').removeClass('js-show-detail');
+  $(this).parents('.main').find('.proto-vid').removeClass('is-playing');
+});
+
+// open prototype video when open case study
+$('.teaser--prototype').click(function(){
+  $(this).parents('.main').find('.proto-vid').addClass('is-playing');
 });
