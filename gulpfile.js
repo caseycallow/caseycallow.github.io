@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var bs = require('browser-sync');
 var mustache = require('gulp-mustache');
-var htmlbeautify = require('gulp-html-beautify');
+var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var fs  = require('fs');
@@ -34,7 +34,7 @@ gulp.task('mustache', function() {
   var pages = 'src/templates/{index,portfolio}.mustache'
   gulp.src(pages)
     .pipe(mustache(data, {extension: '.html'}))
-    .pipe(htmlbeautify({indent_with_tabs: true}))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('./dist'));
 });
 
