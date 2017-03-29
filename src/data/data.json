@@ -273,7 +273,15 @@
     },
     {
       "title": "Restaurant Finder",
-      "description": "Description for the project goes right here."
+      "description": "A fun mobile prototype for searching for restaurants.",
+      "overview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, reprehenderit nobis odit magnam ad expedita quod iusto quaerat corporis consectetur.",
+      "role": "UX, UI design, interactive prototyping.",
+      "tools": "Whiteboard, Sketch, Flinto.",
+      "body": [
+        {
+          "paragraph": "This is a paragraph"
+        }
+      ]
     }
   ]
 }
