@@ -26,7 +26,7 @@
       transition: $base-transition;
       &:hover, &.active {
         color: $base-font-color;
-        border-bottom: 3px solid $primary-color;
+        border-bottom: 3px solid $action-color;
       }
       @include breakpoint(medium) {
         flex: 1;
