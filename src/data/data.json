@@ -13,11 +13,11 @@
     "portfolioActive": true
   },
   "about": {
-    "title": "Casey Callow is a product designer, prototyper, and UX engineer with an affinity for design systems.",
-    "description": "He also feels disingenuous referring to himself in the third person, so he put this phone here to let you pretend to talk to him."
+    "title": "I'm Casey Callow, a product designer and UX engineer.",
+    "description": "I love design systems, frontend code, and solving meaningful problems with design. If you'd like to chat further, reach out on the social network of your choosing below, or text me."
   },
   "navBar": {
-    "label": "Casey Callow",
+    "label": "Casey",
     "imgSrc": "assets/profile-pic.png"
   },
   "iconWifi": [
