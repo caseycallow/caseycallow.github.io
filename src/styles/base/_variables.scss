@@ -27,7 +27,7 @@ $base-z-index: 0;
 $header-height: 5rem;
 
 //Colors
-$blue: #1E92F8;
+$blue: #055dab;
 $red: #e80202;
 $green: #009c2b;
 $yellow: #e8a000;
@@ -35,14 +35,14 @@ $dark-gray: #333;
 $medium-dark-gray: #666;
 $medium-gray: #999;
 $light-gray: #d7d7d7;
-$primary-color: #2f2f46;
+$primary-color: $blue;
 $primary-color-darker: darken($primary-color, 15%);
 $primary-color-gradient: linear-gradient(275deg, $primary-color 0%, $primary-color-darker 100%);
 
 //Font Colors
 $base-font-color: whitesmoke;
 $heading-color: white;
-$action-color: $blue;
+$action-color: $primary-color;
 
 //Border
 $base-border-color: $light-gray;
