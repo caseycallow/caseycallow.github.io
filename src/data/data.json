@@ -268,7 +268,7 @@
       "tools": "Whiteboard, Sketch, Flinto.",
       "body": [
         {
-          "paragraph": "Para para, paragraph"
+          "paragraph": "Early sketching and diagramming centered around workflow. What decisions am I making for search? What do I want to do once I see the restaurant results? Most people have a pretty clear idea what qualities they are looking for in a place to eat, but don't want to spend time fussing with filter controls or advanced search pages, especially on a phone or on the go."
         },
         {
           "image": [
@@ -278,6 +278,12 @@
               "caption": "Workflow diagram. Defining the best pathway through the experience before beginning to build UI."
             }
           ]
+        },
+        {
+          "paragraph": "Swiping has become a ubiquitous user interaction paradigm on mobile for a number of reasons. It's fast and intuitive if used appropriately, and generally requires less precision than a tap on a small target area. These usability differences are magnified on a smaller device; people using a phone are usually multitasking, walking around, talking to someone else, or outside in the sun where precise, tap interactions are much harder to use."
+        },
+        {
+          "paragraph": "I spent time exploring what a swipe for a filter selection might look like. If I am simply making a choice between two items on screen, does it make sense to push something off the screen? Instead, I landed on a model for expanding half of the page as a way of choosing an item. Once filling the screen, it could automatically collapse upward, adding to a growing queue of selected filters. It was an interaction that was almost impossible to visualize without animation and gestures so I mocked it up in Sketch and brought it over to Flinto to prototype."
         },
         {
           "image": [
@@ -291,6 +297,18 @@
         {
           "image": [
             {
+              "src": "assets/restaurant/restaurant-screens.png",
+              "alt": "Mockup app screens.",
+              "caption": "Mockup screens designed in Sketch."
+            }
+          ]
+        },
+        {
+          "paragraph": "Using Flinto allowed me to get a clearer sense for how panels should visually collapse and stack. It also helped spark a few ideas for transitioning between the filter view and the card view. This is another example of how working purely in static tools like Photoshop or Sketch can limit ideation, and restrict UI ideas to something more static, even though our interfaces are inherently dynamic."
+        },
+        {
+          "image": [
+            {
               "src": "assets/restaurant/restaurant-prototype.png",
               "alt": "Screenshot of Flinto prototype screens.",
               "caption": "Linking up screens in Flinto before animating transitions."
@@ -298,13 +316,7 @@
           ]
         },
         {
-          "image": [
-            {
-              "src": "assets/restaurant/restaurant-screens.png",
-              "alt": "",
-              "caption": ""
-            }
-          ]
+          "paragraph": "This project was scoped to a simple prototype and was delivered on time. Had we been responsible for implementation, I would be asking an entirely different set of questions beyond interface design and usability. Where does this restaurant data come from? Does Yelp have an API we can pull from? How do our filters (lively vs. intimate) map to their category tags? Why use this app over another food search application? What does this app/company sell and how does it make money? Business and engineering constraints are equally as important as design constraints and would need to be factored into the design to turn it into a feasible product."
         }
       ]
     }
