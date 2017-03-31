@@ -38,7 +38,7 @@
       width: 2.5rem;
     }
     &:hover {
-      background: $primary-color;
+      background: $primary-color-lighter;
       border-radius: 50%;
     }
     @include breakpoint(small) {

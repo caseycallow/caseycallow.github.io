@@ -4,7 +4,7 @@ body {
   font-feature-settings: "kern", "liga", "pnum";
   font-size: $base-font-size;
   line-height: $base-line-height;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.04rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,7 +30,7 @@ h4 {
 }
 
 p {
-  margin: 0 0 $small-spacing;
+  margin: 0 0 $base-spacing;
 }
 
 a {

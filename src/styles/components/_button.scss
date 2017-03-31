@@ -1,0 +1,20 @@
+.btn {
+  font-family: $heading-font-family;
+  padding: $small-spacing/1.25;
+  background: $primary-color-lighter;
+  border: none;
+  border-radius: $base-border-radius;
+  color: $base-font-color;
+  letter-spacing: 1px;
+  font-size: $base-font-size*0.8;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto $small-spacing;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: $base-transition;
+  &:hover, &:active {
+    box-shadow: none;
+  }
+}

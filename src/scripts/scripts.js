@@ -39,7 +39,7 @@ $('.teaser').click(function(){
 });
 
 // collapse teaser when close icon clicked, hide video prototype
-$('.icon-close').click(function(e){
+$('.icon-close, .js-close-detail').click(function(e){
   e.stopPropagation();
   $(this).parents('.project-detail').removeClass('js-show-detail');
   $(this).parents('.main').find('.proto-vid').removeClass('is-playing');
