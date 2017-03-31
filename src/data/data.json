@@ -262,13 +262,49 @@
     {
       "prototype": true,
       "title": "Restaurant Finder",
-      "description": "A fun mobile prototype for searching for restaurants.",
-      "overview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, reprehenderit nobis odit magnam ad expedita quod iusto quaerat corporis consectetur.",
+      "description": "A mobile app for finding restaurants on the go.",
+      "overview": "The client had a rough concept for a mobile application to find nearby bars and restaurants based on filtering by attributes. Are you looking for a drink or food? Want to eat light or are you starving? Expensive or affordable? The idea was to build an app around these quick binary decisions, and present an array of options to vote on, contact, view a menu, or share.",
       "role": "UX, UI design, interactive prototyping.",
       "tools": "Whiteboard, Sketch, Flinto.",
       "body": [
         {
-          "paragraph": "This is a paragraph"
+          "paragraph": "Para para, paragraph"
+        },
+        {
+          "image": [
+            {
+              "src": "assets/restaurant/restaurant-workflow.jpg",
+              "alt": "Workflow diagram.",
+              "caption": "Workflow diagram. Defining the best pathway through the experience before beginning to build UI."
+            }
+          ]
+        },
+        {
+          "image": [
+            {
+              "src": "assets/restaurant/restaurant-interaction.png",
+              "alt": "Interaction model for how panels should slide and collapse.",
+              "caption": "Interaction model for how panels should slide and collapse."
+            }
+          ]
+        },
+        {
+          "image": [
+            {
+              "src": "assets/restaurant/restaurant-prototype.png",
+              "alt": "Screenshot of Flinto prototype screens.",
+              "caption": "Linking up screens in Flinto before animating transitions."
+            }
+          ]
+        },
+        {
+          "image": [
+            {
+              "src": "assets/restaurant/restaurant-screens.png",
+              "alt": "",
+              "caption": ""
+            }
+          ]
         }
       ]
     }
