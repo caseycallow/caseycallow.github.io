@@ -31,7 +31,6 @@ body {
 
 .main-content {
   order: 1;
-  pointer-events: none;
   padding-left: $small-spacing;
   @include breakpoint(medium) {
     justify-content: center;
