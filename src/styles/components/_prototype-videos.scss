@@ -6,7 +6,9 @@
   height: 670px;
   opacity: 0;
   transition: all 0.5s ease;
+  pointer-events: none;
   &.is-playing {
     opacity: 1;
+    pointer-events: auto;
   }
 }
