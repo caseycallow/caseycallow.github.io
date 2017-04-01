@@ -171,7 +171,7 @@
     {
       "title": "Proposal Builder",
       "description": "A system to streamline the creation of funding proposals for job creation and a stronger California economy.",
-      "overview": "We worked with a program associated the California Community Colleges to help streamline the process of creating, distributing, and tracking funding proposals for new grants and educational resources. Most of the proposal creation process was happening either offline or using free online tools, so keeping track of proposal data was nearly impossible. The state needed this data in order to monitor the success of academic programs to more appropriately allocate resources, and to hopefully prepare our future workforce for emerging job demands.",
+      "overview": "We worked with a program associated with the California Community Colleges to help streamline the process of creating, distributing, and tracking funding proposals for new grants and educational resources. Most of the proposal creation process was happening either offline or using free online tools, so keeping track of proposal data was nearly impossible. The state needed this data in order to monitor the success of academic programs to more appropriately allocate resources, and to hopefully prepare our future workforce for emerging job demands.",
       "role": "Design strategy, UI design, prototyping, HTML/CSS.",
       "tools": "Whiteboard, Sketch, PatternLab, Sass (BEM), Mustache, jQuery, Gulp.",
       "body": [
@@ -188,7 +188,7 @@
           ]
         },
         {
-          "paragraph": "We centered early UI concepts around the idea of breaking down the UI into manageable chunks, and separating each step into its own breadcrumb. The UI would walk you through each step, rather than hitting you in the face with a giant form. The breadcrumbs also provide context and situational awareness. Where am I? How much more is left? Did I do this part yet?"
+          "paragraph": "We centered early UI concepts around the idea of breaking down the UI into manageable chunks, and separating each step into its own breadcrumb. The UI walks you through each step, rather than hitting you in the face with a giant form. The breadcrumbs also provide context and situational awareness. Where am I? How much more is left? Did I do this part yet?"
         },
         {
           "image": [
@@ -212,7 +212,7 @@
           ]
         },
         {
-          "paragraph": "My next step was to begin building out the modular components in PatternLab so would could get something in front of the client as quickly as possible and gather feedback. Once I had my bucket of LEGOs so to speak, I could start plugging and playing. Each component was written as a template in Mustache, allowing me to pass dummy data via JSON into the UI to test how it would hold up."
+          "paragraph": "My next step was to begin building out the modular components in PatternLab so we could get something in front of the client as quickly as possible and gather feedback. Once I had my bucket of LEGOs so to speak, I could start plugging and playing. Each component was written as a template in Mustache, allowing me to pass dummy data via JSON into the UI to test how it would hold up."
         },
         {
           "image": [
@@ -224,10 +224,10 @@
           ]
         },
         {
-          "paragraph": "This pattern-based approach to design proved incredibly useful when it came to iterating and improving the prototype with the client. For demos, we pulled the repository and ran it on a local server, giving us a link to share with the client to click through and interact with the prototype. Because each pattern was templated and set up with the proper class names and structure, I could easily make content changes to JSON files during meetings, which would instantly update the underlying patterns. This proved to be invaluable, as labels and dropdowns and cards were constantly changing and adapting as we worked with users."
+          "paragraph": "This pattern-based approach to design proved incredibly useful when it came to iterating and improving the prototype with the client. For demos, we ran it on a local server so the client could interact and click through the prototype. Because each pattern was templated and set up with the proper class names and structure, I could easily make content changes to JSON files during meetings, which would instantly update the underlying patterns. This proved to be invaluable, as labels, dropdowns and titles were constantly changing and adapting as we worked with users."
         },
         {
-          "paragraph": "An unexpected side effect of protoyping in the browser was that people we showed it to often thought the protoype <strong>was</strong> the final product. While we were able to get great feedback early, we also had to educate the client on the nuances of how software is built. Software doesn't follow the normal rules when it comes to visible progress -- there is much more involved that is invisible. A database schema, API design, AWS architecture all tend to go unnoticed in a demo where all eyes are trained on the UI. So from the surface, it sometimes appeared as if progress was slowing, even though it wasn't. I think this is a helpful lesson that reveals a lot about how human beings perceive software. The interface is the product, and the product is the brand. This is another reason why consistency, predictability, and ease of use are so important in UI design."
+          "paragraph": "An unexpected side effect of protoyping in the browser was people we showed it to often thought the protoype <strong>was</strong> the final product. While we were able to get great feedback early, we also had to educate the client on the nuances of how software is built. Software doesn't follow the normal rules when it comes to visible progress -- there is much more involved that is invisible. A database schema, API design, AWS architecture all tend to go unnoticed in a demo where all eyes are trained on the UI. So from the surface, it sometimes appeared as if progress was slowing, even though it wasn't. This is a helpful lesson that reveals a lot about how human beings perceive software. The interface is the product, and the product is the brand. This is why consistency, predictability, and ease of use are so important in UI design."
         },
         {
           "image": [
@@ -263,7 +263,7 @@
       "prototype": true,
       "title": "Restaurant Finder",
       "description": "A mobile app for finding restaurants on the go.",
-      "overview": "The client had a rough concept for a mobile application to find nearby bars and restaurants based on filtering by attributes. Are you looking for a drink or food? Want to eat light or are you starving? Expensive or affordable? The idea was to build an app around these quick binary decisions, and present an array of options to vote on, contact, view a menu, or share.",
+      "overview": "The client had a rough concept for a mobile application to find nearby restaurants and bars by filtering by attributes. Are you looking for a drink or food? Want to eat light or are you starving? Expensive or affordable? The idea was to prototype an app around these quick binary decisions, and present an array of options to vote on, contact, view a menu, or share.",
       "role": "UX, UI design, interactive prototyping.",
       "tools": "Whiteboard, Sketch, Flinto.",
       "body": [
@@ -280,10 +280,10 @@
           ]
         },
         {
-          "paragraph": "Swiping has become a ubiquitous user interaction paradigm on mobile for a number of reasons. It's fast and intuitive if used appropriately, and generally requires less precision than a tap on a small target area. These usability differences are magnified on a smaller device; people using a phone are usually multitasking, walking around, talking to someone else, or outside in the sun where precise, tap interactions are much harder to use."
+          "paragraph": "Swiping has become a ubiquitous user interaction paradigm on mobile for a number of reasons. It's fast and intuitive if used appropriately, and generally requires less precision than a tap on a small target area. These usability differences are magnified on a smaller device; people using a phone are usually multitasking, walking around, talking to someone else, or outside in the sun where precise tapping interactions are much harder to use."
         },
         {
-          "paragraph": "I spent time exploring what a swipe for a filter selection might look like. If I am simply making a choice between two items on screen, does it make sense to push something off the screen? Instead, I landed on a model for expanding half of the page as a way of choosing an item. Once filling the screen, it could automatically collapse upward, adding to a growing queue of selected filters. It was an interaction that was almost impossible to visualize without animation and gestures so I mocked it up in Sketch and brought it over to Flinto to prototype."
+          "paragraph": "I spent time exploring what a swipe for a filter selection might look like. If I am simply making a choice between two items on screen, does it make sense to push something off the screen? Instead, I landed on a model for expanding half of the page as a way of selecting an item. Once filling the screen, it could automatically collapse upward, adding to a growing queue of selected filters. It was an interaction that was almost impossible to visualize without animation and gestures so I mocked it up in Sketch and brought it over to Flinto to prototype."
         },
         {
           "image": [
