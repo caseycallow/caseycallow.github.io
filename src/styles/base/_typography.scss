@@ -69,3 +69,7 @@ label {
   border: none;
   font-weight: bold;
 }
+
+::selection {
+  background: $primary-color-lighter;
+}
