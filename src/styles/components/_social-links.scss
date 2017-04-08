@@ -1,11 +1,13 @@
-$number-of-icons: 7;
-
 .social-links {
+
+  $number-of-icons: 7;
+
   display: flex;
   align-items: center;
   margin: $base-spacing 0 0;
   padding: 0;
   list-style: none;
+
   &__item {
     opacity: 0;
     margin: 0 $base-spacing/1.5 0 0;
@@ -17,6 +19,7 @@ $number-of-icons: 7;
         animation-delay: 500ms + $i * 100ms;
       }
     }
+
     &:hover {
       transform: rotate(360deg);
     }
@@ -29,6 +32,7 @@ $number-of-icons: 7;
       margin: 0 $small-spacing/2 0 0;
     }
   }
+
   .icon {
     width: 2rem;
     height: 2rem;

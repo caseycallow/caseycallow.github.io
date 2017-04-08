@@ -41,8 +41,8 @@ $primary-color-lighter: lighten($primary-color, 15%);
 $primary-color-gradient: linear-gradient(275deg, $primary-color 0%, $primary-color-darker 100%);
 
 //Font Colors
-$base-font-color: whitesmoke;
-$heading-color: white;
+$base-font-color: #333;
+$heading-color: #333;
 $action-color: $primary-color;
 
 //Border
@@ -56,7 +56,7 @@ $base-box-shadow-left: -15px 0 25px rgba(0,0,0,0.3);
 $base-box-shadow-hover: 0 2px 5px rgba(0,0,0,0.1);
 
 //Background Colors
-$base-background-color: black;
+$base-background-color: white;
 $secondary-background-color: tint($base-border-color, 75%);
 
 //Forms
