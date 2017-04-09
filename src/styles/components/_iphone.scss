@@ -1,23 +1,25 @@
-$iphone-tilt-speed: 1s;
-$iphone-tilt-transition: all $iphone-tilt-speed ease;
-
 .iphone {
+
+  $background-color: #080808;
+  $background-color-light: lighten($background-color, 11%);
+  $background-color-lighter: lighten($background-color, 24%);
+  $tilt-speed: 1s;
+  $tilt-transition: all $tilt-speed ease;
+
   display: inline-block;
   position: relative;
-  transform: scale(0.7) perspective(550px) rotateX(-2deg) rotateY(7deg);
-  transition: $iphone-tilt-transition;
+  transform: scale(0.7) perspective(550px) rotateX(-2deg) rotateY(6deg);
+  transition: $tilt-transition;
   width: 375px;
   height: 667px;
   padding: 105px 24px;
   border-radius: 56px;
-  background: #464646;
-  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.7), 0 30px 100px black;
-  opacity: 0.9; //allow for brightening on hover
+  background: $background-color-lighter;
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.7), 0 10px 30px rgba(0, 0, 0, 0.5);
   &:hover {
     transform: scale(0.7); //preserve scale, remove other 3D transforms
-    opacity: 1; //subtle brightening on hover
     .iphone__home {
-    transform: rotate(100deg); //home button shimmer effect
+      transform: rotate(100deg); //home button shimmer effect
       &:before {
         opacity: 1;
       }
@@ -53,7 +55,7 @@ $iphone-tilt-transition: all $iphone-tilt-speed ease;
     content: '';
     left: 6px;
     border-radius: 50px;
-    background: #080808;
+    background: $background-color;
     z-index: 1;
     @include breakpoint(small) {
       border: 44px;
@@ -67,7 +69,7 @@ $iphone-tilt-transition: all $iphone-tilt-speed ease;
     content: '';
     left: 8px;
     border-radius: 48px;
-    box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 6px 3px #212121;
+    box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 6px 3px $background-color-light;
     z-index: 2;
     @include breakpoint(small) {
       border: 42px;
@@ -97,7 +99,7 @@ $iphone-tilt-transition: all $iphone-tilt-speed ease;
 
   &__top-bar, &__bottom-bar {
     height: 14px;
-    background: #212121;
+    background: $background-color-light;
     width: 100%;
     display: block;
     position: absolute;
@@ -122,7 +124,7 @@ $iphone-tilt-transition: all $iphone-tilt-speed ease;
   }
 
   &__volume, &__sleep {
-    background: #464646;
+    background: $background-color-lighter;
   }
 
   &__sleep {
@@ -167,7 +169,7 @@ $iphone-tilt-transition: all $iphone-tilt-speed ease;
   }
 
   &__camera {
-    background: #080808;
+    background: $background-color;
     width: 12px;
     height: 12px;
     position: absolute;
@@ -214,8 +216,8 @@ $iphone-tilt-transition: all $iphone-tilt-speed ease;
     margin-left: -34px;
     bottom: 22px;
     z-index: 3;
-    background: linear-gradient(135deg, #080808 0%, #464646 50%, #080808 100%);
-    transition: $iphone-tilt-transition;
+    background: linear-gradient(135deg, $background-color 0%, $background-color-lighter 50%, $background-color 100%);
+    transition: $tilt-transition;
     &:before {
       content: '';
       border-radius: inherit;
@@ -226,12 +228,12 @@ $iphone-tilt-transition: all $iphone-tilt-speed ease;
       margin-left: inherit;
       bottom: 0;
       z-index: -1;
-      background: linear-gradient(135deg, #080808 0%, #838383 50%, #080808 100%);
+      background: linear-gradient(135deg, $background-color 0%, #838383 50%, $background-color 100%);
       opacity: 0;
       transition: inherit;
     }
     &:after {
-      background: #080808;
+      background: $background-color;
       position: absolute;
       content: '';
       border-radius: 100%;
