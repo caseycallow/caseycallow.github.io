@@ -39,7 +39,7 @@
     left: 0;
     opacity: 0;
     transition: $base-transition;
-    background: $primary-color-gradient;
+    background: $base-background-color;
     z-index: -1;
     box-shadow: $base-box-shadow;
   }
