@@ -33,6 +33,6 @@ body {
   padding-left: $small-spacing;
   @include breakpoint(medium) {
     justify-content: center;
-    padding: $base-spacing $base-spacing 0;
+    padding: $small-spacing/1.5 $small-spacing 0;
   }
 }

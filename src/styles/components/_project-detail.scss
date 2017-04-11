@@ -11,7 +11,7 @@
   top: 0;
   right: 0;
   transition: all 0.25s ease;
-  overflow-y: scroll;
+  overflow: auto;
   -webkit-overflow-scrolling: touch; //enable intertial scrolling on mobile
   z-index: 1;
   box-shadow: $base-box-shadow-left;

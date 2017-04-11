@@ -27,10 +27,6 @@
     @include breakpoint(medium) {
       margin: 0 $small-spacing 0 0;
     }
-
-    @include breakpoint(small) {
-      margin: 0 $small-spacing/2 0 0;
-    }
   }
 
   .icon {

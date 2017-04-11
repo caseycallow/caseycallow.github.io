@@ -39,7 +39,7 @@ $('.teaser').click(function(){
 });
 
 // collapse teaser when close icon clicked, hide video prototype
-$('.icon-close, .js-close-detail').click(function(e){
+$('.icon-close').click(function(e){
   e.stopPropagation();
   $(this).parents('.project-detail').removeClass('is-open');
   $(this).parents('.main').find('.proto-vid').removeClass('is-playing');
@@ -48,4 +48,11 @@ $('.icon-close, .js-close-detail').click(function(e){
 // open prototype video when open case study
 $('.teaser--prototype').click(function(){
   $(this).parents('.main').find('.proto-vid').addClass('is-playing');
+});
+
+//Scroll to top -- doesnt work on mobile
+$('.js-scroll-top').click(function(){
+  $('.project-detail').animate({
+    scrollTop: 0
+  }, 'fast');
 });
