@@ -35,13 +35,13 @@ window.onload = function(){
 
 // expand teaser when clicked
 $('.teaser').click(function(){
-  $(this).next('.project-detail').addClass('js-show-detail');
+  $(this).next('.project-detail').addClass('is-open');
 });
 
 // collapse teaser when close icon clicked, hide video prototype
 $('.icon-close, .js-close-detail').click(function(e){
   e.stopPropagation();
-  $(this).parents('.project-detail').removeClass('js-show-detail');
+  $(this).parents('.project-detail').removeClass('is-open');
   $(this).parents('.main').find('.proto-vid').removeClass('is-playing');
 });
 

@@ -17,7 +17,7 @@
   box-shadow: $base-box-shadow-left;
 
   //open animation
-  &.js-show-detail {
+  &.is-open {
     transform: scale3d(1, 1, 1);
     animation: 'fadeIn' 0.4s;
     .project-detail__header, .project-detail__body {
