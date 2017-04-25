@@ -5,6 +5,13 @@
   {{/iconClose}}
 
   <div class="project-detail__header">
+
+    {{#banner}}
+    <div class="project-detail__banner">
+      <img src="{{src}}" alt="{{alt}}">
+    </div>
+    {{/banner}}
+
     <h2 class="project-detail__title">{{title}}</h2>
     <hr>
     <div class="project-detail__section">

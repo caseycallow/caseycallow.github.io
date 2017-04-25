@@ -28,24 +28,29 @@
   .icon-close {
     z-index: 2;
     position: absolute;
-    right: $base-spacing;
-    top: $base-spacing;
+    right: $small-spacing;
+    top: $small-spacing;
     cursor: pointer;
     transition: $base-transition;
     padding: $small-spacing/2;
     svg {
-      fill: $base-font-color;
+      fill: $base-background-color;
       height: 2.5rem;
       width: 2.5rem;
     }
     &:hover {
-      background: rgba(0, 0, 0, 0.05);
+      background: rgba($base-background-color, 0.1);
       border-radius: 50%;
     }
     @include breakpoint(small) {
       right: $small-spacing;
       top: $small-spacing;
     }
+  }
+
+  &__banner {
+    margin: 0 -$base-spacing;
+    margin-bottom: $small-spacing;
   }
 
   &__title {

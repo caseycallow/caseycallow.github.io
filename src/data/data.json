@@ -73,6 +73,12 @@
   ],
   "teaser": [
     {
+      "banner": [
+        {
+          "src": "assets/dashboard/dashboard-header.png",
+          "alt": "Dashboard mockup"
+        }
+      ],
       "title": "Deployment Dashboard",
       "description": "A deployment tool for developers and project managers to create, configure, and monitor new services and applications.",
       "overview": "Developers at a major academic journal company had no standardized or simple way to launch and configure services/applications for their company. Developers were spending lots of time setting up Github repos and managing configuration settings rather than focusing on development. Management needed a way to check the status of the product line. Our solution was to build a dashboard that aided in easy creation/configuration of new apps and services, and allow for a high-level view of the availability of all applications.",
@@ -170,6 +176,12 @@
     },
     {
       "prototype": true,
+      "banner": [
+        {
+          "src": "assets/restaurant/restaurant-header.png",
+          "alt": "Restaurant finder mockup"
+        }
+      ],
       "title": "Restaurant Finder",
       "description": "A mobile app for finding restaurants on the go.",
       "overview": "The client had a rough concept for a mobile application to find nearby restaurants and bars by filtering by attributes. Are you looking for a drink or food? Want to eat light or are you starving? Expensive or affordable? The idea was to prototype an app around these quick binary decisions, and present an array of options to vote on, contact, view a menu, or share.",
@@ -230,6 +242,12 @@
       ]
     },
     {
+      "banner": [
+        {
+          "src": "assets/proposal/proposal-header.png",
+          "alt": "Proposal builder mockup"
+        }
+      ],
       "title": "Proposal Builder",
       "description": "A system to streamline the creation of funding proposals for job creation and a stronger California economy.",
       "overview": "We worked with a program associated with the California Community Colleges to help streamline the process of creating, distributing, and tracking funding proposals for new grants and educational resources. Most of the proposal creation process was happening either offline or using free online tools, so keeping track of proposal data was nearly impossible. The state needed this data in order to monitor the success of academic programs to more appropriately allocate resources, and to hopefully prepare our future workforce for emerging job demands.",
