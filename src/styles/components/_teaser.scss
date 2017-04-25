@@ -1,4 +1,5 @@
 .teaser-section {
+  pointer-events: auto;
   @include breakpoint(medium) {
     width: 100%;
   }

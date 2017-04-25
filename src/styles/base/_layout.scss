@@ -31,6 +31,7 @@ body {
 .main-content {
   order: 1;
   padding-left: $small-spacing;
+  pointer-events: none; //fixes click-through bug on Firefox
   @include breakpoint(medium) {
     justify-content: center;
     padding: $small-spacing/1.5 $small-spacing 0;
