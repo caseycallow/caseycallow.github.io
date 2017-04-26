@@ -75,6 +75,103 @@
     {
       "banner": [
         {
+          "src": "assets/proposal/proposal-header.png",
+          "alt": "Proposal builder mockup"
+        }
+      ],
+      "title": "Proposal Builder",
+      "description": "A system to streamline the creation of funding proposals for job creation and a stronger California economy.",
+      "overview": "We worked with a program associated with the California Community Colleges to help streamline the process of creating, distributing, and tracking funding proposals for new grants and educational resources. Most of the proposal creation process was happening either offline or using free online tools, so keeping track of proposal data was nearly impossible. The state needed this data in order to monitor the success of academic programs to more appropriately allocate resources, and to hopefully prepare our future workforce for emerging job demands.",
+      "role": "Design strategy, UI design, prototyping, HTML/CSS.",
+      "tools": "Whiteboard, Sketch, PatternLab, Sass (BEM), Mustache, jQuery, Gulp.",
+      "body": [
+        {
+          "paragraph": "This was easily the most complex project I've ever worked on. Working with a small team, we had a short timeframe to release an MVP UI showcasing a functional proposal creation process. In the beginning, a lot of our time was spent simply trying to wrap our heads around the problem, and all the details and considerations involved. Working close to the state government level meant having to understand multiple hierarchies, nomenclature, different data sources, and competing policies and goals from each community college."
+        },
+        {
+          "image": [
+            {
+              "src": "assets/proposal/proposal-whiteboard.jpg",
+              "alt": "Whiteboard with ideas and UI sketches",
+              "caption": "Trying to figure how to wade through the overwhelming complexity."
+            }
+          ]
+        },
+        {
+          "paragraph": "We centered early UI concepts around the idea of breaking down the UI into manageable chunks, and separating each step into its own breadcrumb. The UI walks you through each step, rather than hitting you in the face with a giant form. The breadcrumbs also provide context and situational awareness. Where am I? How much more is left? Did I do this part yet?"
+        },
+        {
+          "image": [
+            {
+              "src": "assets/proposal/proposal-wireframe.jpg",
+              "alt": "Wireframe mockup for proposal UI",
+              "caption": "Early layout UI wireframe."
+            }
+          ]
+        },
+        {
+          "paragraph": "With a rough outline in place, and requirements changing left and right, I started focusing on the pieces I knew would remain constant and gathered a list of UI components we would likely need. One advantage of designing 'atomically' is that you can still make headway even as the product requirements are still coming into focus."
+        },
+        {
+          "image": [
+            {
+              "src": "assets/proposal/proposal-sketches.jpg",
+              "alt": "UI sketches",
+              "caption": "Early layout concepts and inventory of required UI components."
+            }
+          ]
+        },
+        {
+          "paragraph": "My next step was to begin building out the modular components in PatternLab so we could get something in front of the client as quickly as possible and gather feedback. Once I had my bucket of LEGOs so to speak, I could start plugging and playing. Each component was written as a template in Mustache, allowing me to pass dummy data via JSON into the UI to test how it would hold up."
+        },
+        {
+          "image": [
+            {
+              "src": "assets/proposal/proposal-patternlab.jpg",
+              "alt": "Components in the PatternLab UI.",
+              "caption": "Disparate components floating around in the PatternLab UI, before being assembled into patterns."
+            }
+          ]
+        },
+        {
+          "paragraph": "This pattern-based approach to design proved incredibly useful when it came to iterating and improving the prototype with the client. For demos, we ran it on a local server so the client could interact and click through the prototype. Because each pattern was templated and set up with the proper class names and structure, I could easily make content changes to JSON files during meetings, which would instantly update the underlying patterns. This proved to be invaluable, as labels, dropdowns and titles were constantly changing and adapting as we worked with users."
+        },
+        {
+          "paragraph": "An unexpected side effect of protoyping in the browser was people we showed it to often thought the protoype <strong>was</strong> the final product. While we were able to get great feedback early, we also had to educate the client on the nuances of how software is built. Software doesn't follow the normal rules when it comes to visible progress -- there is much more involved that is invisible. A database schema, API design, AWS architecture all tend to go unnoticed in a demo where all eyes are trained on the UI. So from the surface, it sometimes appeared as if progress was slowing, even though it wasn't. This is a helpful lesson that reveals a lot about how human beings perceive software. The interface is the product, and the product is the brand. This is why consistency, predictability, and ease of use are so important in UI design."
+        },
+        {
+          "image": [
+            {
+              "src": "assets/proposal/proposal-budget.jpg",
+              "alt": "Budget page UI",
+              "caption": "Budget page."
+            }
+          ]
+        },
+        {
+          "image": [
+            {
+              "src": "assets/proposal/proposal-metrics.jpg",
+              "alt": "Metrics page UI",
+              "caption": "Metrics page."
+            }
+          ]
+        },
+        {
+          "video": [
+            {
+              "src": "https://player.vimeo.com/video/210014070?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+            }
+          ]
+        },
+        {
+          "paragraph": "Ultimately, we shipped on time, began beta testing, and spent a few months squashing bugs and iterating on user feedback. The main launch was so successful that the scope of work rapidly expanded beyond 'proposal creation' as stakeholders were looking to add more functionality and services. Moving forward, existing patterns will have to be evaluated to see how they hold up against a new wave of user goals and broader contexts."
+        }
+      ]
+    },
+    {
+      "banner": [
+        {
           "src": "assets/dashboard/dashboard-header.png",
           "alt": "Dashboard mockup"
         }
@@ -238,103 +335,6 @@
         },
         {
           "paragraph": "This project was scoped to a simple prototype and was delivered on time. Had we been responsible for implementation, I would be asking an entirely different set of questions beyond interface design and usability. Where does this restaurant data come from? Does Yelp have an API we can pull from? How do our filters (lively vs. intimate) map to their category tags? Why use this app over another food search application? What does this app/company sell and how does it make money? Business and engineering constraints are equally as important as design constraints and would need to be factored into the design to turn it into a feasible product."
-        }
-      ]
-    },
-    {
-      "banner": [
-        {
-          "src": "assets/proposal/proposal-header.png",
-          "alt": "Proposal builder mockup"
-        }
-      ],
-      "title": "Proposal Builder",
-      "description": "A system to streamline the creation of funding proposals for job creation and a stronger California economy.",
-      "overview": "We worked with a program associated with the California Community Colleges to help streamline the process of creating, distributing, and tracking funding proposals for new grants and educational resources. Most of the proposal creation process was happening either offline or using free online tools, so keeping track of proposal data was nearly impossible. The state needed this data in order to monitor the success of academic programs to more appropriately allocate resources, and to hopefully prepare our future workforce for emerging job demands.",
-      "role": "Design strategy, UI design, prototyping, HTML/CSS.",
-      "tools": "Whiteboard, Sketch, PatternLab, Sass (BEM), Mustache, jQuery, Gulp.",
-      "body": [
-        {
-          "paragraph": "This was easily the most complex project I've ever worked on. Working with a small team, we had a short timeframe to release an MVP UI showcasing a functional proposal creation process. In the beginning, a lot of our time was spent simply trying to wrap our heads around the problem, and all the details and considerations involved. Working close to the state government level meant having to understand multiple hierarchies, nomenclature, different data sources, and competing policies and goals from each community college."
-        },
-        {
-          "image": [
-            {
-              "src": "assets/proposal/proposal-whiteboard.jpg",
-              "alt": "Whiteboard with ideas and UI sketches",
-              "caption": "Trying to figure how to wade through the overwhelming complexity."
-            }
-          ]
-        },
-        {
-          "paragraph": "We centered early UI concepts around the idea of breaking down the UI into manageable chunks, and separating each step into its own breadcrumb. The UI walks you through each step, rather than hitting you in the face with a giant form. The breadcrumbs also provide context and situational awareness. Where am I? How much more is left? Did I do this part yet?"
-        },
-        {
-          "image": [
-            {
-              "src": "assets/proposal/proposal-wireframe.jpg",
-              "alt": "Wireframe mockup for proposal UI",
-              "caption": "Early layout UI wireframe."
-            }
-          ]
-        },
-        {
-          "paragraph": "With a rough outline in place, and requirements changing left and right, I started focusing on the pieces I knew would remain constant and gathered a list of UI components we would likely need. One advantage of designing 'atomically' is that you can still make headway even as the product requirements are still coming into focus."
-        },
-        {
-          "image": [
-            {
-              "src": "assets/proposal/proposal-sketches.jpg",
-              "alt": "UI sketches",
-              "caption": "Early layout concepts and inventory of required UI components."
-            }
-          ]
-        },
-        {
-          "paragraph": "My next step was to begin building out the modular components in PatternLab so we could get something in front of the client as quickly as possible and gather feedback. Once I had my bucket of LEGOs so to speak, I could start plugging and playing. Each component was written as a template in Mustache, allowing me to pass dummy data via JSON into the UI to test how it would hold up."
-        },
-        {
-          "image": [
-            {
-              "src": "assets/proposal/proposal-patternlab.jpg",
-              "alt": "Components in the PatternLab UI.",
-              "caption": "Disparate components floating around in the PatternLab UI, before being assembled into patterns."
-            }
-          ]
-        },
-        {
-          "paragraph": "This pattern-based approach to design proved incredibly useful when it came to iterating and improving the prototype with the client. For demos, we ran it on a local server so the client could interact and click through the prototype. Because each pattern was templated and set up with the proper class names and structure, I could easily make content changes to JSON files during meetings, which would instantly update the underlying patterns. This proved to be invaluable, as labels, dropdowns and titles were constantly changing and adapting as we worked with users."
-        },
-        {
-          "paragraph": "An unexpected side effect of protoyping in the browser was people we showed it to often thought the protoype <strong>was</strong> the final product. While we were able to get great feedback early, we also had to educate the client on the nuances of how software is built. Software doesn't follow the normal rules when it comes to visible progress -- there is much more involved that is invisible. A database schema, API design, AWS architecture all tend to go unnoticed in a demo where all eyes are trained on the UI. So from the surface, it sometimes appeared as if progress was slowing, even though it wasn't. This is a helpful lesson that reveals a lot about how human beings perceive software. The interface is the product, and the product is the brand. This is why consistency, predictability, and ease of use are so important in UI design."
-        },
-        {
-          "image": [
-            {
-              "src": "assets/proposal/proposal-budget.jpg",
-              "alt": "Budget page UI",
-              "caption": "Budget page."
-            }
-          ]
-        },
-        {
-          "image": [
-            {
-              "src": "assets/proposal/proposal-metrics.jpg",
-              "alt": "Metrics page UI",
-              "caption": "Metrics page."
-            }
-          ]
-        },
-        {
-          "video": [
-            {
-              "src": "https://player.vimeo.com/video/210014070?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-            }
-          ]
-        },
-        {
-          "paragraph": "Ultimately, we shipped on time, began beta testing, and spent a few months squashing bugs and iterating on user feedback. The main launch was so successful that the scope of work rapidly expanded beyond 'proposal creation' as stakeholders were looking to add more functionality and services. Moving forward, existing patterns will have to be evaluated to see how they hold up against a new wave of user goals and broader contexts."
         }
       ]
     }
