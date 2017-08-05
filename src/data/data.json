@@ -1,6 +1,6 @@
 {
   "siteTitle": "Casey Callow",
-  "siteDescription": "Designer, prototyper, maker.",
+  "siteDescription": "Designer <> Developer",
   "fontSrc": "https://fonts.googleapis.com/css?family=Armata|Open+Sans",
   "mainPage": {
     "chatbotSrc": "https://api.motion.ai/webchat/23723?sendBtn=SEND&inputBox=Type+something...&token=ef7a260569f0f1fa64203a3f32fcd87e",
@@ -13,7 +13,7 @@
     "portfolioActive": true
   },
   "about": {
-    "title": "I'm Casey Callow, a hybrid frontend designer.",
+    "title": "I'm Casey Callow, a design systems engineer.",
     "description": "I love design systems, frontend code, and solving meaningful problems with design. If you'd like to chat further, reach out on the social network of your choosing below, or text me!"
   },
   "navBar": {
