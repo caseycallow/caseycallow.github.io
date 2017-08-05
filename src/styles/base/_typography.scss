@@ -35,9 +35,10 @@ p {
 
 a {
   cursor: pointer;
-  color: $primary-color;
+  color: $primary-color-lighter;
   text-decoration: none;
-  transition: color $base-duration $base-timing;
+  font-weight: 600;
+  transition: $base-transition;
 
   &:active,
   &:focus,
