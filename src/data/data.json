@@ -13,8 +13,8 @@
     "portfolioActive": true
   },
   "about": {
-    "title": "I'm Casey Callow, a design systems engineer.",
-    "description": "Currently scaling design <a href='https://www.udacity.com' target='_blank'>@Udacity</a>. If you'd like to chat, reach out on the social network of your choosing below, or text me."
+    "title": "I'm Casey Callow, a design systems engineer 👨🏻‍💻.",
+    "description": "I get to build tools to scale design and think about the future of education all day long at <a href='https://www.udacity.com' target='_blank'>Udacity</a>. Chat with me on <a href='http://designsystems.herokuapp.com' target='_blank'>Slack</a> about systems, ping me on Twitter, or text me questions on this ancient iPhone with a glistening physical home button."
   },
   "navBar": {
     "label": "Casey",
