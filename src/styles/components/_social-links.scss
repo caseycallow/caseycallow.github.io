@@ -1,8 +1,8 @@
 .social-links {
-
   $number-of-icons: 7;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: $base-spacing 0 0;
   padding: 0;
@@ -10,7 +10,7 @@
 
   &__item {
     opacity: 0;
-    margin: 0 $base-spacing/1.5 0 0;
+    margin: 0 $base-spacing/1.5 $base-spacing/1.5 0;
     line-height: 0;
     transition: $base-transition;
     animation: 0.5s spin ease, 0.5s fadeIn ease forwards;
@@ -25,7 +25,7 @@
     }
 
     @include breakpoint(medium) {
-      margin: 0 $small-spacing 0 0;
+      margin: 0 $small-spacing $small-spacing 0;
     }
   }
 
