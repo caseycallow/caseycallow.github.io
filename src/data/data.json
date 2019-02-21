@@ -13,8 +13,8 @@
     "portfolioActive": true
   },
   "about": {
-    "title": "I'm Casey Callow, a design systems engineer 👨🏻‍💻.",
-    "description": "I’m a hybrid developer and designer with a passion for design systems, frontend code, and am always learning new ways to build beautifully crafted interfaces to solve meaningful problems. Shoot me an email, or ping me on Twitter if you'd like to chat."
+    "title": "I'm Casey Callow, a UX Engineer 👨🏻‍💻.",
+    "description": "I love design systems, frontend code, and am always learning new ways to build beautifully crafted interfaces to solve meaningful problems. Shoot me an email, or ping me on Twitter if you'd like to chat."
   },
   "navBar": {
     "label": "Casey",
