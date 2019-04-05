@@ -334,6 +334,13 @@
           ]
         },
         {
+          "video": [
+            {
+              "src": "https://player.vimeo.com/video/198791350?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+            }
+          ]
+        },
+        {
           "paragraph": "This project was scoped to a simple prototype and was delivered on time. Had we been responsible for implementation, I would be asking an entirely different set of questions beyond interface design and usability. Where does this restaurant data come from? Does Yelp have an API we can pull from? How do our filters (lively vs. intimate) map to their category tags? Why use this app over another food search application? What does this app/company sell and how does it make money? Business and engineering constraints are equally as important as design constraints and would need to be factored into the design to turn it into a feasible product."
         }
       ]
