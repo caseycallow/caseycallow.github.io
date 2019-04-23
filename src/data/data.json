@@ -1,6 +1,6 @@
 {
   "siteTitle": "Casey Callow",
-  "siteDescription": "Designer <> Developer",
+  "siteDescription": "UX Engineer",
   "fontSrc": "https://fonts.googleapis.com/css?family=Armata|Open+Sans",
   "mainPage": {
     "chatbotSrc": "https://api.motion.ai/webchat/23723?sendBtn=SEND&inputBox=Type+something...&token=ef7a260569f0f1fa64203a3f32fcd87e",
@@ -14,7 +14,7 @@
   },
   "about": {
     "title": "I'm Casey Callow, a UX Engineer 👨🏻‍💻.",
-    "description": "I love design systems, frontend code, and am always learning new ways to build beautifully crafted interfaces to solve meaningful problems. Shoot me an email, or ping me on Twitter if you'd like to chat."
+    "description": "I am a fast-learning engineer with proven experience building user interfaces, design systems, and collaborating closely with designers and developers to build polished, high quality products. I love learning new technologies, writing music, and honing my craft. Feel free to reach out!"
   },
   "navBar": {
     "label": "Casey",
@@ -47,10 +47,6 @@
     {
       "src": "https://twitter.com/caseycallow",
       "icon": "twitter"
-    },
-    {
-      "src": "https://medium.com/@caseycallow",
-      "icon": "medium"
     },
     {
       "src": "http://codepen.io/caseycallow",
