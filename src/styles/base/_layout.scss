@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   animation: 1s fadeIn ease forwards;
   opacity: 0;
   background-image: url(assets/bg.svg);
@@ -8,9 +11,9 @@ body {
 .main {
   display: flex;
   justify-content: center;
-  height: 90vh;
   padding: 0 $large-spacing;
-  margin: 0 auto;
+  align-self: center;
+  height: 100%;
   max-width: 48rem;
 
   @include breakpoint(medium) {
