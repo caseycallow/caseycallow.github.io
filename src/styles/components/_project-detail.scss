@@ -14,6 +14,7 @@
   margin: auto;
   transition: all 0.25s ease;
   overflow: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch; //enable inertial scrolling on mobile
   z-index: 1;
   box-shadow: $base-box-shadow;
@@ -89,7 +90,7 @@
   }
 
   @include breakpoint(medium) {
-    width: 100%;
+    width: 100vw;
   }
 
   @include breakpoint(small) {
