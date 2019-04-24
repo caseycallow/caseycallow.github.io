@@ -6,15 +6,16 @@
   border-radius: $base-border-radius;
   color: $base-background-color;
   letter-spacing: 1px;
-  font-size: $base-font-size*0.8;
+  font-size: $base-font-size * 0.8;
   font-weight: bold;
   text-transform: uppercase;
   display: block;
-  margin: 0 auto $small-spacing;
+  margin: 0 auto $base-spacing;
   cursor: pointer;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: $base-transition;
-  &:hover, &:active {
+  &:hover,
+  &:active {
     box-shadow: none;
   }
 }

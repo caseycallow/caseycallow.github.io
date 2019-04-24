@@ -3,25 +3,29 @@
   cursor: auto;
   padding: $base-spacing;
   transform: scale3d(0, 0, 0);
-  transform-origin: left center;
+  transform-origin: center;
   background: $base-background-color;
   height: 100vh;
-  width: 60vw;
+  max-width: 60rem;
   position: absolute;
   top: 0;
+  left: 0;
   right: 0;
+  bottom: 0;
+  margin: auto;
   transition: all 0.25s ease;
   overflow: auto;
-  -webkit-overflow-scrolling: touch; //enable intertial scrolling on mobile
+  -webkit-overflow-scrolling: touch; //enable inertial scrolling on mobile
   z-index: 1;
-  box-shadow: $base-box-shadow-left;
+  box-shadow: $base-box-shadow;
 
   //open animation
   &.is-open {
     transform: scale3d(1, 1, 1);
-    animation: 'fadeIn' 0.4s;
-    .project-detail__header, .project-detail__body {
-      animation: 'fadeInUp' 0.8s $cubic-bezier, 'fadeIn' 1.5s;
+    animation: "fadeIn" 0.4s;
+    .project-detail__header,
+    .project-detail__body {
+      animation: "fadeInUp" 0.8s $cubic-bezier, "fadeIn" 1.5s;
     }
   }
 
@@ -66,8 +70,8 @@
 
   &__video {
     position: relative;
-  	padding-bottom: 57%; //16:9
-  	height: 0;
+    padding-bottom: 57%; //16:9
+    height: 0;
     margin: 0 0 $base-spacing;
     iframe {
       position: absolute;
@@ -86,10 +90,9 @@
   }
 
   @include breakpoint(medium) {
-    transform-origin: top center;
-    width: auto;
-    height: auto;
+    width: 100%;
   }
+
   @include breakpoint(small) {
     padding: $small-spacing;
   }
