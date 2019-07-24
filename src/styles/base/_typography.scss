@@ -2,9 +2,14 @@ body {
   color: $base-font-color;
   font-family: $base-font-family;
   font-feature-settings: "kern", "liga", "pnum";
-  font-size: $base-font-size;
+  font-size: $base-font-size * 1.2;
   line-height: $base-line-height;
   letter-spacing: 0.04rem;
+
+
+  @include breakpoint(medium) {
+    font-size: $base-font-size;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,7 +25,11 @@ h1 {
 	font-size: $base-font-size*3;
 }
 h2 {
-	font-size: $base-font-size*2.25;
+	font-size: $base-font-size*2.8;
+
+  @include breakpoint(medium) {
+    font-size: $base-font-size*2.25;
+  }
 }
 h3 {
 	font-size: $base-font-size*1.75;
