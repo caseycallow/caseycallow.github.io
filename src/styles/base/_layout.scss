@@ -2,11 +2,20 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  animation: 3s fadeIn 500ms ease forwards;
-  opacity: 0;
-  background-image: url(assets/bg.svg);
   background-color: $base-background-color;
   overflow-x: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    background-image: url(assets/bg.svg);
+    animation: 2s fadeIn 250ms ease forwards;
+  }
 }
 
 .main {

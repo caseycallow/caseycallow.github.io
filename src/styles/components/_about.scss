@@ -1,4 +1,6 @@
 .about {
+  opacity: 0;
+  animation: 1.5s fadeInUp 250ms ease forwards;
   pointer-events: auto;
   &__title {
     margin-bottom: $small-spacing;
