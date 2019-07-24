@@ -16,7 +16,7 @@
     animation: 0.5s spin ease, 0.5s fadeIn ease forwards;
     @for $i from 1 to $number-of-icons + 1 {
       &:nth-of-type(#{$i}) {
-        animation-delay: 500ms + $i * 100ms;
+        animation-delay: 750ms + $i * 100ms;
       }
     }
 

@@ -8,10 +8,10 @@ $base-font-family: $open-sans;
 $heading-font-family: $armata;
 
 //Font Sizes
-$base-font-size: 1rem;
+$base-font-size: 1.2rem;
 
 //Line Height
-$base-line-height: 1.9;
+$base-line-height: 2.0;
 $heading-line-height: 1.6;
 
 //Breakpoints
@@ -41,8 +41,8 @@ $primary-color-lighter: lighten($primary-color, 15%);
 $primary-color-gradient: linear-gradient(275deg, $primary-color 0%, $primary-color-darker 100%);
 
 //Font Colors
-$base-font-color: #333;
-$heading-color: #333;
+$base-font-color: #eee;
+$heading-color: #fff;
 $action-color: $primary-color;
 
 //Border
@@ -56,7 +56,7 @@ $base-box-shadow-left: -15px 0 25px rgba(0,0,0,0.3);
 $base-box-shadow-hover: 0 2px 5px rgba(0,0,0,0.1);
 
 //Background Colors
-$base-background-color: white;
+$base-background-color: #11151D;
 $secondary-background-color: tint($base-border-color, 75%);
 
 //Forms
