@@ -1,5 +1,5 @@
 .social-links {
-  $number-of-icons: 7;
+  $number-of-icons: 6;
 
   display: flex;
   flex-wrap: wrap;
@@ -32,5 +32,10 @@
   .icon {
     width: 2rem;
     height: 2rem;
+
+    @include breakpoint(small) {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
   }
 }

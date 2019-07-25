@@ -8,6 +8,10 @@ body {
 
 
   @include breakpoint(medium) {
+    font-size: $base-font-size * 1.1;
+  }
+
+  @include breakpoint(small) {
     font-size: $base-font-size;
   }
 }
@@ -26,10 +30,6 @@ h1 {
 }
 h2 {
 	font-size: $base-font-size*2.8;
-
-  @include breakpoint(medium) {
-    font-size: $base-font-size*2.25;
-  }
 }
 h3 {
 	font-size: $base-font-size*1.75;

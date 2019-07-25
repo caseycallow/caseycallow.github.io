@@ -1,8 +1,16 @@
 .about {
   opacity: 0;
   animation: 2s fadeInUp 1.5s ease forwards;
-  pointer-events: auto;
+
   &__title {
     margin-bottom: $small-spacing;
+
+    @include breakpoint(medium) {
+      font-size: $base-font-size*2.25;
+    }
+
+    @include breakpoint(small) {
+      font-size: $base-font-size*1.75;
+    }
   }
 }
