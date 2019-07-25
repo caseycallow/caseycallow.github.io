@@ -1,10 +1,10 @@
 {
-  "name": "caseycallow.design",
+  "name": "caseycallow.codes",
   "version": "1.0.0",
-  "description": "Design portfolio for Casey Callow",
+  "description": "Casey Callow's website",
   "devDependencies": {
-    "browser-sync": "^2.18.6",
-    "gulp": "^3.9.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-htmlmin": "^3.0.0",
     "gulp-mustache": "^2.3.0",
@@ -17,18 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caseycallow/caseycallow.design.git"
+    "url": "git+https://github.com/caseycallow/caseycallow.git"
   },
-  "keywords": [
-    "portfolio",
-    "design",
-    "UI",
-    "UX"
-  ],
   "author": "Casey Callow",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/caseycallow/caseycallow.design/issues"
+    "url": "https://github.com/caseycallow/caseycallow/issues"
   },
-  "homepage": "https://github.com/caseycallow/caseycallow.design#readme"
+  "homepage": "https://github.com/caseycallow/caseycallow#readme"
 }
