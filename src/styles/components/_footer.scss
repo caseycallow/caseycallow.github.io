@@ -7,12 +7,16 @@
   bottom: 0;
   right: 0;
   padding: $small-spacing/2;
-  @include breakpoint(medium) {
-    visibility: hidden;
-  }
 
   .copyright {
-    font-size: 10px;
-    opacity: 0.8;
+    font-size: 9px;
+    opacity: 0.5;
+
+    @include breakpoint(medium) {
+      overflow: hidden;
+      text-indent: 101%;
+      white-space: nowrap;
+      font-size: 0;
+    }
   }
 }
