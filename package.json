@@ -10,7 +10,8 @@
     "gulp-mustache": "^2.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.1.2"
+    "gulp-uglify": "^2.1.2",
+    "lodash.template": ">=4.5.0"
   },
   "scripts": {
     "start": "gulp"
