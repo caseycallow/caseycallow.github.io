@@ -1,11 +1,15 @@
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
-
-<Directory /images/animated-bg.svg>
-  Header Set Pragma "no-cache"
-  Header Set Expires "Thu, 1 Jan 1970 00:00:00 GMT"
-  Header Set Cache-Control "max-age=0, no-store, no-cache, must-revalidate"
-  Header Unset ETag
-  FileETag None
-</Directory>
+<FilesMatch "\.(svg)$">
+  <IfModule mod_expires.c>
+    ExpiresActive Off
+  </IfModule>
+  <IfModule mod_headers.c>
+    FileETag None
+    Header unset ETag
+    Header unset Pragma
+    Header unset Cache-Control
+    Header unset Last-Modified
+    Header set Pragma "no-cache"
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+    Header set Expires "Thu, 1 Jan 1970 00:00:00 GMT"
+  </IfModule>
+</FilesMatch>
