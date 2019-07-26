@@ -62,7 +62,7 @@ function refresh(done) {
 
 function copyAssets(done) {
   return gulp
-    .src("src/assets/**")
+    .src("src/assets/**", { dot: true })
     .pipe(gulp.dest("./dist"));
   done();
 }
