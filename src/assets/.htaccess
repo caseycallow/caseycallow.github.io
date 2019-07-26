@@ -1,7 +1,10 @@
 <ifModule mod_headers.c>
-    <filesMatch ".(svg)$">
-      Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
-      Header set Pragma "no-cache"
-      Header set Expires 0
-    </filesMatch>
+  <filesMatch ".(pdf|xml|ico|jpg|png|js|css)$">
+      Header set Cache-Control "max-age=2592000, public"
+  </filesMatch>
+  <filesMatch ".(svg)$">
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+  </filesMatch>
 </ifModule>
