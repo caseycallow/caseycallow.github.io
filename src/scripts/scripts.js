@@ -2,7 +2,7 @@
 
 function triggerBackgroundAnimation() {
   var url = "images/animated-bg.svg?" + Math.random();
-  var css = "body:before { background: url(" + url + "); background-size: contain; }";
+  var css = "body:before { background: url(" + url + ") 0 / contain }";
   var style = document.createElement("style");
   style.appendChild(document.createTextNode(css));
   document.head.appendChild(style);
